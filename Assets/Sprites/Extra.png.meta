@@ -1,0 +1,2320 @@
+fileFormatVersion: 2
+guid: 667667200bb5af14d94b37485835e2e6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1824268091788894927
+    second: Extra_0
+  - first:
+      213: 4241717216167891283
+    second: Extra_1
+  - first:
+      213: -2208650096276337814
+    second: Extra_2
+  - first:
+      213: -694583067294133443
+    second: Extra_3
+  - first:
+      213: -2670767909063178252
+    second: Extra_4
+  - first:
+      213: 1905157048910023509
+    second: Extra_5
+  - first:
+      213: -9193491702364381962
+    second: Extra_6
+  - first:
+      213: 4723843297515268931
+    second: Extra_7
+  - first:
+      213: 1839970119226637319
+    second: Extra_8
+  - first:
+      213: -6675102796960876500
+    second: Extra_9
+  - first:
+      213: 1916079559840051419
+    second: Extra_10
+  - first:
+      213: -4280409550311824700
+    second: Extra_11
+  - first:
+      213: 5384479902572709455
+    second: Extra_12
+  - first:
+      213: -1767107272416375126
+    second: Extra_13
+  - first:
+      213: 8958262165524613650
+    second: Extra_14
+  - first:
+      213: -6866697159204427963
+    second: Extra_15
+  - first:
+      213: 4281333548576056531
+    second: Extra_16
+  - first:
+      213: -5860215921036785070
+    second: Extra_17
+  - first:
+      213: 5981342530301498353
+    second: Extra_18
+  - first:
+      213: 6644722369137472110
+    second: Extra_19
+  - first:
+      213: -8636961356036262325
+    second: Extra_20
+  - first:
+      213: 8730957448967020190
+    second: Extra_21
+  - first:
+      213: 1475560227878156474
+    second: Extra_22
+  - first:
+      213: -7089940469712923538
+    second: Extra_23
+  - first:
+      213: 5979204583520823858
+    second: Extra_24
+  - first:
+      213: 2377711891350015217
+    second: Extra_25
+  - first:
+      213: 5621883684020057105
+    second: Extra_26
+  - first:
+      213: -6996938391265501294
+    second: Extra_27
+  - first:
+      213: -1583261817231797455
+    second: Extra_28
+  - first:
+      213: -2331949526828010738
+    second: Extra_29
+  - first:
+      213: -3065281387535062034
+    second: Extra_30
+  - first:
+      213: -6417527672536585473
+    second: Extra_31
+  - first:
+      213: -4727197066011876842
+    second: Extra_32
+  - first:
+      213: -7718402005562262897
+    second: Extra_33
+  - first:
+      213: 3486911089735239989
+    second: Extra_34
+  - first:
+      213: 79257767547316982
+    second: Extra_35
+  - first:
+      213: -3236460093824369050
+    second: Extra_36
+  - first:
+      213: 5135507331719681022
+    second: Extra_37
+  - first:
+      213: 4796907922065454167
+    second: Extra_38
+  - first:
+      213: -2790986931694457673
+    second: Extra_39
+  - first:
+      213: 3015064442145208460
+    second: Extra_40
+  - first:
+      213: 2681758387487442634
+    second: Extra_41
+  - first:
+      213: -117683013110179662
+    second: Extra_42
+  - first:
+      213: 2853531852930833804
+    second: Extra_43
+  - first:
+      213: 8018258702577772194
+    second: Extra_44
+  - first:
+      213: 261252545369403940
+    second: Extra_45
+  - first:
+      213: 9127734817244412220
+    second: Extra_46
+  - first:
+      213: -5163553019205738649
+    second: Extra_47
+  - first:
+      213: 4617531088158266662
+    second: Extra_48
+  - first:
+      213: -5451590275954708737
+    second: Extra_49
+  - first:
+      213: 1679952400114210276
+    second: Extra_50
+  - first:
+      213: -1055373551040325865
+    second: Extra_51
+  - first:
+      213: 2374998641757898334
+    second: Extra_52
+  - first:
+      213: 4134118677381864734
+    second: Extra_53
+  - first:
+      213: -7109226586686551352
+    second: Extra_54
+  - first:
+      213: 5642830019508637340
+    second: Extra_55
+  - first:
+      213: -7247174545032167408
+    second: Extra_56
+  - first:
+      213: -3871522362560926466
+    second: Extra_57
+  - first:
+      213: -8219113868023348920
+    second: Extra_58
+  - first:
+      213: -8899133540269268605
+    second: Extra_59
+  - first:
+      213: 1997785006813004102
+    second: Extra_60
+  - first:
+      213: 7187514879194461401
+    second: Extra_61
+  - first:
+      213: -161040235460930074
+    second: Extra_62
+  - first:
+      213: 1134402567380780030
+    second: Extra_63
+  - first:
+      213: -6173431803005567518
+    second: Extra_64
+  - first:
+      213: -3929936298592601128
+    second: Extra_65
+  - first:
+      213: 799978393302758032
+    second: Extra_66
+  - first:
+      213: 5744929827522671805
+    second: Extra_67
+  - first:
+      213: 2891321644124815046
+    second: Extra_68
+  - first:
+      213: 7984764652034468360
+    second: Extra_69
+  - first:
+      213: -9170720971840251606
+    second: Extra_70
+  - first:
+      213: 7623912500662366011
+    second: Extra_71
+  - first:
+      213: -8281499182974093465
+    second: Extra_72
+  - first:
+      213: 8118322950360778387
+    second: Extra_73
+  - first:
+      213: 3224096908999386625
+    second: Extra_74
+  - first:
+      213: 1633873863324321476
+    second: Extra_75
+  - first:
+      213: 5804821157784788135
+    second: Extra_76
+  - first:
+      213: 3258773536574168987
+    second: Extra_77
+  - first:
+      213: -2346227555940918521
+    second: Extra_78
+  - first:
+      213: 6606368701370269787
+    second: Extra_79
+  - first:
+      213: -2179284158723470179
+    second: Extra_80
+  - first:
+      213: 4576888997598569562
+    second: Extra_81
+  - first:
+      213: 1019617279575661004
+    second: Extra_82
+  - first:
+      213: 8703425711496402734
+    second: Extra_83
+  - first:
+      213: -422326010972140442
+    second: Extra_84
+  - first:
+      213: -4899342209450862215
+    second: Extra_85
+  - first:
+      213: -5734547792787637323
+    second: Extra_86
+  - first:
+      213: 3158505264116733752
+    second: Extra_87
+  - first:
+      213: -1997883613667952727
+    second: Extra_88
+  - first:
+      213: -147405266298514390
+    second: Extra_89
+  - first:
+      213: -2716016295281648787
+    second: Extra_90
+  - first:
+      213: 381082473711934125
+    second: Extra_91
+  - first:
+      213: 3176748218488020997
+    second: Extra_92
+  - first:
+      213: -4266230504740572567
+    second: Extra_93
+  - first:
+      213: 4246273008232645346
+    second: Extra_94
+  - first:
+      213: 3066334537096605523
+    second: Extra_95
+  - first:
+      213: -878641742368452302
+    second: Extra_96
+  - first:
+      213: 5300035999308105415
+    second: Extra_97
+  - first:
+      213: 5882020158822966453
+    second: Extra_98
+  - first:
+      213: 5976263656736420069
+    second: Extra_99
+  - first:
+      213: 1729489674894417685
+    second: Extra_100
+  - first:
+      213: 1371768085643102180
+    second: Extra_101
+  - first:
+      213: -4068337120291723617
+    second: Extra_102
+  - first:
+      213: -8841946663065625761
+    second: Extra_103
+  - first:
+      213: 937942823417604291
+    second: Extra_104
+  - first:
+      213: 8947665913417974730
+    second: Extra_105
+  - first:
+      213: -7612430453991545277
+    second: Extra_106
+  - first:
+      213: 2266606159017099942
+    second: Extra_107
+  - first:
+      213: 5336588250446294808
+    second: Extra_108
+  - first:
+      213: -9205588506313542467
+    second: Extra_109
+  - first:
+      213: 3889777006110952632
+    second: Extra_110
+  - first:
+      213: -6917230797626928559
+    second: Extra_111
+  - first:
+      213: -4426283861719449155
+    second: Extra_112
+  - first:
+      213: -8160997547521593634
+    second: Extra_113
+  - first:
+      213: -6960095578463993232
+    second: Extra_114
+  - first:
+      213: -8757896129533200193
+    second: Extra_115
+  - first:
+      213: 7457108213869234672
+    second: Extra_116
+  - first:
+      213: 5669519933292821350
+    second: Extra_117
+  - first:
+      213: -1064092724836784917
+    second: Extra_118
+  - first:
+      213: -1293115480313383875
+    second: Extra_119
+  - first:
+      213: -3819917119278829252
+    second: Extra_120
+  - first:
+      213: -4840350689421407246
+    second: Extra_121
+  - first:
+      213: 8824789871206972097
+    second: Extra_122
+  - first:
+      213: -6607423120629595127
+    second: Extra_123
+  - first:
+      213: -2082313923525913214
+    second: Extra_124
+  - first:
+      213: -3487843460501369379
+    second: Extra_125
+  - first:
+      213: 4181317070984998324
+    second: Extra_126
+  - first:
+      213: 1794802020379573651
+    second: Extra_127
+  - first:
+      213: -8828215056658589512
+    second: Extra_128
+  - first:
+      213: -6496384870576136849
+    second: Extra_129
+  - first:
+      213: -5262818038757014907
+    second: Extra_130
+  - first:
+      213: -6721246805424241066
+    second: Extra_131
+  - first:
+      213: 3800324362063685811
+    second: Extra_132
+  - first:
+      213: -684087309996058711
+    second: Extra_133
+  - first:
+      213: 7123487473271046624
+    second: Extra_134
+  - first:
+      213: -2825567542230200051
+    second: Extra_135
+  - first:
+      213: 970358408247059347
+    second: Extra_136
+  - first:
+      213: -8754468138918636874
+    second: Extra_137
+  - first:
+      213: -7438652767359267243
+    second: Extra_138
+  - first:
+      213: -5673273838639519680
+    second: Extra_139
+  - first:
+      213: -2389027863008555424
+    second: Extra_140
+  - first:
+      213: -4437754729683688087
+    second: Extra_141
+  - first:
+      213: -7112334820574273837
+    second: Extra_142
+  - first:
+      213: 4999099572929743727
+    second: Extra_143
+  - first:
+      213: -4976550582571030628
+    second: Extra_144
+  - first:
+      213: 3604099727047383113
+    second: Extra_145
+  - first:
+      213: 6823425342216393962
+    second: Extra_146
+  - first:
+      213: 5316731433358536472
+    second: Extra_147
+  - first:
+      213: -330825810456830405
+    second: Extra_148
+  - first:
+      213: -4825596753725992698
+    second: Extra_149
+  - first:
+      213: 7046080332022334900
+    second: Extra_150
+  - first:
+      213: -4172375651060815614
+    second: Extra_151
+  - first:
+      213: -2462504724162544649
+    second: Extra_152
+  - first:
+      213: 7846923701844690408
+    second: Extra_153
+  - first:
+      213: -4920475930959041286
+    second: Extra_154
+  - first:
+      213: -1887570962754367497
+    second: Extra_155
+  - first:
+      213: 6098423608017087729
+    second: Extra_156
+  - first:
+      213: -1560883154365050319
+    second: Extra_157
+  - first:
+      213: -1445062954207755156
+    second: Extra_158
+  - first:
+      213: 3341812131202694154
+    second: Extra_159
+  - first:
+      213: 8663105036245514070
+    second: Extra_160
+  - first:
+      213: -1776804744178554833
+    second: Extra_161
+  - first:
+      213: 620278687019064343
+    second: Extra_162
+  - first:
+      213: -6294822610852692325
+    second: Extra_163
+  - first:
+      213: 3173037454577454497
+    second: Extra_164
+  - first:
+      213: -9032289322515622398
+    second: Extra_165
+  - first:
+      213: 2177247783036727558
+    second: Extra_166
+  - first:
+      213: 5985381196805346279
+    second: Extra_167
+  - first:
+      213: -7429318024020071384
+    second: Extra_168
+  - first:
+      213: 2493945116118974556
+    second: Extra_169
+  - first:
+      213: 3432887399570992701
+    second: Extra_170
+  - first:
+      213: -5832363549100220417
+    second: Extra_171
+  - first:
+      213: 9056989396106528587
+    second: Extra_172
+  - first:
+      213: -958214178140664763
+    second: Extra_173
+  - first:
+      213: -8007793410938821395
+    second: Extra_174
+  - first:
+      213: -258148291299386910
+    second: Extra_175
+  - first:
+      213: 4519907002067776352
+    second: Extra_176
+  - first:
+      213: 4726961703756880707
+    second: Extra_177
+  - first:
+      213: 7970248275885615759
+    second: Extra_178
+  - first:
+      213: 8036912790513826137
+    second: Extra_179
+  - first:
+      213: 4180784689058491305
+    second: Extra_180
+  - first:
+      213: 6081912072916746919
+    second: Extra_181
+  - first:
+      213: -4515908336730714759
+    second: Extra_182
+  - first:
+      213: 8620914703989566002
+    second: Extra_183
+  - first:
+      213: -7686932260284608906
+    second: Extra_184
+  - first:
+      213: 3267690807797602266
+    second: Extra_185
+  - first:
+      213: 403071200583808154
+    second: Extra_186
+  - first:
+      213: 5266651686517362406
+    second: Extra_187
+  - first:
+      213: -5368217795250844160
+    second: Extra_188
+  - first:
+      213: -7193369419500145131
+    second: Extra_189
+  - first:
+      213: 6282464201017912709
+    second: Extra_190
+  - first:
+      213: 6807516528897839842
+    second: Extra_191
+  - first:
+      213: 8873230557310460094
+    second: Extra_192
+  - first:
+      213: 5703091589375801065
+    second: Extra_193
+  - first:
+      213: 4826782050248689894
+    second: Extra_194
+  - first:
+      213: -641441242159482255
+    second: Extra_195
+  - first:
+      213: -8383927681596906189
+    second: Extra_196
+  - first:
+      213: -5580619132636172677
+    second: Extra_197
+  - first:
+      213: 1044227802405356166
+    second: Extra_198
+  - first:
+      213: 803760477528280116
+    second: Extra_199
+  - first:
+      213: 4174836623055886449
+    second: Extra_200
+  - first:
+      213: 8419023091569407691
+    second: Extra_201
+  - first:
+      213: 8587542049668406469
+    second: Extra_202
+  - first:
+      213: -8391891089858812905
+    second: Extra_203
+  - first:
+      213: 8198125669763120286
+    second: Extra_204
+  - first:
+      213: -2575935618108853608
+    second: Extra_205
+  - first:
+      213: -2095037351321442688
+    second: Extra_206
+  - first:
+      213: -6606412328900307042
+    second: Extra_207
+  - first:
+      213: -8493904597630050363
+    second: Extra_208
+  - first:
+      213: 2474342905008333414
+    second: Extra_209
+  - first:
+      213: 544404559024611095
+    second: Extra_210
+  - first:
+      213: -6940568889180052712
+    second: Extra_211
+  - first:
+      213: 750377911409306895
+    second: Extra_212
+  - first:
+      213: 857746844100500516
+    second: Extra_213
+  - first:
+      213: 6491778229169520055
+    second: Extra_214
+  - first:
+      213: -6418140054910515027
+    second: Extra_215
+  - first:
+      213: 1114307891980224140
+    second: Extra_216
+  - first:
+      213: -7673298719614626516
+    second: Extra_217
+  - first:
+      213: -5789718538159283
+    second: Extra_218
+  - first:
+      213: 5297933215441421259
+    second: Extra_219
+  - first:
+      213: 5695575688255607860
+    second: Extra_220
+  - first:
+      213: 1736851820900827511
+    second: Extra_221
+  - first:
+      213: -8423560501647227391
+    second: Extra_222
+  - first:
+      213: -3778299620108506255
+    second: Extra_223
+  - first:
+      213: 6018763928572175588
+    second: Extra_224
+  - first:
+      213: 5692843979947142041
+    second: Extra_225
+  - first:
+      213: -7521552780817430420
+    second: Extra_226
+  - first:
+      213: -1191500543455460690
+    second: Extra_227
+  - first:
+      213: -3206164142567614784
+    second: Extra_228
+  - first:
+      213: 6511743337794266137
+    second: Extra_229
+  - first:
+      213: 3323994436123866148
+    second: Extra_230
+  - first:
+      213: -537678996913379219
+    second: Extra_231
+  - first:
+      213: -6435873013044680538
+    second: Extra_232
+  - first:
+      213: -2449508728759686403
+    second: Extra_233
+  - first:
+      213: -2960937386822358875
+    second: Extra_234
+  - first:
+      213: 5710409227475434805
+    second: Extra_235
+  - first:
+      213: 2219924062255626514
+    second: Extra_236
+  - first:
+      213: 8961365236712090609
+    second: Extra_237
+  - first:
+      213: -530527265895486439
+    second: Extra_238
+  - first:
+      213: -2718323402762570729
+    second: Extra_239
+  - first:
+      213: -3530373620733642747
+    second: Extra_240
+  - first:
+      213: -6578122464893399562
+    second: Extra_241
+  - first:
+      213: -4600382490106214518
+    second: Extra_242
+  - first:
+      213: 7664451984408447764
+    second: Extra_243
+  - first:
+      213: 8316586933014175357
+    second: Extra_244
+  - first:
+      213: -2111818981104475860
+    second: Extra_245
+  - first:
+      213: 8404051821351392301
+    second: Extra_246
+  - first:
+      213: 5588815153615787361
+    second: Extra_247
+  - first:
+      213: -29152522438098661
+    second: Extra_248
+  - first:
+      213: -350357122674898018
+    second: Extra_249
+  - first:
+      213: -6913254348070490732
+    second: Extra_250
+  - first:
+      213: 3019604917399877362
+    second: Extra_251
+  - first:
+      213: 1068824739647655615
+    second: Extra_252
+  - first:
+      213: 6510098644165107103
+    second: Extra_253
+  - first:
+      213: 2506959641399117000
+    second: Extra_254
+  - first:
+      213: -2574599048824683134
+    second: Extra_255
+  - first:
+      213: -9130805714377368252
+    second: Extra_256
+  - first:
+      213: -8751759228491948505
+    second: Extra_257
+  - first:
+      213: 501258394422850886
+    second: Extra_258
+  - first:
+      213: 8523205338313439322
+    second: Extra_259
+  - first:
+      213: -1786999015288087766
+    second: Extra_260
+  - first:
+      213: 5627603276406096847
+    second: Extra_261
+  - first:
+      213: 4423928309748067928
+    second: Extra_262
+  - first:
+      213: 6408157587416236711
+    second: Extra_263
+  - first:
+      213: -8775697455463334256
+    second: Extra_264
+  - first:
+      213: -6225641839796285389
+    second: Extra_265
+  - first:
+      213: 4274442769868329690
+    second: Extra_266
+  - first:
+      213: -1180206903247675795
+    second: Extra_267
+  - first:
+      213: 573693779361248363
+    second: Extra_268
+  - first:
+      213: -3439495218929404261
+    second: Extra_269
+  - first:
+      213: -8633673656581541444
+    second: Extra_270
+  - first:
+      213: -2424484006634479149
+    second: Extra_271
+  - first:
+      213: 2081626811126568076
+    second: Extra_272
+  - first:
+      213: 1342268519199965837
+    second: Extra_273
+  - first:
+      213: -4496541886277812867
+    second: Extra_274
+  - first:
+      213: 905524101202891539
+    second: Extra_275
+  - first:
+      213: 4224464542617705031
+    second: Extra_276
+  - first:
+      213: 761413222499179006
+    second: Extra_277
+  - first:
+      213: -3223852453686889684
+    second: Extra_278
+  - first:
+      213: 8492472664710048979
+    second: Extra_279
+  - first:
+      213: 8012339268256321646
+    second: Extra_280
+  - first:
+      213: 1176688231747017077
+    second: Extra_281
+  - first:
+      213: 934167559488339091
+    second: Extra_282
+  - first:
+      213: -8880683817860621393
+    second: Extra_283
+  - first:
+      213: 4390089084644277779
+    second: Extra_284
+  - first:
+      213: -8497405195592989021
+    second: Extra_285
+  - first:
+      213: 5329500423315216847
+    second: Extra_286
+  - first:
+      213: -714593878173129490
+    second: Extra_287
+  - first:
+      213: -843963089387102577
+    second: Extra_288
+  - first:
+      213: -4358548584250570673
+    second: Extra_289
+  - first:
+      213: 6289780302861342061
+    second: Extra_290
+  - first:
+      213: -8630333446228737023
+    second: Extra_291
+  - first:
+      213: 8943494463077353635
+    second: Extra_292
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 192
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Extra_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2112
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc228220a2a115910800000000000000
+      internalID: 1824268091788894927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Extra_1
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 2112
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3519853a55b9dda30800000000000000
+      internalID: 4241717216167891283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Extra_2
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 2112
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6b015a707c4951e0800000000000000
+      internalID: -2208650096276337814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Extra_3
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 2112
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d339eee51685c56f0800000000000000
+      internalID: -694583067294133443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Extra_4
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 2112
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f7c6ceacb68fead0800000000000000
+      internalID: -2670767909063178252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Extra_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1920
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55b0d95fd3a707a10800000000000000
+      internalID: 1905157048910023509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Extra_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1920
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fcd11381082a6080800000000000000
+      internalID: -9193491702364381962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Extra_7
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1920
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34be10b73767e8140800000000000000
+      internalID: 4723843297515268931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Extra_8
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 1920
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70c36d92313e88910800000000000000
+      internalID: 1839970119226637319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Extra_9
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1920
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c283ee35f554d53a0800000000000000
+      internalID: -6675102796960876500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Extra_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1728
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd037a53538479a10800000000000000
+      internalID: 1916079559840051419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Extra_11
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1728
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c2697c413ee894c0800000000000000
+      internalID: -4280409550311824700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Extra_12
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1728
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f46831571f389ba40800000000000000
+      internalID: 5384479902572709455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Extra_13
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 1728
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aaecc9b5c49f977e0800000000000000
+      internalID: -1767107272416375126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Extra_14
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1728
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21a8ae40af3225c70800000000000000
+      internalID: 8958262165524613650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Extra_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1536
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 547af65a05794b0a0800000000000000
+      internalID: -6866697159204427963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Extra_16
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1536
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d4a6dfcd2a5a6b30800000000000000
+      internalID: 4281333548576056531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Extra_17
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1536
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25a83872ba45caea0800000000000000
+      internalID: -5860215921036785070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Extra_18
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 1536
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f39e8e375ff10350800000000000000
+      internalID: 5981342530301498353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Extra_19
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1536
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e62f78b1acbc63c50800000000000000
+      internalID: 6644722369137472110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Extra_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1344
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b46bea24869532880800000000000000
+      internalID: -8636961356036262325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Extra_21
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1344
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9edabe8a879a2970800000000000000
+      internalID: 8730957448967020190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Extra_22
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1344
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab83f5b953e3a7410800000000000000
+      internalID: 1475560227878156474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Extra_23
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 1344
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e645818f4b87b9d90800000000000000
+      internalID: -7089940469712923538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Extra_24
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1344
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23a6528b3e66af250800000000000000
+      internalID: 5979204583520823858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Extra_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1152
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fcc3261e545ff020800000000000000
+      internalID: 2377711891350015217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Extra_26
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1152
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1147492bc61f40e40800000000000000
+      internalID: 5621883684020057105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Extra_27
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1152
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29f9351ca91e5ee90800000000000000
+      internalID: -6996938391265501294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Extra_28
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 1152
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 133957504cf170ae0800000000000000
+      internalID: -1583261817231797455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Extra_29
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1152
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e03b643b24043afd0800000000000000
+      internalID: -2331949526828010738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Extra_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 960
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eeb2b5f81dee575d0800000000000000
+      internalID: -3065281387535062034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Extra_31
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 960
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffaa736559c50f6a0800000000000000
+      internalID: -6417527672536585473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Extra_32
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 960
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 612e711705f956eb0800000000000000
+      internalID: -4727197066011876842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Extra_33
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 960
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8a7cc0154ab2e490800000000000000
+      internalID: -7718402005562262897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Extra_34
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 768
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5390a03692ff36030800000000000000
+      internalID: 3486911089735239989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Extra_35
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 768
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fa29580584991100800000000000000
+      internalID: 79257767547316982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Extra_36
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 768
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66efed131b8c513d0800000000000000
+      internalID: -3236460093824369050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Extra_37
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 768
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef3d09885bcf44740800000000000000
+      internalID: 5135507331719681022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Extra_38
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 768
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 754f7fa075a029240800000000000000
+      internalID: 4796907922065454167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Extra_39
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 576
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bc28934c2c6449d0800000000000000
+      internalID: -2790986931694457673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Extra_40
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 576
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c88f9f8b229a7d920800000000000000
+      internalID: 3015064442145208460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Extra_41
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 576
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac60d9b7b05873520800000000000000
+      internalID: 2681758387487442634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Extra_42
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 576
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b8587f4ce7ed5ef0800000000000000
+      internalID: -117683013110179662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Extra_43
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 576
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8d54310a18c99720800000000000000
+      internalID: 2853531852930833804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Extra_44
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 384
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a62554bec3964f60800000000000000
+      internalID: 8018258702577772194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Extra_45
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 384
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 422f86b4ec720a300800000000000000
+      internalID: 261252545369403940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Extra_46
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 384
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3971d9947a3cae70800000000000000
+      internalID: 9127734817244412220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Extra_47
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 384
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76f985ff2ef5758b0800000000000000
+      internalID: -5163553019205738649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Extra_48
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 384
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6251ff85f04c41040800000000000000
+      internalID: 4617531088158266662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Extra_49
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffeeebc178f0854b0800000000000000
+      internalID: -5451590275954708737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Extra_50
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e55f50aec3605710800000000000000
+      internalID: 1679952400114210276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Extra_51
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 192
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71716e0d85f8a51f0800000000000000
+      internalID: -1055373551040325865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Extra_52
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 192
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e56c3007ea0b5f020800000000000000
+      internalID: 2374998641757898334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Extra_53
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 192
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1d57a898075f5930800000000000000
+      internalID: 4134118677381864734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Extra_54
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ca09c0f514f65d90800000000000000
+      internalID: -7109226586686551352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Extra_55
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9e09b8710c5f4e40800000000000000
+      internalID: 5642830019508637340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Extra_56
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 010ca12062ddc6b90800000000000000
+      internalID: -7247174545032167408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: a0aa1c669df69b04bba3931c03a2a883
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Extra_0: 1824268091788894927
+      Extra_1: 4241717216167891283
+      Extra_10: 1916079559840051419
+      Extra_11: -4280409550311824700
+      Extra_12: 5384479902572709455
+      Extra_13: -1767107272416375126
+      Extra_14: 8958262165524613650
+      Extra_15: -6866697159204427963
+      Extra_16: 4281333548576056531
+      Extra_17: -5860215921036785070
+      Extra_18: 5981342530301498353
+      Extra_19: 6644722369137472110
+      Extra_2: -2208650096276337814
+      Extra_20: -8636961356036262325
+      Extra_21: 8730957448967020190
+      Extra_22: 1475560227878156474
+      Extra_23: -7089940469712923538
+      Extra_24: 5979204583520823858
+      Extra_25: 2377711891350015217
+      Extra_26: 5621883684020057105
+      Extra_27: -6996938391265501294
+      Extra_28: -1583261817231797455
+      Extra_29: -2331949526828010738
+      Extra_3: -694583067294133443
+      Extra_30: -3065281387535062034
+      Extra_31: -6417527672536585473
+      Extra_32: -4727197066011876842
+      Extra_33: -7718402005562262897
+      Extra_34: 3486911089735239989
+      Extra_35: 79257767547316982
+      Extra_36: -3236460093824369050
+      Extra_37: 5135507331719681022
+      Extra_38: 4796907922065454167
+      Extra_39: -2790986931694457673
+      Extra_4: -2670767909063178252
+      Extra_40: 3015064442145208460
+      Extra_41: 2681758387487442634
+      Extra_42: -117683013110179662
+      Extra_43: 2853531852930833804
+      Extra_44: 8018258702577772194
+      Extra_45: 261252545369403940
+      Extra_46: 9127734817244412220
+      Extra_47: -5163553019205738649
+      Extra_48: 4617531088158266662
+      Extra_49: -5451590275954708737
+      Extra_5: 1905157048910023509
+      Extra_50: 1679952400114210276
+      Extra_51: -1055373551040325865
+      Extra_52: 2374998641757898334
+      Extra_53: 4134118677381864734
+      Extra_54: -7109226586686551352
+      Extra_55: 5642830019508637340
+      Extra_56: -7247174545032167408
+      Extra_6: -9193491702364381962
+      Extra_7: 4723843297515268931
+      Extra_8: 1839970119226637319
+      Extra_9: -6675102796960876500
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

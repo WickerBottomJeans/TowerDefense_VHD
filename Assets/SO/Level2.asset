@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e419d58a577cdfa4c932114a82508668, type: 3}
+  m_Name: Level2
+  m_EditorClassIdentifier: 
+  levelName: 
+  turretName: 
+  abilityName: 
+  level: 2
+  levelSprite: {fileID: -7649221769655518369, guid: 76c4e188392c9804eb4e4d2bee1dbc25, type: 3}
+  levelUpgradeManaCost: 300
+  attackRangeIncreaseRatio: 0
+  fireRateIncreaseRatio: 0
+  HPIncreaseRatio: 0
+  MPIncreaseRatio: 0
