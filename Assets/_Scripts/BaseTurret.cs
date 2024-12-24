@@ -7,33 +7,33 @@ public abstract class BaseTurret : MonoBehaviour {
 
     #region Reference
 
-    [SerializeField] private Transform firePoint;
-    [SerializeField] private LevelSystem levelSystem;
-    [SerializeField] private Transform turretPivot;
-    [SerializeField] private TurretStatsSO turretStatsSO;
+    [SerializeField] public Transform firePoint;
+    [SerializeField] public LevelSystem levelSystem;
+    [SerializeField] public Transform turretPivot;
+    [SerializeField] public TurretStatsSO turretStatsSO;
 
     #endregion Reference
 
     #region Variables
 
-    private GameObject currentTarget;
-    private IProjectile iprojectile;
-    private float currentHP, currentMP, currentAttackRange, currentFireRate;
-    private float currentMaxHP, currentMaxMP, currentMaxAttackRange, currentMaxFireRate;
-    private HashSet<GameObject> enemiesInRange = new HashSet<GameObject>();
-    private float fireCooldown = 0f;
-    private HashSet<GameObject> subscribedEnemies = new HashSet<GameObject>();
+    protected GameObject currentTarget;
+    protected IProjectile iprojectile;
+    protected float currentHP, currentMP, currentAttackRange, currentFireRate;
+    protected float currentMaxHP, currentMaxMP, currentMaxAttackRange, currentMaxFireRate;
+    protected HashSet<GameObject> enemiesInRange = new HashSet<GameObject>();
+    protected float fireCooldown = 0f;
+    protected HashSet<GameObject> subscribedEnemies = new HashSet<GameObject>();
 
     #endregion Variables
 
     #region LifeCycle
 
-    private void Update() {
+    protected void Update() {
         RotateTurretPivotTowardsTarget();
         HandleAttackCooldown();
     }
 
-    private void Start() {
+    protected void Start() {
         InitStats();
         levelSystem.OnLevelUp += LevelSystem_OnLevelUp;
     }
@@ -42,7 +42,7 @@ public abstract class BaseTurret : MonoBehaviour {
 
     #region VisualStuff
 
-    private void RotateTurretPivotTowardsTarget() {
+    protected void RotateTurretPivotTowardsTarget() {
         if (currentTarget == null || turretPivot == null) return;
 
         Vector2 direction = (currentTarget.transform.position - turretPivot.position).normalized;
@@ -62,7 +62,7 @@ public abstract class BaseTurret : MonoBehaviour {
 
     public abstract GameObject FindEnemy();
 
-    private void EnemyScript_OnEnemyDestroyed(object sender, Enemy.OnEnemyDestroyedEventArgs e) {
+    protected void EnemyScript_OnEnemyDestroyed(object sender, Enemy.OnEnemyDestroyedEventArgs e) {
         //Gain MP
         currentMP += e.mpGain;
         if (currentMP >= currentMaxMP) {
@@ -72,7 +72,7 @@ public abstract class BaseTurret : MonoBehaviour {
         levelSystem.AddEXP(e.expGain);
     }
 
-    private void HandleAttackCooldown() {
+    protected void HandleAttackCooldown() {
         fireCooldown -= Time.deltaTime;
         if (fireCooldown <= 0f) {
             AttackEnemy();
@@ -80,7 +80,7 @@ public abstract class BaseTurret : MonoBehaviour {
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D other) {
+    protected void OnTriggerEnter2D(Collider2D other) {
         Debug.Log("Trigger entered by: " + other.gameObject.name);
         if (other.CompareTag("Enemy")) {
             enemiesInRange.Add(other.gameObject);
@@ -88,7 +88,7 @@ public abstract class BaseTurret : MonoBehaviour {
         }
     }
 
-    private void OnTriggerExit2D(Collider2D other) {
+    protected void OnTriggerExit2D(Collider2D other) {
         if (other.CompareTag("Enemy")) {
             enemiesInRange.Remove(other.gameObject);
             Debug.Log("Enemy exited range: " + other.gameObject.name);
@@ -113,7 +113,7 @@ public abstract class BaseTurret : MonoBehaviour {
         currentFireRate = Mathf.Min(currentFireRate + (currentMaxFireRate - currentFireRate), currentMaxFireRate);
     }
 
-    private void InitStats() {
+    protected void InitStats() {
         currentAttackRange = currentMaxAttackRange = turretStatsSO.baseAttackRange;
         currentFireRate = currentMaxFireRate = turretStatsSO.baseFireRate;
         currentMaxMP = turretStatsSO.baseMaxMP;
@@ -122,7 +122,7 @@ public abstract class BaseTurret : MonoBehaviour {
         GetComponent<CircleCollider2D>().radius = currentMaxAttackRange;
     }
 
-    private void LevelSystem_OnLevelUp(object sender, LevelSystem.OnLevelUpEventArgs e) {
+    protected void LevelSystem_OnLevelUp(object sender, LevelSystem.OnLevelUpEventArgs e) {
         Upgrade(e.level);
     }
 
