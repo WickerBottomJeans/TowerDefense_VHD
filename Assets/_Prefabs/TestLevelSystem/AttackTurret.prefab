@@ -92,7 +92,7 @@ MonoBehaviour:
   firePoint: {fileID: 4293231946063871339}
   levelSystem: {fileID: 4231215838548462814, guid: 127c04cf3033b9c41aba8734a22cd887, type: 3}
   turretPivot: {fileID: 1882059363590226864}
-  turretStatsSO: {fileID: 11400000, guid: 8a05d0bf6cecde14fa20ee60e4da91e2, type: 2}
+  turretStatsSO: {fileID: 11400000, guid: 9b14e002359c2294890a5da0d983ace4, type: 2}
 --- !u!1 &806589979897175447 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5058973824624027181, guid: 7a5f812abbed9ac41a49af6887536702, type: 3}

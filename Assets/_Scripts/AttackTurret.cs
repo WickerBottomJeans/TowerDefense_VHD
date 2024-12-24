@@ -6,6 +6,7 @@ public class AttackTurret : BaseTurret {
 
     private void Update() {
         if (enemiesInRange.Count > 0 && currentSword == null) {
+            Debug.Log("EAT ASS");
             AttackEnemy(); //this would release a sword with its first target, it would find other target later until it get destroy
         } else if (enemiesInRange.Count == 0 & currentSword != null) {
             DestroySword();
@@ -14,10 +15,12 @@ public class AttackTurret : BaseTurret {
 
     private void Start() {
         iprojectile = turretStatsSO.projectilePrefab.GetComponent<IProjectile>();
+        InitStats();
+        levelSystem.OnLevelUp += LevelSystem_OnLevelUp;
     }
 
     private void DestroySword() {
-        throw new NotImplementedException();
+        Debug.Log("Hello");
     }
 
     public override void AttackEnemy() {
