@@ -2,18 +2,19 @@ using System;
 using UnityEngine;
 
 public class WaterSpell : MonoBehaviour, IProjectile {
-    [SerializeField] private float speed = .5f; 
-    [SerializeField] private float chillTime = 1f; 
-    [SerializeField] private int damage = 10; 
+    [SerializeField] private float speed = .5f;
+    [SerializeField] private float chillTime = 1f;
+    [SerializeField] private int damage = 10;
     [SerializeField] private float speedMultiplier;
     private Transform target; // The target the projectile is moving towards
     private Rigidbody2D rb;
 
     private float chillTimer = 0f;
-    private bool isChasingTarget = false; 
+    private bool isChasingTarget = false;
     private bool isDoneChasing = false;
     private Vector2 initialDirection; // Initial direction of throw
     [SerializeField] private float smoothFactor = 0.1f; // Smoothness of transition (smaller = smoother)
+
     public enum State {
         Spawn,
         Idle,
@@ -21,9 +22,11 @@ public class WaterSpell : MonoBehaviour, IProjectile {
     }
 
     public event EventHandler<OnStateChangedEventArgs> OnStateChanged;
+
     public class OnStateChangedEventArgs {
         public State state;
     }
+
     private void Awake() {
         rb = GetComponent<Rigidbody2D>();
         FireOnStateChanged(State.Spawn);
@@ -34,7 +37,6 @@ public class WaterSpell : MonoBehaviour, IProjectile {
             state = state
         });
     }
-
 
     private void Update() {
         if (chillTimer > 0f) {
@@ -48,7 +50,6 @@ public class WaterSpell : MonoBehaviour, IProjectile {
             Vector2 directionToTarget = (target.position - transform.position).normalized;
             initialDirection = -directionToTarget;
             rb.linearVelocity = initialDirection * speed;
-            
         } else if (isChasingTarget && target != null) {
             // Chasing phase: Smoothly transition towards the target
 
@@ -58,8 +59,6 @@ public class WaterSpell : MonoBehaviour, IProjectile {
             rb.linearVelocity = newVelocity;
             float angle = Mathf.Atan2(rb.linearVelocity.y, rb.linearVelocity.x) * Mathf.Rad2Deg;
             transform.rotation = Quaternion.Euler(0, 0, angle);
-
-
         } else if (isDoneChasing) {
             // After chasing is complete: Stop movement and disable physics
             rb.linearVelocity = Vector2.zero;
@@ -75,21 +74,18 @@ public class WaterSpell : MonoBehaviour, IProjectile {
         }
     }
 
-
-
-
-    public void SpawnProjectile(GameObject projectilePrefab, Transform spawnPoint, Transform target) {
+    public GameObject SpawnProjectile(GameObject projectilePrefab, Transform spawnPoint, Transform target) {
         GameObject projectile = Instantiate(projectilePrefab, spawnPoint.position, Quaternion.identity);
         WaterSpell projScript = projectile.GetComponent<WaterSpell>();
         if (projScript != null) {
             projScript.SetTarget(target); // Set the target and let the damage be handled by the WaterSpell itself
         }
+        return projectile;
     }
 
-
     public void SetTarget(Transform target) {
-        this.target = target; 
-        chillTimer = chillTime; 
+        this.target = target;
+        chillTimer = chillTime;
         Enemy enemy = target.GetComponent<Enemy>();
         if (enemy != null) {
             enemy.OnEnemyDestroyed += Enemy_OnEnemyDestroyed;
@@ -100,23 +96,22 @@ public class WaterSpell : MonoBehaviour, IProjectile {
         FireOnStateChanged(State.Destroy);
         Debug.Log("Sent the destroy");
     }
+
     public void DestroyAfterAnimation() {
         Destroy(gameObject);
     }
+
     private void OnCollisionEnter2D(Collision2D other) {
         if (other.gameObject.CompareTag("Enemy")) {
             // Apply damage to the enemy
             Enemy enemy = other.gameObject.GetComponent<Enemy>();
             if (enemy != null) {
-                enemy.TakeDamage(damage); 
+                enemy.TakeDamage(damage);
             }
 
             //Stop the projectile from bouncing off and keep hitting enemy again
             isChasingTarget = false;
             isDoneChasing = true;
-            
-
-
 
             // Destroy the projectile after hitting the target
             FireOnStateChanged(State.Destroy);

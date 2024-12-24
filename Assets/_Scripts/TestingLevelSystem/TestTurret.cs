@@ -6,6 +6,7 @@ using System.Linq;
 //THE TURRET WON'T ATTACK, REFACTOR ALL THESE STATS INTI AND STUFF!!!
 
 public class TestTurret : MonoBehaviour {
+
     [Header("Turret Settings")]
     //public AbilitySO[] abilitySOArray;
 
@@ -17,6 +18,7 @@ public class TestTurret : MonoBehaviour {
 
     [Header("References")]
     private IProjectile iprojectile;
+
     [SerializeField] private Transform turretPivot;
     [SerializeField] private Transform firePoint;
     [SerializeField] private LevelSO[] levelSOArray;
@@ -44,6 +46,7 @@ public class TestTurret : MonoBehaviour {
     private void LevelSystem_OnLevelUp(object sender, LevelSystem.OnLevelUpEventArgs e) {
         Upgrade(e.level);
     }
+
     private void InitStats() {
         currentAttackRange = currentMaxAttackRange = turretStatsSO.baseAttackRange;
         currentFireRate = currentMaxFireRate = turretStatsSO.baseFireRate;
@@ -52,9 +55,8 @@ public class TestTurret : MonoBehaviour {
         currentHP = currentMaxHP = turretStatsSO.baseMaxHP;
         GetComponent<CircleCollider2D>().radius = currentMaxAttackRange;
     }
-    
-    [SerializeField] TurretIconUI turretIconUI;
 
+    [SerializeField] private TurretIconUI turretIconUI;
 
     private float fireCooldown = 0f;
     private GameObject currentTarget;
@@ -109,7 +111,6 @@ public class TestTurret : MonoBehaviour {
         levelSystem.AddEXP(e.expGain);
     }
 
-
     private GameObject FindClosestEnemy() {
         GameObject closestEnemy = null;
         float shortestDistance = Mathf.Infinity;
@@ -122,9 +123,7 @@ public class TestTurret : MonoBehaviour {
             }
         }
         return closestEnemy;
-    
-}
-
+    }
 
     private void OnTriggerEnter2D(Collider2D other) {
         Debug.Log("Trigger entered by: " + other.gameObject.name);
@@ -133,7 +132,6 @@ public class TestTurret : MonoBehaviour {
             Debug.Log("Added to enemiesInRange: " + other.gameObject.name);
         }
     }
-
 
     private void OnTriggerExit2D(Collider2D other) {
         if (other.CompareTag("Enemy")) {
