@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using static UnityEngine.GraphicsBuffer;
 
@@ -41,6 +42,16 @@ public class SwordSpell : MonoBehaviour, IProjectile {
         Enemy enemy = target.GetComponent<Enemy>();
         if (enemy != null) {
             enemy.OnEnemyDestroyed += Enemy_OnEnemyDestroyed;
+        }
+    }
+
+    private void OnTriggerStay2D(Collider2D collision) {
+        if (collision.gameObject.CompareTag("Enemy")) {
+            Debug.Log("Attacking");
+            Enemy enemy = collision.gameObject.GetComponent<Enemy>();
+            Debug.Log(enemy);
+
+            enemy.TakeDamage(damage);
         }
     }
 
