@@ -126,17 +126,14 @@ public class TestTurret : MonoBehaviour {
     }
 
     private void OnTriggerEnter2D(Collider2D other) {
-        Debug.Log("Trigger entered by: " + other.gameObject.name);
         if (other.CompareTag("Enemy")) {
             enemiesInRange.Add(other.gameObject);
-            Debug.Log("Added to enemiesInRange: " + other.gameObject.name);
         }
     }
 
     private void OnTriggerExit2D(Collider2D other) {
         if (other.CompareTag("Enemy")) {
             enemiesInRange.Remove(other.gameObject);
-            Debug.Log("Enemy exited range: " + other.gameObject.name);
         }
     }
 }

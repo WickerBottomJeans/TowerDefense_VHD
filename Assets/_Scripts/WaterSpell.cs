@@ -94,7 +94,6 @@ public class WaterSpell : MonoBehaviour, IProjectile {
 
     private void Enemy_OnEnemyDestroyed(object sender, EventArgs e) {
         FireOnStateChanged(State.Destroy);
-        Debug.Log("Sent the destroy");
     }
 
     public void DestroyAfterAnimation() {

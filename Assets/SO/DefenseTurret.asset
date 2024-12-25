@@ -20,4 +20,4 @@ MonoBehaviour:
   fireRateMultiplier: 0.1
   maxMPMultiplier: 0.1
   maxHPMultiplier: 0.1
-  projectilePrefab: {fileID: 0}
+  projectilePrefab: {fileID: 8661557369178034711, guid: 903196072107d764d846df85d5459fff, type: 3}

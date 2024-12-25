@@ -20,7 +20,7 @@ public class AttackTurret : BaseTurret {
     }
 
     private void DestroySword() {
-        Debug.Log("Hello");
+        Destroy(currentSword.gameObject);
     }
 
     public override void AttackEnemy() {
@@ -35,6 +35,19 @@ public class AttackTurret : BaseTurret {
         }
         iprojectile = turretStatsSO.projectilePrefab.GetComponent<IProjectile>();
         currentSword = iprojectile.SpawnProjectile(turretStatsSO.projectilePrefab, firePoint, currentTarget.transform);
+    }
+
+    public void EnemyScript_OnEnemyDestroyed(object sender, Enemy.OnEnemyDestroyedEventArgs e) {
+        //Gain MP
+        currentMP += e.mpGain;
+        if (currentMP >= currentMaxMP) {
+            currentMP = currentMaxMP;
+        }
+        //Gain EXP
+        levelSystem.AddEXP(e.expGain);
+
+        //Give new target to the sword
+        currentSword.GetComponent<SwordSpell>().SetTarget(FindEnemy().transform);
     }
 
     public override GameObject FindEnemy() {
