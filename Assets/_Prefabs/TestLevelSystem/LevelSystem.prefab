@@ -46,4 +46,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   level: 0
   exp: 0
-  expToNextLevel: 100
+  expToNextLevel: 10000

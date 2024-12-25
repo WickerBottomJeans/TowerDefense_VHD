@@ -25,7 +25,7 @@ Transform:
   m_GameObject: {fileID: 640463238469153055}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.3, y: 0, z: 0}
+  m_LocalPosition: {x: 0.6, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -754,10 +754,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4148287d2651eb4582ddd48472d7fe1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackRangeMultiplier: 0
-  fireRateMultiplier: 0
-  maxMPMultiplier: 0
-  maxHPMultiplier: 0
   turretStatsSO: {fileID: 11400000, guid: 8a05d0bf6cecde14fa20ee60e4da91e2, type: 2}
   turretPivot: {fileID: 6276588201828268042}
   firePoint: {fileID: 8543362606518306513}
@@ -876,7 +872,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: -3018798280071108689, guid: a1d23f886dc28954fa9e15add89c1251, type: 3}
+  m_Sprite: {fileID: 979992951078978390, guid: 76c4e188392c9804eb4e4d2bee1dbc25, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
