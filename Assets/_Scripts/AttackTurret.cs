@@ -69,4 +69,15 @@ public class AttackTurret : BaseTurret {
         }
         return closestEnemy;
     }
+
+    //this only change target on once. idk why
+    public void OnTriggerExit2D(Collider2D other) {
+        if (other.CompareTag("Enemy")) {
+            enemiesInRange.Remove(other.gameObject);
+            if (other.gameObject == currentTarget) {
+                currentSword.GetComponent<SwordSpell>().SetTarget(FindEnemy().transform);
+                currentTarget = FindEnemy();
+            }
+        }
+    }
 }
