@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-public class AttackTurret : BaseTurret {
+public class DefenseTurret : BaseTurret {
     private GameObject currentSword;
 
     private void Update() {
