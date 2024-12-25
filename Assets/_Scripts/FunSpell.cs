@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-public class WaterSpell : MonoBehaviour, IProjectile {
+public class FunSpell : MonoBehaviour, IProjectile {
     [SerializeField] private float speed = .5f;
     [SerializeField] private float chillTime = 1f;
     [SerializeField] private int damage = 10;
@@ -52,7 +52,6 @@ public class WaterSpell : MonoBehaviour, IProjectile {
             rb.linearVelocity = initialDirection * speed;
         } else if (isChasingTarget && target != null) {
             // Chasing phase: Smoothly transition towards the target
-
             Vector2 currentVelocity = rb.linearVelocity;
             Vector2 directionToTarget = (target.position - transform.position).normalized;
             Vector2 newVelocity = Vector2.Lerp(currentVelocity, directionToTarget * speed, smoothFactor);
@@ -61,6 +60,7 @@ public class WaterSpell : MonoBehaviour, IProjectile {
             transform.rotation = Quaternion.Euler(0, 0, angle);
         } else if (isDoneChasing) {
             // After chasing is complete: Stop movement and disable physics
+
             rb.linearVelocity = Vector2.zero;
             rb.angularVelocity = 0f;
             //rb.bodyType = RigidbodyType2D.Kinematic;
@@ -70,15 +70,16 @@ public class WaterSpell : MonoBehaviour, IProjectile {
             // Transition from chilling to chasing
             isChasingTarget = true;
             FireOnStateChanged(State.Idle);
+            Debug.Log("Being idle");
             speed *= speedMultiplier;
         }
     }
 
     public GameObject SpawnProjectile(GameObject projectilePrefab, Transform spawnPoint, Transform target) {
         GameObject projectile = Instantiate(projectilePrefab, spawnPoint.position, Quaternion.identity);
-        WaterSpell projScript = projectile.GetComponent<WaterSpell>();
+        FunSpell projScript = projectile.GetComponent<FunSpell>();
         if (projScript != null) {
-            projScript.SetTarget(target); // Set the target and let the damage be handled by the WaterSpell itself
+            projScript.SetTarget(target); // Set the target and let the damage be handled by the FunSpell itself
         }
         return projectile;
     }
@@ -88,16 +89,15 @@ public class WaterSpell : MonoBehaviour, IProjectile {
         chillTimer = chillTime;
         Enemy enemy = target.GetComponent<Enemy>();
         if (enemy != null) {
-            enemy.OnEnemyDestroyed += Enemy_OnEnemyDestroyed;
+            enemy.OnEnemyDestroyed += Enemy_OnEnemyDestroyed; ;
         }
     }
 
-    private void Enemy_OnEnemyDestroyed(object sender, EventArgs e) {
+    private void Enemy_OnEnemyDestroyed(object sender, Enemy.OnEnemyDestroyedEventArgs e) {
         FireOnStateChanged(State.Destroy);
     }
 
     public void DestroyAfterAnimation() {
-        Debug.Log("Yeah it get deled after animation");
         Destroy(gameObject);
     }
 

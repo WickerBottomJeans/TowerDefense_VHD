@@ -15,10 +15,11 @@ public class WaterSpellAnimator : MonoBehaviour {
 
     private void Start() {
         waterSpell.OnStateChanged += WaterSpell_OnStateChanged;
-
     }
 
     public void DestroyAfterAnimation() {
+        Debug.Log("Yeah it get deled after animation in animator class");
+
         Destroy(waterSpell.gameObject);
     }
 
@@ -30,16 +31,18 @@ public class WaterSpellAnimator : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.D)) {
             animator.SetTrigger(DESTROY);
         }
-
     }
+
     private void WaterSpell_OnStateChanged(object sender, WaterSpell.OnStateChangedEventArgs e) {
         switch (e.state) {
             case WaterSpell.State.Spawn:
                 animator.SetTrigger(SPAWN);
                 break;
+
             case WaterSpell.State.Idle:
                 animator.SetTrigger(IDLE);
                 break;
+
             case WaterSpell.State.Destroy:
                 animator.SetTrigger(DESTROY);
                 break;

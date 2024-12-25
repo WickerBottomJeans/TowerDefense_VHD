@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: -4029596850319871106}
   - component: {fileID: -7665669177438370248}
   m_Layer: 7
-  m_Name: FunSpell
+  m_Name: WaterSpell
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -149,7 +149,7 @@ TrailRenderer:
     generateLightingData: 0
   m_MinVertexDistance: 0.1
   m_MaskInteraction: 0
-  m_Autodestruct: 1
+  m_Autodestruct: 0
   m_Emitting: 1
   m_ApplyActiveColorSpace: 0
 --- !u!114 &194810039188668769
@@ -164,9 +164,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b021c5976427c84c8b72c93d06f4e64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
-  chillTime: 1
-  damage: 40
+  speed: 0.5
+  chillTime: 0.1
+  damage: 1000
   speedMultiplier: 15
   smoothFactor: 0.05
 --- !u!50 &-4029596850319871106
@@ -259,13 +259,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6146915934555002539}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 23745252931491621}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &7589914534401976913
 Animator:
   serializedVersion: 7

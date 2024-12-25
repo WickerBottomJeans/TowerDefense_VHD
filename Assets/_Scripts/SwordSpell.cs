@@ -71,7 +71,6 @@ public class SwordSpell : MonoBehaviour, IProjectile {
 
     private void OnTriggerStay2D(Collider2D collision) {
         if (collision.gameObject.CompareTag("Enemy")) {
-            Debug.Log("Attacking");
             Enemy enemy = collision.gameObject.GetComponent<Enemy>();
             Debug.Log(enemy);
             isOnTopTarget = true;
