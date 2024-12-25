@@ -12,6 +12,13 @@ public class SwordSpell : MonoBehaviour, IProjectile {
     private Rigidbody2D rb;
     private Transform target;
     private bool isAttacking;
+    private bool isOnTopTarget = false;
+
+    //make it swing
+    [SerializeField] private float swingAmplitude = 10f; // Maximum angle for swinging
+
+    [SerializeField] private float swingFrequency = 5f;  // Speed of the swing
+    private float swingTimer = 0f;
 
     private void Start() {
         rb = GetComponent<Rigidbody2D>();
@@ -20,13 +27,30 @@ public class SwordSpell : MonoBehaviour, IProjectile {
     //WE need a way to pump new target constantly when the currentTarget dies
     private void Update() {
         if (isAttacking && target != null) {
-            Vector2 currentVelocity = rb.linearVelocity;
-            Vector2 directionToTarget = (target.position - transform.position).normalized;
-            //error here. we need to give next target for the sword when enemy dies
-            Vector2 newVelocity = Vector2.Lerp(currentVelocity, directionToTarget * speed, smoothFactor);
-            rb.linearVelocity = newVelocity;
-            float angle = Mathf.Atan2(rb.linearVelocity.y, rb.linearVelocity.x) * Mathf.Rad2Deg;
-            transform.rotation = Quaternion.Euler(0, 0, angle);
+            if (isOnTopTarget) {
+                // Stick the sword to the enemy
+                transform.position = target.position;
+
+                // Swinging effect while stuck
+                swingTimer += Time.deltaTime * swingFrequency;
+                float swingAngle = Mathf.Sin(swingTimer) * swingAmplitude;
+                transform.rotation = Quaternion.Euler(0, 0, swingAngle);
+            } else {
+                // Continue moving towards the target
+                Vector2 currentVelocity = rb.linearVelocity;
+                Vector2 directionToTarget = (target.position - transform.position).normalized;
+                Vector2 newVelocity = Vector2.Lerp(currentVelocity, directionToTarget * speed, smoothFactor);
+                rb.linearVelocity = newVelocity;
+
+                // Rotate towards the target
+                Vector2 direction = (target.position - transform.position).normalized;
+                float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+                transform.rotation = Quaternion.RotateTowards(
+                    transform.rotation,
+                    Quaternion.Euler(0, 0, angle),
+                    360f * Time.deltaTime
+                );
+            }
         }
     }
 
@@ -50,7 +74,7 @@ public class SwordSpell : MonoBehaviour, IProjectile {
             Debug.Log("Attacking");
             Enemy enemy = collision.gameObject.GetComponent<Enemy>();
             Debug.Log(enemy);
-
+            isOnTopTarget = true;
             enemy.TakeDamage(damage);
         }
     }
@@ -60,5 +84,7 @@ public class SwordSpell : MonoBehaviour, IProjectile {
 
     private void Enemy_OnEnemyDestroyed(object sender, Enemy.OnEnemyDestroyedEventArgs e) {
         isAttacking = false;
+        //this to make it not teleport to next enemy
+        isOnTopTarget = false;
     }
 }

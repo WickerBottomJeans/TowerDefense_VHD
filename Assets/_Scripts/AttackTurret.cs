@@ -58,6 +58,7 @@ public class AttackTurret : BaseTurret {
         foreach (GameObject enemy in enemiesInRange) {
             float distanceToEnemy;
             if (currentSword == null) {
+                //error will pop if distanceToEnemy > currentAttackRange
                 distanceToEnemy = Vector3.Distance(transform.position, enemy.transform.position);
             } else {
                 distanceToEnemy = Vector3.Distance(currentSword.transform.position, enemy.transform.position);
