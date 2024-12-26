@@ -44,12 +44,21 @@ public class WaterSpell : MonoBehaviour, IProjectile {
         }
     }
 
+    public float forceAmount = 2f;
+    private bool forceApplied = false;
+    public float torque = 5f;
+
     private void FixedUpdate() {
-        if (chillTimer > 0f && target != null) {
+        if (chillTimer > 0f && target != null && forceApplied == false) {
             // Chilling phase: Move in the initial direction
-            Vector2 directionToTarget = (target.position - transform.position).normalized;
-            initialDirection = -directionToTarget;
-            rb.linearVelocity = initialDirection * speed;
+            //Vector2 directionToTarget = (target.position - transform.position).normalized;
+            //initialDirection = -directionToTarget;
+            //rb.linearVelocity = initialDirection * speed;
+            float torque = 5f; // Rotational force
+            rb.AddTorque(torque, ForceMode2D.Impulse);
+            Vector2 upwardForce = Vector2.up * forceAmount;
+            rb.AddForce(upwardForce, ForceMode2D.Force);
+            forceApplied = true;
         } else if (isChasingTarget && target != null) {
             // Chasing phase: Smoothly transition towards the target
 
