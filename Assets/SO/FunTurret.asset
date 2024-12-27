@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: FunTurret
   m_EditorClassIdentifier: 
   baseAttackRange: 8
-  baseFireRate: 0.5
+  baseFireRate: 6
   baseMaxMP: 100
   baseMaxHP: 200
   attackRangeMultiplier: 0.1

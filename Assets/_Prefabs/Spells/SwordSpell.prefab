@@ -5157,7 +5157,7 @@ MonoBehaviour:
   turret: {fileID: 0}
   visual: {fileID: 166585214582169509}
   swingAmplitude: 360
-  swingFrequency: 10
+  swingFrequency: 7
 --- !u!50 &4484702242050913044
 Rigidbody2D:
   serializedVersion: 5
