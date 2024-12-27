@@ -2,15 +2,18 @@ using System;
 using UnityEngine;
 
 public class Enemy : MonoBehaviour {
+
     [Header("Enemy Stats")]
-    public float maxHealth = 100f;      
-    private float currentHealth;       
+    public float maxHealth = 100f;
+
+    private float currentHealth;
     public float speed = 2f;
     public float mpGain = 5f;
     public float expGain = 5f;
 
     [Header("References")]
     public Transform[] waypoints;       // Path waypoints for the enemies to follow
+
     private int currentWaypointIndex = 0; // Index of the next waypoint
 
     private void Start() {
@@ -18,6 +21,7 @@ public class Enemy : MonoBehaviour {
     }
 
     public event EventHandler<OnEnemyDestroyedEventArgs> OnEnemyDestroyed;
+
     public class OnEnemyDestroyedEventArgs : EventArgs {
         public float mpGain;
         public float expGain;
@@ -73,7 +77,6 @@ public class Enemy : MonoBehaviour {
             expGain = expGain,
         });
         Destroy(gameObject);
-
     }
 
     public float getMPGain() {

@@ -1,11 +1,12 @@
 using System;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 public class DefenseTurret : BaseTurret {
     private GameObject currentSword;
 
     private void Update() {
-        if (enemiesInRange.Count > 0 && currentSword == null) {
+        if (enemiesInRange.Count > 0) {
             AttackEnemy(); //this would release a sword with its first target, it would find other target later until it get destroy
         } else if (enemiesInRange.Count == 0 & currentSword != null) {
             DestroySword();
@@ -32,8 +33,12 @@ public class DefenseTurret : BaseTurret {
             enemyScript.OnEnemyDestroyed += EnemyScript_OnEnemyDestroyed;
             subscribedEnemies.Add(currentTarget);
         }
-        iprojectile = turretStatsSO.projectilePrefab.GetComponent<IProjectile>();
-        currentSword = iprojectile.SpawnProjectile(turretStatsSO.projectilePrefab, firePoint, currentTarget.transform);
+        if (currentSword == null) {
+            iprojectile = turretStatsSO.projectilePrefab.GetComponent<IProjectile>();
+            currentSword = iprojectile.SpawnProjectile(turretStatsSO.projectilePrefab, firePoint, currentTarget.transform);
+        } else {
+            currentSword.GetComponent<SwordSpell>().SetTarget(currentTarget.transform);
+        }
     }
 
     public void EnemyScript_OnEnemyDestroyed(object sender, Enemy.OnEnemyDestroyedEventArgs e) {
@@ -55,6 +60,11 @@ public class DefenseTurret : BaseTurret {
         float shortestDistance = Mathf.Infinity;
 
         foreach (GameObject enemy in enemiesInRange) {
+            if (enemy == null) {
+                Debug.Log("Enemy = null???");
+                enemiesInRange.Remove(enemy);
+                continue;
+            }
             float distanceToEnemy;
             if (currentSword == null) {
                 //error will pop if distanceToEnemy > currentAttackRange
@@ -73,12 +83,18 @@ public class DefenseTurret : BaseTurret {
     public void OnTriggerExit2D(Collider2D other) {
         if (other.CompareTag("Enemy")) {
             enemiesInRange.Remove(other.gameObject);
-            if (other.gameObject == currentTarget) {
-                if (enemiesInRange.Count > 0) {
-                    currentSword.GetComponent<SwordSpell>().SetTarget(FindEnemy().transform);
-                    currentTarget = FindEnemy();
-                }
-            }
+            //if (other.gameObject == currentTarget) {
+            //    if (enemiesInRange.Count > 0) {
+            //        GameObject target = FindEnemy();
+            //        if (target != null) {
+            //            Debug.Log("Target got out of range, so new target is: " + target);
+            //            currentSword.GetComponent<SwordSpell>().SetTarget(target.transform);
+            //            currentTarget = target;
+            //        } else {
+            //            Debug.Log("Can't find new target");
+            //        }
+            //    }
+            //}
         }
     }
 }

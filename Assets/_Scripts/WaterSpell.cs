@@ -106,7 +106,6 @@ public class WaterSpell : MonoBehaviour, IProjectile {
     }
 
     public void DestroyAfterAnimation() {
-        Debug.Log("Yeah it get deled after animation");
         Destroy(gameObject);
     }
 

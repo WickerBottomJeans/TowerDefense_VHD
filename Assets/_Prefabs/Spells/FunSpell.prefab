@@ -50,7 +50,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 0.5
   chillTime: 0.1
-  damage: 1000
+  damage: 30
   speedMultiplier: 20
   smoothFactor: 0.1
 --- !u!96 &-3316045305381411513

@@ -61,6 +61,9 @@ public class SwordSpell : MonoBehaviour, IProjectile {
     }
 
     public void SetTarget(Transform target) {
+        if (target == null) {
+            Debug.Log("Target == null????????");
+        }
         this.target = target;
         isAttacking = true;
         Enemy enemy = target.GetComponent<Enemy>();
