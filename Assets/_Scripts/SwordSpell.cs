@@ -8,7 +8,7 @@ public class SwordSpell : MonoBehaviour, IProjectile {
     [SerializeField] private int damage = 10;
     [SerializeField] private float speedMultiplier;
     [SerializeField] private float smoothFactor = 0.1f;
-    [SerializeField] private BaseTurret turret;
+    [SerializeField] private _BaseTurret turret;
     [SerializeField] private Transform visual;
     private Rigidbody2D rb;
     private Transform target;

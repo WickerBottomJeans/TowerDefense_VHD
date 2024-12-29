@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-public abstract class BaseTurret : MonoBehaviour, IHasHPBar {
+public abstract class _BaseTurret : MonoBehaviour, IHasHPBar {
 
     #region Reference
 

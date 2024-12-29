@@ -2,7 +2,7 @@ using System;
 using UnityEngine;
 using UnityEngine.Rendering;
 
-public class DefenseTurret : BaseTurret {
+public class DefenseTurret : _BaseTurret {
     private GameObject currentSword;
 
     private void Update() {

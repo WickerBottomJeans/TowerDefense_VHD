@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class FunTurret : BaseTurret {
+public class FunTurret : _BaseTurret {
 
     protected void Update() {
         RotateTurretPivotTowardsTarget();
