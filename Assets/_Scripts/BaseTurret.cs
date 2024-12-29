@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-public abstract class BaseTurret : MonoBehaviour {
+public abstract class BaseTurret : MonoBehaviour, IHasHPBar {
 
     #region Reference
 
@@ -18,11 +18,13 @@ public abstract class BaseTurret : MonoBehaviour {
 
     protected GameObject currentTarget;
     protected IProjectile iprojectile;
-    protected float currentHP, currentMP, currentAttackRange, currentFireRate;
-    protected float currentMaxHP, currentMaxMP, currentMaxAttackRange, currentMaxFireRate;
+    [SerializeField] protected float currentHP, currentMP, currentAttackRange, currentFireRate;
+    [SerializeField] protected float currentMaxHP, currentMaxMP, currentMaxAttackRange, currentMaxFireRate;
     protected HashSet<GameObject> enemiesInRange = new HashSet<GameObject>();
     protected float fireCooldown = 0f;
     protected HashSet<GameObject> subscribedEnemies = new HashSet<GameObject>();
+
+    public event EventHandler<IHasHPBar.OnHPChangedEventArgs> OnHPChanged;
 
     #endregion Variables
 
@@ -65,11 +67,13 @@ public abstract class BaseTurret : MonoBehaviour {
     protected void EnemyScript_OnEnemyDestroyed(object sender, Enemy.OnEnemyDestroyedEventArgs e) {
         //Gain MP
         currentMP += e.mpGain;
+        Debug.Log("EAT ASS");
         if (currentMP >= currentMaxMP) {
             currentMP = currentMaxMP;
         }
         //Gain EXP
         levelSystem.AddEXP(e.expGain);
+        FireOnHPChanged();
     }
 
     protected void HandleAttackCooldown() {
@@ -105,23 +109,54 @@ public abstract class BaseTurret : MonoBehaviour {
 
         // Min to ensure those current stats don't exceed the max
         currentHP = Mathf.Min(currentHP + (currentMaxHP - currentHP), currentMaxHP);
+        float haha = currentHP + (currentMaxHP - currentHP);
         currentMP = Mathf.Min(currentMP + (currentMaxMP - currentMP), currentMaxMP);
         currentAttackRange = Mathf.Min(currentAttackRange + (currentMaxAttackRange - currentAttackRange), currentMaxAttackRange);
         currentFireRate = Mathf.Min(currentFireRate + (currentMaxFireRate - currentFireRate), currentMaxFireRate);
+
+        FireOnHPChanged();
     }
 
     protected void InitStats() {
         currentAttackRange = currentMaxAttackRange = turretStatsSO.baseAttackRange;
         currentFireRate = currentMaxFireRate = turretStatsSO.baseFireRate;
-        currentMaxMP = turretStatsSO.baseMaxMP;
+        currentHP = currentMaxMP = turretStatsSO.baseMaxMP;
+
         currentMP = 0f;
-        currentHP = currentMaxHP = turretStatsSO.baseMaxHP;
         GetComponent<CircleCollider2D>().radius = currentMaxAttackRange;
     }
 
     protected void LevelSystem_OnLevelUp(object sender, LevelSystem.OnLevelUpEventArgs e) {
+        FireOnHPChanged();
         Upgrade(e.level);
     }
 
     #endregion DataStuff
+
+    protected void TakeDamage(float damage) {
+        if (currentHP > damage) {
+            currentHP -= damage;
+            FireOnHPChanged();
+        } else {
+            Die();
+            OnHPChanged?.Invoke(this, new IHasHPBar.OnHPChangedEventArgs {
+                HPNormalized = 0f
+            });
+        }
+    }
+
+    protected void Die() {
+        Destroy(gameObject);
+    }
+
+    protected void FireOnHPChanged() {
+        Debug.Log($"Level: {levelSystem.GetLevel()}, Max Level: {levelSystem.GetMaxLevel()}");
+
+        OnHPChanged?.Invoke(this, new IHasHPBar.OnHPChangedEventArgs {
+            HPNormalized = currentHP / currentMaxHP,
+            MPNormalized = currentMP / currentMaxMP,
+
+            levelNormalized = (float)levelSystem.GetLevel() / levelSystem.GetMaxLevel()
+        });
+    }
 }

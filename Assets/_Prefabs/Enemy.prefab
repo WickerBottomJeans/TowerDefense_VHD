@@ -50,7 +50,7 @@ MonoBehaviour:
   maxHealth: 200
   speed: 2
   mpGain: 5
-  expGain: 5
+  expGain: 100
   waypoints: []
 --- !u!58 &8379145576025570492
 CircleCollider2D:

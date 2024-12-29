@@ -5151,13 +5151,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 6
   chillTime: 1
-  damage: 5
+  damage: 100
   speedMultiplier: 0
-  smoothFactor: 0.5
+  smoothFactor: 0.05
   turret: {fileID: 0}
   visual: {fileID: 166585214582169509}
   swingAmplitude: 360
-  swingFrequency: 7
+  swingFrequency: 3
 --- !u!50 &4484702242050913044
 Rigidbody2D:
   serializedVersion: 5

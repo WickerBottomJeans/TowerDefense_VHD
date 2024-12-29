@@ -90,9 +90,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firePoint: {fileID: 4293231946063871339}
-  levelSystem: {fileID: 4231215838548462814, guid: 127c04cf3033b9c41aba8734a22cd887, type: 3}
+  levelSystem: {fileID: 2910432760595316514}
   turretPivot: {fileID: 1882059363590226864}
   turretStatsSO: {fileID: 11400000, guid: 9b14e002359c2294890a5da0d983ace4, type: 2}
+  currentHP: 0
+  currentMP: 0
+  currentAttackRange: 0
+  currentFireRate: 0
+  currentMaxHP: 0
+  currentMaxMP: 0
+  currentMaxAttackRange: 0
+  currentMaxFireRate: 0
 --- !u!1 &806589979897175447 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5058973824624027181, guid: 7a5f812abbed9ac41a49af6887536702, type: 3}
@@ -180,6 +188,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6276588201828268042, guid: 7a5f812abbed9ac41a49af6887536702, type: 3}
   m_PrefabInstance: {fileID: 5549702151403469754}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2910432760595316514 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7306931649297417368, guid: 7a5f812abbed9ac41a49af6887536702, type: 3}
+  m_PrefabInstance: {fileID: 5549702151403469754}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6152df6972f2d5949ab39cea9a6c19a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &4293231946063871339 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8543362606518306513, guid: 7a5f812abbed9ac41a49af6887536702, type: 3}

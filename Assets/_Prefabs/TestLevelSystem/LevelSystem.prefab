@@ -44,6 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6152df6972f2d5949ab39cea9a6c19a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  level: 0
+  level: 1
   exp: 0
-  expToNextLevel: 10000
+  expToNextLevel: 100
+  maxLevel: 5

@@ -52,6 +52,7 @@ public class DefenseTurret : BaseTurret {
 
         //Give new target to the sword
         currentSword.GetComponent<SwordSpell>().SetTarget(FindEnemy().transform);
+        FireOnHPChanged();
     }
 
     public override GameObject FindEnemy() {
