@@ -34,5 +34,14 @@ public class AttackTurret : _BaseTurret {
         return closestEnemy;
     }
 
+    protected override void CastSpecialSkill(Vector2 targetLocation) {
+        // Instantiate ThunderStrike
+        GameObject thunderStrikeInstance = Instantiate(specialSkillPrefab);
+
+        // Access and initialize the ThunderStrike script
+        ThunderStrike thunderStrikeScript = thunderStrikeInstance.GetComponent<ThunderStrike>();
+        thunderStrikeScript.Initialize(targetLocation);
+    }
+
     #endregion AttackStuff
 }

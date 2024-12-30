@@ -18,8 +18,6 @@ public class WaterSpellAnimator : MonoBehaviour {
     }
 
     public void DestroyAfterAnimation() {
-        Debug.Log("Yeah it get deled after animation in animator class");
-
         Destroy(waterSpell.gameObject);
     }
 

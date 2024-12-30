@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: AttackTurret
   m_EditorClassIdentifier: 
   baseAttackRange: 8
-  baseFireRate: 0.5
+  baseFireRate: 3
   baseMaxMP: 100
   baseMaxHP: 200
   attackRangeMultiplier: 0.1
@@ -21,3 +21,4 @@ MonoBehaviour:
   maxMPMultiplier: 0.1
   maxHPMultiplier: 0.1
   projectilePrefab: {fileID: 1057119316314463574, guid: 3c969ac896f4c644cbc92695edb403a9, type: 3}
+  specialSkillPrefab: {fileID: 4371316402298572485, guid: d268560158bca2b44a4b4ff51eaa8bef, type: 3}

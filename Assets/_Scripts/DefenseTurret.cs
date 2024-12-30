@@ -98,4 +98,8 @@ public class DefenseTurret : _BaseTurret {
             //}
         }
     }
+
+    protected override void CastSpecialSkill(Vector2 targetLocation) {
+        throw new NotImplementedException();
+    }
 }

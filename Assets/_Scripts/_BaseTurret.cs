@@ -11,13 +11,16 @@ public abstract class _BaseTurret : MonoBehaviour, IHasHPBar {
     [SerializeField] public LevelSystem levelSystem;
     [SerializeField] public Transform turretPivot;
     [SerializeField] public TurretStatsSO turretStatsSO;
+    public SpecialSkillButton specialSkillButton;
 
     #endregion Reference
 
     #region Variables
 
+    protected bool specialSkillUnlocked = false;
     protected GameObject currentTarget;
     protected IProjectile iprojectile;
+    protected GameObject specialSkillPrefab;
     [SerializeField] protected float currentHP, currentMP, currentAttackRange, currentFireRate;
     [SerializeField] protected float currentMaxHP, currentMaxMP, currentMaxAttackRange, currentMaxFireRate;
     protected HashSet<GameObject> enemiesInRange = new HashSet<GameObject>();
@@ -67,7 +70,6 @@ public abstract class _BaseTurret : MonoBehaviour, IHasHPBar {
     protected void EnemyScript_OnEnemyDestroyed(object sender, Enemy.OnEnemyDestroyedEventArgs e) {
         //Gain MP
         currentMP += e.mpGain;
-        Debug.Log("EAT ASS");
         if (currentMP >= currentMaxMP) {
             currentMP = currentMaxMP;
         }
@@ -109,10 +111,11 @@ public abstract class _BaseTurret : MonoBehaviour, IHasHPBar {
 
         // Min to ensure those current stats don't exceed the max
         currentHP = Mathf.Min(currentHP + (currentMaxHP - currentHP), currentMaxHP);
-        float haha = currentHP + (currentMaxHP - currentHP);
         currentMP = Mathf.Min(currentMP + (currentMaxMP - currentMP), currentMaxMP);
         currentAttackRange = Mathf.Min(currentAttackRange + (currentMaxAttackRange - currentAttackRange), currentMaxAttackRange);
         currentFireRate = Mathf.Min(currentFireRate + (currentMaxFireRate - currentFireRate), currentMaxFireRate);
+
+        specialSkillPrefab = turretStatsSO.specialSkillPrefab;
 
         FireOnHPChanged();
     }
@@ -124,12 +127,23 @@ public abstract class _BaseTurret : MonoBehaviour, IHasHPBar {
 
         currentMP = 0f;
         GetComponent<CircleCollider2D>().radius = currentMaxAttackRange;
+        specialSkillButton = transform.Find("SpecialSkillButtonCanvas/SpecialSkillButton")?.GetComponent<SpecialSkillButton>();
     }
 
     protected void LevelSystem_OnLevelUp(object sender, LevelSystem.OnLevelUpEventArgs e) {
         FireOnHPChanged();
         Upgrade(e.level);
+        if (e.isMaxLevel) {
+            specialSkillUnlocked = true;
+            specialSkillButton.OnSpecialButtonClicked += SpecialSkillButton_OnSpecialButtonClicked;
+        }
     }
+
+    private void SpecialSkillButton_OnSpecialButtonClicked(object sender, SpecialSkillButton.OnSpecialButtonClickedEventArgs e) {
+        CastSpecialSkill(e.targetLocation);
+    }
+
+    protected abstract void CastSpecialSkill(Vector2 targetLocation);
 
     #endregion DataStuff
 
@@ -150,8 +164,6 @@ public abstract class _BaseTurret : MonoBehaviour, IHasHPBar {
     }
 
     protected void FireOnHPChanged() {
-        Debug.Log($"Level: {levelSystem.GetLevel()}, Max Level: {levelSystem.GetMaxLevel()}");
-
         OnHPChanged?.Invoke(this, new IHasHPBar.OnHPChangedEventArgs {
             HPNormalized = currentHP / currentMaxHP,
             MPNormalized = currentMP / currentMaxMP,

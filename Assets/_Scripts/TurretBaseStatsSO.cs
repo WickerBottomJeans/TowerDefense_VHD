@@ -11,4 +11,5 @@ public class TurretStatsSO : ScriptableObject {
     public float maxMPMultiplier = 0.1f;
     public float maxHPMultiplier = 0.1f;
     public GameObject projectilePrefab;
+    public GameObject specialSkillPrefab;
 }

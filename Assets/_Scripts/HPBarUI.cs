@@ -20,6 +20,5 @@ public class HPBarUI : MonoBehaviour {
         hpBar.fillAmount = e.HPNormalized;
         mpBar.fillAmount = e.MPNormalized;
         levelHeart.fillAmount = e.levelNormalized;
-        Debug.Log(e.levelNormalized);
     }
 }

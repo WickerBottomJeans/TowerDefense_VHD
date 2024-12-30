@@ -11,12 +11,12 @@ public class LevelSystem : MonoBehaviour {
 
     public class OnLevelUpEventArgs : EventArgs {
         public int level;
+        public bool isMaxLevel;
     }
 
     public void AddEXP(float amount) {
         if (level < maxLevel) {
             exp += amount;
-            Debug.Log($"Added EXP: {amount}. Current EXP: {exp}/{expToNextLevel}");
 
             while (exp >= expToNextLevel) {
                 exp -= expToNextLevel;
@@ -27,10 +27,10 @@ public class LevelSystem : MonoBehaviour {
 
     public void LevelUp() {
         level++;
-        Debug.Log("LevelUP!");
         //tell the turret to upgrade()
         OnLevelUp?.Invoke(this, new OnLevelUpEventArgs {
             level = level,
+            isMaxLevel = (level == maxLevel)
         });
     }
 
