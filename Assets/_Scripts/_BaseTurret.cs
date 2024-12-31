@@ -70,6 +70,7 @@ public abstract class _BaseTurret : MonoBehaviour, IHasHPBar {
     protected void EnemyScript_OnEnemyDestroyed(object sender, Enemy.OnEnemyDestroyedEventArgs e) {
         //Gain MP
         currentMP += e.mpGain;
+        Debug.Log("Mana += " + e.mpGain);
         if (currentMP >= currentMaxMP) {
             currentMP = currentMaxMP;
         }
@@ -111,7 +112,7 @@ public abstract class _BaseTurret : MonoBehaviour, IHasHPBar {
 
         // Min to ensure those current stats don't exceed the max
         currentHP = Mathf.Min(currentHP + (currentMaxHP - currentHP), currentMaxHP);
-        currentMP = Mathf.Min(currentMP + (currentMaxMP - currentMP), currentMaxMP);
+        //currentMP = Mathf.Min(currentMP + (currentMaxMP - currentMP), currentMaxMP);
         currentAttackRange = Mathf.Min(currentAttackRange + (currentMaxAttackRange - currentAttackRange), currentMaxAttackRange);
         currentFireRate = Mathf.Min(currentFireRate + (currentMaxFireRate - currentFireRate), currentMaxFireRate);
 

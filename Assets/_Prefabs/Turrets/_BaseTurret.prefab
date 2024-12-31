@@ -454,6 +454,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1230781691492810248, guid: a228f87cc1e81804790c6129355ccda7, type: 3}
+      propertyPath: m_Color.a
+      value: 0.95686275
+      objectReference: {fileID: 0}
+    - target: {fileID: 1230781691492810248, guid: a228f87cc1e81804790c6129355ccda7, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1230781691492810248, guid: a228f87cc1e81804790c6129355ccda7, type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1230781691492810248, guid: a228f87cc1e81804790c6129355ccda7, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6609633311092290037, guid: a228f87cc1e81804790c6129355ccda7, type: 3}
       propertyPath: m_Name
       value: SpecialSkillButtonCanvas

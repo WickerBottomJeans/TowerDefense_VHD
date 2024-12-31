@@ -47,10 +47,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23b0e3573f5cbdd42b065d40baa1b974, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 200
+  maxHealth: 50
   speed: 2
   mpGain: 5
-  expGain: 100
+  expGain: 500
   waypoints: []
 --- !u!58 &8379145576025570492
 CircleCollider2D:
