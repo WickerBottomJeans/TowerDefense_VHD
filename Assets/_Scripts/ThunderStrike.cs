@@ -1,44 +1,89 @@
+using System;
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class ThunderStrike : MonoBehaviour {
     public float damage = 300f;
+    public float range = 1f;
+    public float spawnTimer = 0f;
+    public float spawnTime = 1f;
+    private HashSet<Enemy> enemiesInRange = new HashSet<Enemy>();
+    private bool casted = false;
+    private CircleCollider2D areaCollider;
+
+    public enum State {
+        Spawn,
+        Strike,
+    }
+
+    private State currentState;
+
+    public event EventHandler<OnStateChangedEventArgs> OnStateChanged;
+
+    public class OnStateChangedEventArgs : EventArgs {
+        public State state;
+    }
+
+    private void Awake() {
+        areaCollider = GetComponent<CircleCollider2D>();
+        areaCollider.radius = range;
+        FireOnStateChanged(State.Spawn);
+    }
+
+    private void Update() {
+        if (spawnTimer > 0f) {
+            spawnTimer -= Time.deltaTime;
+        } else if (spawnTimer <= 0f && currentState != State.Strike) {
+            currentState = State.Strike;
+            CastThunderStrike();
+            FireOnStateChanged(State.Strike);
+        }
+    }
+
+    private void CastThunderStrike() {
+        foreach (Enemy enemy in enemiesInRange) {
+            enemy.TakeDamage(damage);
+        }
+    }
 
     public void Initialize(Vector2 targetLocation) {
-        // Set position
         transform.position = new Vector3(targetLocation.x, targetLocation.y, 0);
-
-        // Start strike logic
-        StartCoroutine(Strike());
+        spawnTimer = spawnTime;
     }
 
-    private IEnumerator Strike() {
-        // Visual or delay logic (e.g., lightning animation)
-        yield return new WaitForSeconds(0.5f);
-
-        // Enable the collider to detect enemies
-        GetComponent<CircleCollider2D>().enabled = true;
-
-        // Wait a short duration to allow the collider to detect
-        yield return new WaitForSeconds(0.1f);
-
-        // Destroy the strike object after
-        Destroy(gameObject);
+    private void FireOnStateChanged(State state) {
+        OnStateChanged?.Invoke(this, new OnStateChangedEventArgs {
+            state = state
+        });
+        Debug.Log("Fired" + state);
     }
 
-    private void OnTriggerEnter2D(Collider2D collision) {
-        // Check if the object is an enemy and apply damage
-        if (collision.CompareTag("Enemy") && collision.TryGetComponent(out Enemy enemyScript)) {
+    private void OnTriggerStay2D(Collider2D collision) {
+        if (collision.CompareTag("Enemy") && collision.TryGetComponent(out Enemy enemyScript) && currentState == State.Strike) {
             enemyScript.TakeDamage(damage);
         }
     }
 
-    private void OnDrawGizmosSelected() {
-        // For debugging: draw the strike range in the editor
-        CircleCollider2D collider = GetComponent<CircleCollider2D>();
-        if (collider != null) {
-            Gizmos.color = Color.yellow;
-            Gizmos.DrawWireSphere(transform.position, collider.radius);
-        }
-    }
+    //    private void OnTriggerEnter2D(Collider2D collision) {
+    //    // Check if the object is an enemy and apply damage
+    //    if (collision.CompareTag("Enemy") && collision.TryGetComponent(out Enemy enemyScript)) {
+    //        enemiesInRange.Add(enemyScript);
+    //        enemyScript.OnEnemyDestroyed += EnemyScript_OnEnemyDestroyed;
+    //    }
+    //}
+
+    //private void OnTriggerExit2D(Collider2D collision) {
+    //    if (collision.CompareTag("Enemy") && collision.TryGetComponent(out Enemy enemyScript)) {
+    //        enemiesInRange.Remove(enemyScript);
+    //        enemyScript.OnEnemyDestroyed -= EnemyScript_OnEnemyDestroyed;
+    //    }
+    //}
+
+    //private void EnemyScript_OnEnemyDestroyed(object sender, Enemy.OnEnemyDestroyedEventArgs e) {
+    //    if (sender is Enemy destroyedEnemy) {
+    //        enemiesInRange.Remove(destroyedEnemy);
+    //        destroyedEnemy.OnEnemyDestroyed -= EnemyScript_OnEnemyDestroyed;
+    //    }
+    //}
 }

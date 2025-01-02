@@ -46,8 +46,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abe49f7fba2d8e9498a65239191462c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 100
-  range: 0.5
+  damage: 10
+  range: 1
+  spawnTimer: 0
+  spawnTime: 0.5
 --- !u!58 &8291039708256097205
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -78,7 +80,7 @@ CircleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -95,6 +97,7 @@ GameObject:
   - component: {fileID: 7561884510694564514}
   - component: {fileID: 7997282877632679528}
   - component: {fileID: 8058912843195360310}
+  - component: {fileID: 4653429048975548334}
   m_Layer: 0
   m_Name: ThunderStrikeVisual
   m_TagString: Untagged
@@ -182,8 +185,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: -509595745224685780, guid: 263aef1a3a546ca4e9f00b055b826d4c, type: 3}
+  m_SortingOrder: 20
+  m_Sprite: {fileID: 2102669340, guid: 36d9d06c0036485419b669f08820249f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -194,3 +197,15 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &4653429048975548334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5484454588830413636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a73ae9d7c24de841a5c991d8fb60e61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
