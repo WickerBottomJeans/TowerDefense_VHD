@@ -5,12 +5,12 @@ using UnityEngine.UI;
 public class SpecialSkillButton : MonoBehaviour {
     [SerializeField] private LevelSystem levelSystem;
     [SerializeField] private Image specialSkillButton;
-    [SerializeField] private Image cooldownMask; // Add a cooldown mask overlay
-    [SerializeField] private float cooldownTime = 5f; // Cooldown duration in seconds
-    [SerializeField] private Sprite aimingMouseSprite; // The aiming cursor sprite
+    [SerializeField] private Image cooldownMask;
+    private float cooldownTime;
+    [SerializeField] private Sprite aimingMouseSprite;
 
-    private GameObject aimingMouseObject; // GameObject to hold the SpriteRenderer
-    private _BaseTurret turret; // This will be assigned dynamically
+    private GameObject aimingMouseObject;
+    private _BaseTurret turret;
     private bool isAiming = false;
     private bool isCooldown = false;
     private float cooldownTimer = 0f;
@@ -20,6 +20,9 @@ public class SpecialSkillButton : MonoBehaviour {
     private void Start() {
         // Get the turret from the parent of the parent
         turret = transform.parent.parent.GetComponentInChildren<_BaseTurret>();
+
+        //set the cooldown
+        cooldownTime = turret.turretStatsSO.specialSkillPrefab.GetComponent<ThunderStrike>().GetCooldown();
 
         specialSkillButton.enabled = false;
         cooldownMask.fillAmount = 0f; // Ensure the mask is not visible initially

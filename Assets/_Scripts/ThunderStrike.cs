@@ -9,8 +9,9 @@ public class ThunderStrike : MonoBehaviour {
     public float spawnTimer = 0f;
     public float spawnTime = 1f;
     private HashSet<Enemy> enemiesInRange = new HashSet<Enemy>();
-    private bool casted = false;
     private CircleCollider2D areaCollider;
+
+    [SerializeField] private float cooldown = 5f;
 
     public enum State {
         Spawn,
@@ -63,6 +64,10 @@ public class ThunderStrike : MonoBehaviour {
         if (collision.CompareTag("Enemy") && collision.TryGetComponent(out Enemy enemyScript) && currentState == State.Strike) {
             enemyScript.TakeDamage(damage);
         }
+    }
+
+    public float GetCooldown() {
+        return cooldown;
     }
 
     //    private void OnTriggerEnter2D(Collider2D collision) {

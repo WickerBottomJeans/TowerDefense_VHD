@@ -50,6 +50,7 @@ MonoBehaviour:
   range: 1
   spawnTimer: 0
   spawnTime: 0.5
+  cooldown: 1
 --- !u!58 &8291039708256097205
 CircleCollider2D:
   m_ObjectHideFlags: 0
