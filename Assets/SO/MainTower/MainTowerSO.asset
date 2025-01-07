@@ -21,7 +21,7 @@ MonoBehaviour:
     fireRateMultiplier: 0.1
     maxMPMultiplier: 0.1
     maxHPMultiplier: 0.1
-    projectilePrefab: {fileID: 1057119316314463574, guid: 6c3aa3030a4cf0d419c27a21ae6d4c9b, type: 3}
+    projectilePrefab: {fileID: 1057119316314463574, guid: 3c969ac896f4c644cbc92695edb403a9, type: 3}
     specialSkillPrefab: {fileID: 4371316402298572485, guid: d268560158bca2b44a4b4ff51eaa8bef, type: 3}
   - baseAttackRange: 8
     baseFireRate: 6
@@ -31,7 +31,7 @@ MonoBehaviour:
     fireRateMultiplier: 0.1
     maxMPMultiplier: 0.1
     maxHPMultiplier: 0.1
-    projectilePrefab: {fileID: 1057119316314463574, guid: e48db16aeb6e0354cae48e0eac88c1d9, type: 3}
+    projectilePrefab: {fileID: 1057119316314463574, guid: 3c969ac896f4c644cbc92695edb403a9, type: 3}
     specialSkillPrefab: {fileID: 4371316402298572485, guid: d268560158bca2b44a4b4ff51eaa8bef, type: 3}
   - baseAttackRange: 9
     baseFireRate: 10
@@ -41,5 +41,5 @@ MonoBehaviour:
     fireRateMultiplier: 0.1
     maxMPMultiplier: 0.1
     maxHPMultiplier: 0.1
-    projectilePrefab: {fileID: 1057119316314463574, guid: bd0c4ee002cd2594ab72a0a57149d8cd, type: 3}
+    projectilePrefab: {fileID: 1057119316314463574, guid: 3c969ac896f4c644cbc92695edb403a9, type: 3}
     specialSkillPrefab: {fileID: 4371316402298572485, guid: d268560158bca2b44a4b4ff51eaa8bef, type: 3}
