@@ -2,38 +2,30 @@ using UnityEngine;
 using UnityEngine.Tilemaps;
 
 public class TurretPlacer : MonoBehaviour {
-    public GameObject attackTurretPrefab;
-    public GameObject defenseTurretPrefab;
-    public GameObject funTurretPrefab;
-
-    // Ghost prefabs for each turret type
-    public GameObject ghostAttackTurretPrefab;
-
-    public GameObject ghostDefenseTurretPrefab;
-    public GameObject ghostFunTurretPrefab;
+    public TurretStatsSO attackTurretStats;
+    public TurretStatsSO defenseTurretStats;
+    public TurretStatsSO funTurretStats;
 
     public Tilemap placementTilemap;
     public Camera mainCamera;
 
-    private GameObject currentTurretPrefab;
+    private TurretStatsSO currentTurretStats;
     private GameObject currentGhost;
-    private GameObject currentGhostPrefab;
     private bool isPlacing = false;
 
     private void Start() {
         // Default to Attack Turret
-        currentTurretPrefab = attackTurretPrefab;
-        currentGhostPrefab = ghostAttackTurretPrefab;
+        currentTurretStats = attackTurretStats;
     }
 
     private void Update() {
         // Toggle placing mode for each turret with Z, X, C keys
         if (Input.GetKeyDown(KeyCode.Z)) {
-            TogglePlacingMode(attackTurretPrefab, ghostAttackTurretPrefab);
+            TogglePlacingMode(attackTurretStats);
         } else if (Input.GetKeyDown(KeyCode.X)) {
-            TogglePlacingMode(defenseTurretPrefab, ghostDefenseTurretPrefab);
+            TogglePlacingMode(defenseTurretStats);
         } else if (Input.GetKeyDown(KeyCode.C)) {
-            TogglePlacingMode(funTurretPrefab, ghostFunTurretPrefab);
+            TogglePlacingMode(funTurretStats);
         }
 
         // If placing mode is active, allow turret placement
@@ -50,53 +42,55 @@ public class TurretPlacer : MonoBehaviour {
         }
     }
 
-    // Toggle placing mode for the given turret prefab and ghost
-    private void TogglePlacingMode(GameObject turretPrefab, GameObject ghostPrefab) {
-        if (currentTurretPrefab == turretPrefab && isPlacing) {
-            // If already in placing mode for this turret, disable placing mode
+    // Toggle placing mode for the given turret stats
+    private void TogglePlacingMode(TurretStatsSO turretStats) {
+        if (currentTurretStats == turretStats && isPlacing) {
             isPlacing = false;
-            if (currentGhost != null) {
-                Destroy(currentGhost);
-            }
+            DestroyGhost();
         } else {
-            // If switching turret or toggling on placing mode for this turret
-            currentTurretPrefab = turretPrefab;
-            currentGhostPrefab = ghostPrefab;
+            currentTurretStats = turretStats;
             isPlacing = true;
         }
     }
 
-    // Show a ghost turret preview
     private void ShowGhostTurret(Vector3Int tilePosition) {
         if (currentGhost != null) {
             Destroy(currentGhost);
         }
 
         if (IsTileValidForPlacement(tilePosition)) {
-            currentGhost = Instantiate(currentGhostPrefab, placementTilemap.CellToWorld(tilePosition), Quaternion.identity);
+            currentGhost = new GameObject("GhostTurret");
+            SpriteRenderer spriteRenderer = currentGhost.AddComponent<SpriteRenderer>();
+            spriteRenderer.sprite = currentTurretStats.ghostSprite;
+            spriteRenderer.color = new Color(1f, 1f, 1f, 0.5f);
+            currentGhost.transform.position = placementTilemap.CellToWorld(tilePosition);
         }
     }
 
-    // Check if the tile is valid for placement
     private bool IsTileValidForPlacement(Vector3Int tilePosition) {
-        // Check if the tile exists and is not blocked
         return placementTilemap.HasTile(tilePosition);
     }
 
-    // Place the selected turret on the tile
     private void PlaceTurret(Vector3Int tilePosition) {
         if (IsTileValidForPlacement(tilePosition)) {
-            Vector3 worldPosition = placementTilemap.CellToWorld(tilePosition);
-            Instantiate(currentTurretPrefab, worldPosition, Quaternion.identity);
-            placementTilemap.SetTile(tilePosition, null); // Optionally clear the tile after placement
-
-            // Turn off placing mode after successful placement
-            isPlacing = false;
-
-            // Remove the ghost turret
-            if (currentGhost != null) {
-                Destroy(currentGhost);
+            // Access the singleton CoinManager instance
+            CoinManager coinManager = CoinManager.Instance;
+            if (coinManager != null && coinManager.TrySpendCoins((int)currentTurretStats.turretCost)) {
+                Vector3 worldPosition = placementTilemap.CellToWorld(tilePosition);
+                Instantiate(currentTurretStats.turretPrefab.gameObject, worldPosition, Quaternion.identity);
+                placementTilemap.SetTile(tilePosition, null);
+                isPlacing = false;
+                DestroyGhost();
+            } else {
+                Debug.Log("Not enough coins to place turret!");
             }
+        }
+    }
+
+    // Destroy the ghost turret if it exists
+    private void DestroyGhost() {
+        if (currentGhost != null) {
+            Destroy(currentGhost);
         }
     }
 }

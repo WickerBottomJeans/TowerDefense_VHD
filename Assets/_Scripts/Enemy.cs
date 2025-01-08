@@ -10,6 +10,7 @@ public class Enemy : MonoBehaviour {
     public float speed = 2f;
     public float mpGain = 5f;
     public float expGain = 5f;
+    public int coinGain = 10;
 
     [Header("References")]
     public Transform[] waypoints;       // Path waypoints for the enemies to follow
@@ -76,6 +77,11 @@ public class Enemy : MonoBehaviour {
             mpGain = mpGain,
             expGain = expGain,
         });
+
+        CoinManager coinManager = FindObjectOfType<CoinManager>();
+        if (coinManager != null) {
+            coinManager.AddCoin(coinGain); // Add the coinGain amount to the CoinManager
+        }
         Destroy(gameObject);
     }
 

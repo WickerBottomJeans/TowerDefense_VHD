@@ -70,7 +70,6 @@ public abstract class _BaseTurret : MonoBehaviour, IHasHPBar {
     protected void EnemyScript_OnEnemyDestroyed(object sender, Enemy.OnEnemyDestroyedEventArgs e) {
         //Gain MP
         currentMP += e.mpGain;
-        Debug.Log("Mana += " + e.mpGain);
         if (currentMP >= currentMaxMP) {
             currentMP = currentMaxMP;
         }
