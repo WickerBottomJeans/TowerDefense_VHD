@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: AttackTurret
   m_EditorClassIdentifier: 
   turretCost: 50
-  baseAttackRange: 8
-  baseFireRate: 1
+  baseAttackRange: 6
+  baseFireRate: 5
   baseMaxMP: 100
   baseMaxHP: 200
   attackRangeMultiplier: 0.1

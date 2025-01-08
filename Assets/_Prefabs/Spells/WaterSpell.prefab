@@ -81,11 +81,11 @@ TrailRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Time: 0.3
+  m_Time: 0.12
   m_PreviewTimeScale: 1
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 0.30036673
+    widthMultiplier: 0.11217243
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -165,11 +165,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
-  chillTime: 1
-  damage: 200
-  speedMultiplier: 50
-  smoothFactor: 0.05
-  forceAmount: 200
+  chillTime: 0.01
+  damage: 20
+  speedMultiplier: 20
+  smoothFactor: 0.07
+  forceAmount: 400
   torque: 1
 --- !u!50 &-4029596850319871106
 Rigidbody2D:

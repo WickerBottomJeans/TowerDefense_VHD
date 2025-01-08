@@ -14,7 +14,6 @@ public class AttackTurret : _BaseTurret {
             subscribedEnemies.Add(currentTarget);
         }
 
-        iprojectile = turretStatsSO.projectilePrefab.GetComponent<IProjectile>();
         if (iprojectile != null) {
             iprojectile.SpawnProjectile(turretStatsSO.projectilePrefab, firePoint, currentTarget.transform);
         }
@@ -35,12 +34,10 @@ public class AttackTurret : _BaseTurret {
     }
 
     protected override void CastSpecialSkill(Vector2 targetLocation) {
-        // Instantiate ThunderStrike
-        GameObject thunderStrikeInstance = Instantiate(specialSkillPrefab);
-
-        // Access and initialize the ThunderStrike script
-        ThunderStrike thunderStrikeScript = thunderStrikeInstance.GetComponent<ThunderStrike>();
-        thunderStrikeScript.Initialize(targetLocation);
+        iSpecialAbility = Instantiate(turretStatsSO.specialAbilityGameObject).GetComponent<ISpecialAbility>();
+        if (iSpecialAbility != null) {
+            iSpecialAbility.Activate(targetLocation);
+        }
     }
 
     #endregion AttackStuff
