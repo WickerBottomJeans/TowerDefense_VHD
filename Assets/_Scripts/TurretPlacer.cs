@@ -15,6 +15,7 @@ public class TurretPlacer : MonoBehaviour {
     public Tilemap placementTilemap;
     public Camera mainCamera;
 
+    private TilemapRenderer placementTilemapRenderer; // Reference to TilemapRenderer
     private TurretStatsSO currentTurretStats;
     private GameObject currentGhost;
     private bool isPlacing = false;
@@ -30,10 +31,11 @@ public class TurretPlacer : MonoBehaviour {
         DefButton.onClick.AddListener(() => TogglePlacingMode(defenseTurretStats));
         AtkButton.onClick.AddListener(() => TogglePlacingMode(attackTurretStats));
         FunButton.onClick.AddListener(() => TogglePlacingMode(funTurretStats));
+
+        placementTilemapRenderer = placementTilemap.GetComponent<TilemapRenderer>(); // Get the TilemapRenderer
     }
 
     private void Update() {
-        // Toggle placing mode for each turret with Z, X, C keys
         if (Input.GetKeyDown(KeyCode.Z)) {
             TogglePlacingMode(attackTurretStats);
         } else if (Input.GetKeyDown(KeyCode.X)) {
@@ -42,7 +44,6 @@ public class TurretPlacer : MonoBehaviour {
             TogglePlacingMode(funTurretStats);
         }
 
-        // If placing mode is active, allow turret placement
         if (isPlacing) {
             Vector3 mouseWorldPosition = mainCamera.ScreenToWorldPoint(Input.mousePosition);
             Vector3Int tilePosition = placementTilemap.WorldToCell(mouseWorldPosition);
@@ -50,21 +51,27 @@ public class TurretPlacer : MonoBehaviour {
 
             ShowGhostTurret(tilePosition);
 
-            // Place the turret when left-clicking
             if (Input.GetMouseButtonDown(0)) {
                 PlaceTurret(tilePosition);
             }
         }
     }
 
-    // Toggle placing mode for the given turret stats
     private void TogglePlacingMode(TurretStatsSO turretStats) {
         if (currentTurretStats == turretStats && isPlacing) {
             isPlacing = false;
             DestroyGhost();
+            SetTilemapRenderOrder(-6); // Reset render order when placing mode is off
         } else {
             currentTurretStats = turretStats;
             isPlacing = true;
+            SetTilemapRenderOrder(10); // Increase render order during placing mode
+        }
+    }
+
+    private void SetTilemapRenderOrder(int order) {
+        if (placementTilemapRenderer != null) {
+            placementTilemapRenderer.sortingOrder = order;
         }
     }
 
@@ -88,7 +95,6 @@ public class TurretPlacer : MonoBehaviour {
 
     private void PlaceTurret(Vector3Int tilePosition) {
         if (IsTileValidForPlacement(tilePosition)) {
-            // Access the singleton CoinManager instance
             CoinManager coinManager = CoinManager.Instance;
             if (coinManager != null && coinManager.TrySpendCoins((int)currentTurretStats.turretCost)) {
                 Vector3 worldPosition = placementTilemap.CellToWorld(tilePosition);
@@ -96,13 +102,13 @@ public class TurretPlacer : MonoBehaviour {
                 placementTilemap.SetTile(tilePosition, null);
                 isPlacing = false;
                 DestroyGhost();
+                SetTilemapRenderOrder(-6); // Reset render order after placing
             } else {
                 Debug.Log("Not enough coins to place turret!");
             }
         }
     }
 
-    // Destroy the ghost turret if it exists
     private void DestroyGhost() {
         if (currentGhost != null) {
             Destroy(currentGhost);
