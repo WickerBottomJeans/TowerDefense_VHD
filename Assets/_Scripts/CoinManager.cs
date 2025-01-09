@@ -1,9 +1,11 @@
 using System;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CoinManager : MonoBehaviour {
     public static CoinManager Instance { get; private set; }
-
+    public TextMeshProUGUI text;
     public int coinBalance = 200;
 
     public event Action<int> OnCoinBalanceChange;
@@ -18,12 +20,14 @@ public class CoinManager : MonoBehaviour {
 
     public void AddCoin(int amount) {
         coinBalance += amount;
+        //text.SetText(coinBalance.ToString());
         OnCoinBalanceChange?.Invoke(coinBalance);
     }
 
     public bool TrySpendCoins(int cost) {
         if (coinBalance >= cost) {
             coinBalance -= cost;
+            //text.SetText(coinBalance.ToString());
             OnCoinBalanceChange?.Invoke(coinBalance);
             return true;
         } else {

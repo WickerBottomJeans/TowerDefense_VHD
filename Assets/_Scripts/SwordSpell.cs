@@ -36,7 +36,7 @@ public class SwordSpell : MonoBehaviour, IProjectile {
 
                 transform.position = target.position;
                 //decide where u want to hold the sword
-                visual.position = target.position + new Vector3(0.0f, 0, 0);
+                visual.position = target.position + new Vector3(0.3f, 0, 0);
                 // Swinging effect while stuck
                 swingTimer += Time.deltaTime * swingFrequency;
                 float swingAngle = Mathf.Sin(swingTimer) * swingAmplitude;

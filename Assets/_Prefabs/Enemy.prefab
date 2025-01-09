@@ -50,7 +50,7 @@ MonoBehaviour:
   maxHealth: 50
   speed: 2.5
   mpGain: 5
-  expGain: 500
+  expGain: 20
   coinGain: 10
   waypoints: []
 --- !u!58 &8379145576025570492

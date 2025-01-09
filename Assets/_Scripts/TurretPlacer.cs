@@ -1,7 +1,13 @@
 using UnityEngine;
 using UnityEngine.Tilemaps;
+using UnityEngine.UI;
+using TMPro;
 
 public class TurretPlacer : MonoBehaviour {
+    public Button DefButton;
+    public Button AtkButton;
+    public Button FunButton;
+
     public TurretStatsSO attackTurretStats;
     public TurretStatsSO defenseTurretStats;
     public TurretStatsSO funTurretStats;
@@ -16,6 +22,14 @@ public class TurretPlacer : MonoBehaviour {
     private void Start() {
         // Default to Attack Turret
         currentTurretStats = attackTurretStats;
+
+        DefButton.GetComponentInChildren<TMP_Text>().text = $"{defenseTurretStats.turretCost}";
+        AtkButton.GetComponentInChildren<TMP_Text>().text = $"{attackTurretStats.turretCost}";
+        FunButton.GetComponentInChildren<TMP_Text>().text = $"{funTurretStats.turretCost}";
+
+        DefButton.onClick.AddListener(() => TogglePlacingMode(defenseTurretStats));
+        AtkButton.onClick.AddListener(() => TogglePlacingMode(attackTurretStats));
+        FunButton.onClick.AddListener(() => TogglePlacingMode(funTurretStats));
     }
 
     private void Update() {
@@ -32,6 +46,7 @@ public class TurretPlacer : MonoBehaviour {
         if (isPlacing) {
             Vector3 mouseWorldPosition = mainCamera.ScreenToWorldPoint(Input.mousePosition);
             Vector3Int tilePosition = placementTilemap.WorldToCell(mouseWorldPosition);
+            Debug.Log(tilePosition);
 
             ShowGhostTurret(tilePosition);
 

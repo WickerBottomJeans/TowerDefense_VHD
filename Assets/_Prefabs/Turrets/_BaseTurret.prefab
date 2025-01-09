@@ -588,11 +588,19 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6259442604834594232, guid: 7ea236c67b9238741aef127d15dc1fa2, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6537426330755251607, guid: 7ea236c67b9238741aef127d15dc1fa2, type: 3}
       propertyPath: m_Name
       value: HPBarUI
       objectReference: {fileID: 0}
     - target: {fileID: 6537426330755251607, guid: 7ea236c67b9238741aef127d15dc1fa2, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8576918628722740500, guid: 7ea236c67b9238741aef127d15dc1fa2, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
