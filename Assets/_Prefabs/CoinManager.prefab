@@ -44,3 +44,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4bcdc32ea13fae48937976642ca630b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< Updated upstream
+=======
+  text: {fileID: 0}
+  coinBalance: 200
+>>>>>>> Stashed changes
