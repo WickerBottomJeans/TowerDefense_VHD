@@ -26,13 +26,23 @@ public class GameManager : MonoBehaviour {
         SetState(State.Playing);
     }
 
+    private void Update() {
+        // Key controls for testing
+        if (Input.GetKeyDown(KeyCode.B)) {
+            SetState(State.Lose);
+        } else if (Input.GetKeyDown(KeyCode.N)) {
+            SetState(State.Win);
+        } else if (Input.GetKeyDown(KeyCode.M)) {
+            OpenMenu();
+        }
+    }
+
     public void SetState(State state) {
         CurrentState = state;
 
         switch (state) {
             case State.Playing:
                 Debug.Log("Game is now playing.");
-                // Reset any lose/win UI and gameplay variables
                 break;
 
             case State.Lose:
@@ -43,28 +53,43 @@ public class GameManager : MonoBehaviour {
             case State.Win:
                 Debug.Log("Congratulations! You win.");
                 ShowWinUI();
+                UnlockNextLevel();
                 break;
         }
     }
 
     private void ShowLoseUI() {
-        // TODO: Display "Game Over" UI with options like "Retry" or "Exit"
-        // For example, enable a LosePanel in your canvas
+        Debug.Log("Lose UI should be displayed here.");
+        RestartLevel();
     }
 
     private void ShowWinUI() {
-        // TODO: Display "You Win" UI with options like "Next Level" or "Main Menu"
-        // For example, enable a WinPanel in your canvas
+        Debug.Log("Win UI should be displayed here.");
+        RestartLevel();
     }
 
-    public void RestartLevel() {
-        // Reload the current scene
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    public void LoadLevel(string levelName) {
+        Debug.Log("Loading level: " + levelName);
+        SceneManager.LoadScene(levelName);
         SetState(State.Playing);
     }
 
-    public void ExitGame() {
-        Debug.Log("Exiting game...");
-        Application.Quit();
+    public void RestartLevel() {
+        LoadLevel(SceneManager.GetActiveScene().name);
+    }
+
+    public void OpenMenu() {
+        LoadLevel("MainMenu");
+    }
+
+    private void UnlockNextLevel() {
+        int currentLevelIndex = SceneManager.GetActiveScene().buildIndex;
+        int highestLevelUnlocked = PlayerPrefs.GetInt("LevelReached", 1);
+
+        if (currentLevelIndex >= highestLevelUnlocked) {
+            PlayerPrefs.SetInt("LevelReached", currentLevelIndex + 1);
+            PlayerPrefs.Save();
+            Debug.Log("Next level unlocked: " + (currentLevelIndex + 1));
+        }
     }
 }
