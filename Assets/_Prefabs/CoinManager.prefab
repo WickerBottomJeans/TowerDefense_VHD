@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &3927806623719808338
+--- !u!1 &6505194218634354054
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,8 +8,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7040701847408873151}
-  - component: {fileID: 8693535180377520207}
+  - component: {fileID: 879139847612697415}
+  - component: {fileID: 8520841345500734317}
   m_Layer: 0
   m_Name: CoinManager
   m_TagString: Untagged
@@ -17,35 +17,31 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7040701847408873151
+--- !u!4 &879139847612697415
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3927806623719808338}
+  m_GameObject: {fileID: 6505194218634354054}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.1495361, y: -0.93828666, z: -0.06714042}
+  m_LocalPosition: {x: -0.946207, y: 1.3075527, z: -0.09350304}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8693535180377520207
+--- !u!114 &8520841345500734317
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3927806623719808338}
+  m_GameObject: {fileID: 6505194218634354054}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e4bcdc32ea13fae48937976642ca630b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< Updated upstream
-=======
-  text: {fileID: 0}
   coinBalance: 200
->>>>>>> Stashed changes
