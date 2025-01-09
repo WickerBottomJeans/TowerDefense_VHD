@@ -16,18 +16,23 @@ public class CoinManager : MonoBehaviour {
         } else {
             Instance = this;
         }
+        text.SetText(coinBalance.ToString());
+        OnCoinBalanceChange += CoinManager_OnCoinBalanceChange;
+    }
+
+    private void CoinManager_OnCoinBalanceChange(int obj) {
+        text.SetText(coinBalance.ToString());
     }
 
     public void AddCoin(int amount) {
         coinBalance += amount;
-        //text.SetText(coinBalance.ToString());
+
         OnCoinBalanceChange?.Invoke(coinBalance);
     }
 
     public bool TrySpendCoins(int cost) {
         if (coinBalance >= cost) {
             coinBalance -= cost;
-            //text.SetText(coinBalance.ToString());
             OnCoinBalanceChange?.Invoke(coinBalance);
             return true;
         } else {
