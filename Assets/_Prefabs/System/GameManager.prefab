@@ -44,3 +44,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5ef8d7496653a944b0cf8e3b226be47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  loseCanvasPrefab: {fileID: 5426605233072698303, guid: 88c52d02d39922149bb5be48b16e76e1, type: 3}
+  winCanvasPrefab: {fileID: 5426605233072698303, guid: a49c8fe18f1b8db409e5542661eef170, type: 3}
+  pauseCanvasPrefab: {fileID: 8087449945576220619, guid: e126e290e9b939d44a8adddb05608699, type: 3}
