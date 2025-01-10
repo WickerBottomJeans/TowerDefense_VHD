@@ -206,6 +206,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd155b8a36aaec74bb36131515724ed9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  amountActiveShield: 30
+  amountUpgradeTower: 50
+  amountUsingSkinTower: 80
 --- !u!1 &804431087465713145
 GameObject:
   m_ObjectHideFlags: 0
@@ -2059,63 +2062,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_goShotCtrlList:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   - {fileID: 7770397158650456387}
-  - {fileID: 0}
   - {fileID: 7600145376186086322}
   - {fileID: 2007707344723857303}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   m_shotNameText: {fileID: 0}
 --- !u!1 &6981073453224400603
 GameObject:
@@ -2940,6 +2889,10 @@ PrefabInstance:
     - target: {fileID: 6940357011117961946, guid: 127c04cf3033b9c41aba8734a22cd887, type: 3}
       propertyPath: m_Name
       value: LevelSystem
+      objectReference: {fileID: 0}
+    - target: {fileID: 6940357011117961946, guid: 127c04cf3033b9c41aba8734a22cd887, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

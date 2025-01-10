@@ -7,12 +7,29 @@ public class UISpMainTower : MonoBehaviour
     public Action OnUpgradeTower;
     public Action OnActiveSkill;
     private bool _activeShield;
+    
+    private CoinManager _coinManager;
+    
+    [SerializeField]
+    private int amountActiveShield = 30;
+    [SerializeField]
+    private int amountUpgradeTower = 50;
+    [SerializeField]
+    private int amountUsingSkinTower = 80;
+
+    private void Start()
+    {
+        _coinManager = CoinManager.Instance;
+    }
 
     public void ActiveShield()
     {
         if(_activeShield) return;
-        _activeShield = true;
-        OnActiveShield?.Invoke(true);
+        if (_coinManager != null && _coinManager.TrySpendCoins(amountActiveShield))
+        {        
+            _activeShield = true;
+            OnActiveShield?.Invoke(true);
+        }
     }
     
     public void DisActiveShield()
@@ -27,11 +44,17 @@ public class UISpMainTower : MonoBehaviour
     
     public void UpgradeTower()
     {
-        OnUpgradeTower?.Invoke();
+        if (_coinManager != null && _coinManager.TrySpendCoins(amountUpgradeTower))
+        {        
+            OnUpgradeTower?.Invoke();
+        }
     }
     
     public void ActiveSkill()
     {
-        OnActiveSkill?.Invoke();   
+        if (_coinManager != null && _coinManager.TrySpendCoins(amountUsingSkinTower))
+        {        
+            OnActiveSkill?.Invoke();   
+        }
     } 
 }

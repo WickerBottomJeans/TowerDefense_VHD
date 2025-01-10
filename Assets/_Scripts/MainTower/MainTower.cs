@@ -99,6 +99,7 @@ public class MainTower: BaseTower
         base.Die();
         //SpawnFxDeath();
         Debug.Log("Die");
+        GameManager.Instance.SetState(GameManager.State.Lose);
     }
 
     private void SpawnFxDeath()

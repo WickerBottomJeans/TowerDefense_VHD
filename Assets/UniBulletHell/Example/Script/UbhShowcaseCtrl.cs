@@ -61,7 +61,10 @@ public class UbhShowcaseCtrl : MonoBehaviour
 
             m_nowGoName = m_goShotCtrlList[m_nowIndex].name;
 
-            m_shotNameText.text = "No." + (m_nowIndex + 1).ToString() + " : " + m_nowGoName;
+            if (m_shotNameText)
+            {
+                m_shotNameText.text = "No." + (m_nowIndex + 1).ToString() + " : " + m_nowGoName;
+            }
 
             StartCoroutine(StartShot());
         }

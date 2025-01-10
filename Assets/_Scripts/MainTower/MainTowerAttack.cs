@@ -21,6 +21,19 @@ public class MainTowerAttack : MonoBehaviour
     
     [SerializeField] private List<UbhShotCtrl> shotCtrls;
 
+    private void Start()
+    {
+        ResetObjShot();
+    }
+
+    private void ResetObjShot()
+    {
+        foreach (var shotCtrl in shotCtrls)
+        {
+            shotCtrl.gameObject.SetActive(false);
+        }
+    }
+    
     public void ActiveSkill(int indexSkill)
     {
         StopCoroutineSkill();
@@ -42,6 +55,7 @@ public class MainTowerAttack : MonoBehaviour
     private IEnumerator DelayStopSkill(int indexSkill)
     {
         yield return null;
+        shotCtrls[indexSkill].gameObject.SetActive(true);
         shotCtrls[indexSkill].StartShotRoutine();
         yield return new WaitForSeconds(1f);
         shotCtrls[indexSkill].StopShotRoutine();
