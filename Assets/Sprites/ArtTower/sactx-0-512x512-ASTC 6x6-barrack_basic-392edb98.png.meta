@@ -1,0 +1,1183 @@
+fileFormatVersion: 2
+guid: f07f13cc23c37304dbd76eec2dab888a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5054804330119683706
+    second: sactx-0-512x512-ASTC 6x6-barrack_basic-392edb98_0
+  - first:
+      213: 3247420003319021580
+    second: sactx-0-512x512-ASTC 6x6-barrack_basic-392edb98_1
+  - first:
+      213: -5906658858800747902
+    second: sactx-0-512x512-ASTC 6x6-barrack_basic-392edb98_2
+  - first:
+      213: -6851337117431741680
+    second: sactx-0-512x512-ASTC 6x6-barrack_basic-392edb98_3
+  - first:
+      213: 9094619376027549922
+    second: sactx-0-512x512-ASTC 6x6-barrack_basic-392edb98_4
+  - first:
+      213: 8849602329582556366
+    second: sactx-0-512x512-ASTC 6x6-barrack_basic-392edb98_5
+  - first:
+      213: -8507013336570348392
+    second: sactx-0-512x512-ASTC 6x6-barrack_basic-392edb98_6
+  - first:
+      213: 2635633698477221483
+    second: sactx-0-512x512-ASTC 6x6-barrack_basic-392edb98_7
+  - first:
+      213: -2742302593787711622
+    second: sactx-0-512x512-ASTC 6x6-barrack_basic-392edb98_8
+  - first:
+      213: -4235188492189070149
+    second: sactx-0-512x512-ASTC 6x6-barrack_basic-392edb98_9
+  - first:
+      213: 1984749406520717608
+    second: sactx-0-512x512-ASTC 6x6-barrack_basic-392edb98_10
+  - first:
+      213: 1385409600947544455
+    second: sactx-0-512x512-ASTC 6x6-barrack_basic-392edb98_11
+  - first:
+      213: -6413830666607324725
+    second: sactx-0-512x512-ASTC 6x6-barrack_basic-392edb98_12
+  - first:
+      213: -1306439828629716423
+    second: sactx-0-512x512-ASTC 6x6-barrack_basic-392edb98_13
+  - first:
+      213: 4766348714917894167
+    second: sactx-0-512x512-ASTC 6x6-barrack_basic-392edb98_14
+  - first:
+      213: -4464037812429240394
+    second: sactx-0-512x512-ASTC 6x6-barrack_basic-392edb98_15
+  - first:
+      213: -140560855439833082
+    second: sactx-0-512x512-ASTC 6x6-barrack_basic-392edb98_16
+  - first:
+      213: 2709599644058536599
+    second: sactx-0-512x512-ASTC 6x6-barrack_basic-392edb98_17
+  - first:
+      213: -6326983010964106490
+    second: sactx-0-512x512-ASTC 6x6-barrack_basic-392edb98_18
+  - first:
+      213: -7038346825424471315
+    second: sactx-0-512x512-ASTC 6x6-barrack_basic-392edb98_19
+  - first:
+      213: -5933627869153240066
+    second: sactx-0-512x512-ASTC 6x6-barrack_basic-392edb98_20
+  - first:
+      213: -4429041054910966513
+    second: sactx-0-512x512-ASTC 6x6-barrack_basic-392edb98_21
+  - first:
+      213: 1121634034334753894
+    second: sactx-0-512x512-ASTC 6x6-barrack_basic-392edb98_22
+  - first:
+      213: 3168619801267608866
+    second: sactx-0-512x512-ASTC 6x6-barrack_basic-392edb98_23
+  - first:
+      213: -2353609443199284501
+    second: sactx-0-512x512-ASTC 6x6-barrack_basic-392edb98_24
+  - first:
+      213: 6767072125474988878
+    second: sactx-0-512x512-ASTC 6x6-barrack_basic-392edb98_25
+  - first:
+      213: 5920599792628051808
+    second: sactx-0-512x512-ASTC 6x6-barrack_basic-392edb98_26
+  - first:
+      213: 5197702479190038450
+    second: sactx-0-512x512-ASTC 6x6-barrack_basic-392edb98_27
+  - first:
+      213: 7153353665152791256
+    second: sactx-0-512x512-ASTC 6x6-barrack_basic-392edb98_28
+  - first:
+      213: 1321826798143204737
+    second: sactx-0-512x512-ASTC 6x6-barrack_basic-392edb98_29
+  - first:
+      213: -1468357069163977510
+    second: sactx-0-512x512-ASTC 6x6-barrack_basic-392edb98_30
+  - first:
+      213: -4107617943775794208
+    second: sactx-0-512x512-ASTC 6x6-barrack_basic-392edb98_31
+  - first:
+      213: -8386452806650253377
+    second: sactx-0-512x512-ASTC 6x6-barrack_basic-392edb98_32
+  - first:
+      213: 7624431396543007770
+    second: sactx-0-512x512-ASTC 6x6-barrack_basic-392edb98_33
+  - first:
+      213: 2350116332493653148
+    second: sactx-0-512x512-ASTC 6x6-barrack_basic-392edb98_34
+  - first:
+      213: 5611026880492893692
+    second: sactx-0-512x512-ASTC 6x6-barrack_basic-392edb98_35
+  - first:
+      213: 3592627308788505374
+    second: sactx-0-512x512-ASTC 6x6-barrack_basic-392edb98_36
+  - first:
+      213: -46102743379791827
+    second: sactx-0-512x512-ASTC 6x6-barrack_basic-392edb98_37
+  - first:
+      213: -8402797579193489389
+    second: sactx-0-512x512-ASTC 6x6-barrack_basic-392edb98_38
+  - first:
+      213: -256699002523328446
+    second: sactx-0-512x512-ASTC 6x6-barrack_basic-392edb98_39
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: sactx-0-512x512-ASTC 6x6-barrack_basic-392edb98_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 200
+        width: 172
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6812c164e3ab9d9b0800000000000000
+      internalID: -5054804330119683706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-512x512-ASTC 6x6-barrack_basic-392edb98_1
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 444
+        width: 38
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0004569947211d20800000000000000
+      internalID: 3247420003319021580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-512x512-ASTC 6x6-barrack_basic-392edb98_2
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 485
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28a64cf0015570ea0800000000000000
+      internalID: -5906658858800747902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-512x512-ASTC 6x6-barrack_basic-392edb98_3
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 426
+        width: 67
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 013480f01392be0a0800000000000000
+      internalID: -6851337117431741680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-512x512-ASTC 6x6-barrack_basic-392edb98_4
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 437
+        width: 82
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e0c18b1324963e70800000000000000
+      internalID: 9094619376027549922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-512x512-ASTC 6x6-barrack_basic-392edb98_5
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 484
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec4dc3a7e6a10da70800000000000000
+      internalID: 8849602329582556366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-512x512-ASTC 6x6-barrack_basic-392edb98_6
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 462
+        width: 32
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89cb636417401f980800000000000000
+      internalID: -8507013336570348392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-512x512-ASTC 6x6-barrack_basic-392edb98_7
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 444
+        width: 50
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b66a8c372e6a39420800000000000000
+      internalID: 2635633698477221483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-512x512-ASTC 6x6-barrack_basic-392edb98_8
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 443
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7fa6aef15261f9d0800000000000000
+      internalID: -2742302593787711622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-512x512-ASTC 6x6-barrack_basic-392edb98_9
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 441
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbc8f3e51869935c0800000000000000
+      internalID: -4235188492189070149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-512x512-ASTC 6x6-barrack_basic-392edb98_10
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 407
+        width: 34
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 821b5dfc11f3b8b10800000000000000
+      internalID: 1984749406520717608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-512x512-ASTC 6x6-barrack_basic-392edb98_11
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 424
+        width: 31
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 781e4ec11b6f93310800000000000000
+      internalID: 1385409600947544455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-512x512-ASTC 6x6-barrack_basic-392edb98_12
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 371
+        width: 110
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc11d5b9dfe7df6a0800000000000000
+      internalID: -6413830666607324725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-512x512-ASTC 6x6-barrack_basic-392edb98_13
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 413
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9328a1ec5e79edde0800000000000000
+      internalID: -1306439828629716423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-512x512-ASTC 6x6-barrack_basic-392edb98_14
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 344
+        width: 67
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 718125c27e8752240800000000000000
+      internalID: 4766348714917894167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-512x512-ASTC 6x6-barrack_basic-392edb98_15
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 371
+        width: 32
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b74e36d24d8c02c0800000000000000
+      internalID: -4464037812429240394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-512x512-ASTC 6x6-barrack_basic-392edb98_16
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 252
+        width: 107
+        height: 99
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6080f2e85a0ac0ef0800000000000000
+      internalID: -140560855439833082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-512x512-ASTC 6x6-barrack_basic-392edb98_17
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 348
+        width: 93
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79a42ab258e6a9520800000000000000
+      internalID: 2709599644058536599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-512x512-ASTC 6x6-barrack_basic-392edb98_18
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 347
+        width: 31
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6039d8b297a0238a0800000000000000
+      internalID: -6326983010964106490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-512x512-ASTC 6x6-barrack_basic-392edb98_19
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 318
+        width: 34
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dea73906ad4c25e90800000000000000
+      internalID: -7038346825424471315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-512x512-ASTC 6x6-barrack_basic-392edb98_20
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 269
+        width: 86
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efb53c504e487ada0800000000000000
+      internalID: -5933627869153240066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-512x512-ASTC 6x6-barrack_basic-392edb98_21
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 271
+        width: 70
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f05196a60a2e882c0800000000000000
+      internalID: -4429041054910966513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-512x512-ASTC 6x6-barrack_basic-392edb98_22
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 264
+        width: 32
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 664e2882638d09f00800000000000000
+      internalID: 1121634034334753894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-512x512-ASTC 6x6-barrack_basic-392edb98_23
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 305
+        width: 32
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22d13d2dbe239fb20800000000000000
+      internalID: 3168619801267608866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-512x512-ASTC 6x6-barrack_basic-392edb98_24
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 263
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bea0a1e6eac465fd0800000000000000
+      internalID: -2353609443199284501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-512x512-ASTC 6x6-barrack_basic-392edb98_25
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 269
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e436260ae3879ed50800000000000000
+      internalID: 6767072125474988878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-512x512-ASTC 6x6-barrack_basic-392edb98_26
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 0
+        width: 151
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06fa8d884223a2250800000000000000
+      internalID: 5920599792628051808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-512x512-ASTC 6x6-barrack_basic-392edb98_27
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 206
+        width: 108
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b71a40cdd2f12840800000000000000
+      internalID: 5197702479190038450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-512x512-ASTC 6x6-barrack_basic-392edb98_28
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 203
+        width: 31
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d2bb242241d54360800000000000000
+      internalID: 7153353665152791256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-512x512-ASTC 6x6-barrack_basic-392edb98_29
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 172
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18deae53872185210800000000000000
+      internalID: 1321826798143204737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-512x512-ASTC 6x6-barrack_basic-392edb98_30
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 130
+        width: 101
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad42c0976095f9be0800000000000000
+      internalID: -1468357069163977510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-512x512-ASTC 6x6-barrack_basic-392edb98_31
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 146
+        width: 38
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0eb29344e3fcef6c0800000000000000
+      internalID: -4107617943775794208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-512x512-ASTC 6x6-barrack_basic-392edb98_32
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 146
+        width: 36
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbfa80e0b955d9b80800000000000000
+      internalID: -8386452806650253377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-512x512-ASTC 6x6-barrack_basic-392edb98_33
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 149
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1c084d85fb6fc960800000000000000
+      internalID: 7624431396543007770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-512x512-ASTC 6x6-barrack_basic-392edb98_34
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 143
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c94c02b5a5a4d9020800000000000000
+      internalID: 2350116332493653148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-512x512-ASTC 6x6-barrack_basic-392edb98_35
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 135
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf572f4283f5edd40800000000000000
+      internalID: 5611026880492893692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-512x512-ASTC 6x6-barrack_basic-392edb98_36
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 0
+        width: 80
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1bd4b6b0839bd130800000000000000
+      internalID: 3592627308788505374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-512x512-ASTC 6x6-barrack_basic-392edb98_37
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 75
+        width: 65
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d203da59cc53c5ff0800000000000000
+      internalID: -46102743379791827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-512x512-ASTC 6x6-barrack_basic-392edb98_38
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 0
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 318e8a42f14436b80800000000000000
+      internalID: -8402797579193489389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-512x512-ASTC 6x6-barrack_basic-392edb98_39
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 1
+        width: 72
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24066640e95007cf0800000000000000
+      internalID: -256699002523328446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 80211024794d62e46b963af105a8788b
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      sactx-0-512x512-ASTC 6x6-barrack_basic-392edb98_0: -5054804330119683706
+      sactx-0-512x512-ASTC 6x6-barrack_basic-392edb98_1: 3247420003319021580
+      sactx-0-512x512-ASTC 6x6-barrack_basic-392edb98_10: 1984749406520717608
+      sactx-0-512x512-ASTC 6x6-barrack_basic-392edb98_11: 1385409600947544455
+      sactx-0-512x512-ASTC 6x6-barrack_basic-392edb98_12: -6413830666607324725
+      sactx-0-512x512-ASTC 6x6-barrack_basic-392edb98_13: -1306439828629716423
+      sactx-0-512x512-ASTC 6x6-barrack_basic-392edb98_14: 4766348714917894167
+      sactx-0-512x512-ASTC 6x6-barrack_basic-392edb98_15: -4464037812429240394
+      sactx-0-512x512-ASTC 6x6-barrack_basic-392edb98_16: -140560855439833082
+      sactx-0-512x512-ASTC 6x6-barrack_basic-392edb98_17: 2709599644058536599
+      sactx-0-512x512-ASTC 6x6-barrack_basic-392edb98_18: -6326983010964106490
+      sactx-0-512x512-ASTC 6x6-barrack_basic-392edb98_19: -7038346825424471315
+      sactx-0-512x512-ASTC 6x6-barrack_basic-392edb98_2: -5906658858800747902
+      sactx-0-512x512-ASTC 6x6-barrack_basic-392edb98_20: -5933627869153240066
+      sactx-0-512x512-ASTC 6x6-barrack_basic-392edb98_21: -4429041054910966513
+      sactx-0-512x512-ASTC 6x6-barrack_basic-392edb98_22: 1121634034334753894
+      sactx-0-512x512-ASTC 6x6-barrack_basic-392edb98_23: 3168619801267608866
+      sactx-0-512x512-ASTC 6x6-barrack_basic-392edb98_24: -2353609443199284501
+      sactx-0-512x512-ASTC 6x6-barrack_basic-392edb98_25: 6767072125474988878
+      sactx-0-512x512-ASTC 6x6-barrack_basic-392edb98_26: 5920599792628051808
+      sactx-0-512x512-ASTC 6x6-barrack_basic-392edb98_27: 5197702479190038450
+      sactx-0-512x512-ASTC 6x6-barrack_basic-392edb98_28: 7153353665152791256
+      sactx-0-512x512-ASTC 6x6-barrack_basic-392edb98_29: 1321826798143204737
+      sactx-0-512x512-ASTC 6x6-barrack_basic-392edb98_3: -6851337117431741680
+      sactx-0-512x512-ASTC 6x6-barrack_basic-392edb98_30: -1468357069163977510
+      sactx-0-512x512-ASTC 6x6-barrack_basic-392edb98_31: -4107617943775794208
+      sactx-0-512x512-ASTC 6x6-barrack_basic-392edb98_32: -8386452806650253377
+      sactx-0-512x512-ASTC 6x6-barrack_basic-392edb98_33: 7624431396543007770
+      sactx-0-512x512-ASTC 6x6-barrack_basic-392edb98_34: 2350116332493653148
+      sactx-0-512x512-ASTC 6x6-barrack_basic-392edb98_35: 5611026880492893692
+      sactx-0-512x512-ASTC 6x6-barrack_basic-392edb98_36: 3592627308788505374
+      sactx-0-512x512-ASTC 6x6-barrack_basic-392edb98_37: -46102743379791827
+      sactx-0-512x512-ASTC 6x6-barrack_basic-392edb98_38: -8402797579193489389
+      sactx-0-512x512-ASTC 6x6-barrack_basic-392edb98_39: -256699002523328446
+      sactx-0-512x512-ASTC 6x6-barrack_basic-392edb98_4: 9094619376027549922
+      sactx-0-512x512-ASTC 6x6-barrack_basic-392edb98_5: 8849602329582556366
+      sactx-0-512x512-ASTC 6x6-barrack_basic-392edb98_6: -8507013336570348392
+      sactx-0-512x512-ASTC 6x6-barrack_basic-392edb98_7: 2635633698477221483
+      sactx-0-512x512-ASTC 6x6-barrack_basic-392edb98_8: -2742302593787711622
+      sactx-0-512x512-ASTC 6x6-barrack_basic-392edb98_9: -4235188492189070149
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
