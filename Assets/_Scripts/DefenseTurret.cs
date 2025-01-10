@@ -28,6 +28,7 @@ public class DefenseTurret : _BaseTurret {
         currentTarget = FindEnemy();
         if (currentTarget == null) {
             DestroySword();
+            return;
         }
 
         Enemy enemyScript = currentTarget.GetComponent<Enemy>();
