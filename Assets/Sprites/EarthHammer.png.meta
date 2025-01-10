@@ -1,0 +1,710 @@
+fileFormatVersion: 2
+guid: 855afdfed1ba6b54eaad58db19cc541a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4543586225157405530
+    second: EarthHammer_0
+  - first:
+      213: 2709234281213919957
+    second: EarthHammer_1
+  - first:
+      213: -749998936105533429
+    second: EarthHammer_2
+  - first:
+      213: 1160553720357567693
+    second: EarthHammer_3
+  - first:
+      213: -8267276141307214593
+    second: EarthHammer_4
+  - first:
+      213: -7512317685855207660
+    second: EarthHammer_5
+  - first:
+      213: 1550800943389141561
+    second: EarthHammer_6
+  - first:
+      213: -6629737922782869618
+    second: EarthHammer_7
+  - first:
+      213: 5126959601411719664
+    second: EarthHammer_8
+  - first:
+      213: -8440288968405660920
+    second: EarthHammer_9
+  - first:
+      213: -6640900867051530161
+    second: EarthHammer_10
+  - first:
+      213: -6139581953254837422
+    second: EarthHammer_11
+  - first:
+      213: 2217625189531390377
+    second: EarthHammer_12
+  - first:
+      213: 3042411366648140836
+    second: EarthHammer_13
+  - first:
+      213: -2700285819791370732
+    second: EarthHammer_14
+  - first:
+      213: -5302218646305858865
+    second: EarthHammer_15
+  - first:
+      213: 6777091998366075119
+    second: EarthHammer_16
+  - first:
+      213: 7102400584637222516
+    second: EarthHammer_17
+  - first:
+      213: 2695167365801206264
+    second: EarthHammer_18
+  - first:
+      213: -5884824038516520272
+    second: EarthHammer_19
+  - first:
+      213: 6015947592501641431
+    second: EarthHammer_20
+  - first:
+      213: -918438449425537756
+    second: EarthHammer_21
+  - first:
+      213: -7611605769486886723
+    second: EarthHammer_22
+  - first:
+      213: -7642708650567694709
+    second: EarthHammer_23
+  - first:
+      213: -6001128487672767372
+    second: EarthHammer_24
+  - first:
+      213: 9201971031207680036
+    second: EarthHammer_25
+  - first:
+      213: -8132440863224843557
+    second: EarthHammer_26
+  - first:
+      213: 6165289692531468053
+    second: EarthHammer_27
+  - first:
+      213: 3720712093113902059
+    second: EarthHammer_28
+  - first:
+      213: 6657450755267667155
+    second: EarthHammer_29
+  - first:
+      213: 1699925920206222916
+    second: EarthHammer_30
+  - first:
+      213: -2671795076878637814
+    second: EarthHammer_31
+  - first:
+      213: -7255842541861584672
+    second: EarthHammer_32
+  - first:
+      213: -7073793302860158257
+    second: EarthHammer_33
+  - first:
+      213: -6042651934227992111
+    second: EarthHammer_34
+  - first:
+      213: 5438176502603015594
+    second: EarthHammer_35
+  - first:
+      213: -9057296751761943235
+    second: EarthHammer_36
+  - first:
+      213: -8825068388000029545
+    second: EarthHammer_37
+  - first:
+      213: -8050366652102045004
+    second: EarthHammer_38
+  - first:
+      213: 1007081924337125895
+    second: EarthHammer_39
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: EarthHammer_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 420
+        width: 105
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a48223b660f1f0c0800000000000000
+      internalID: -4543586225157405530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EarthHammer_1
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 420
+        width: 105
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d201118932299520800000000000000
+      internalID: 2709234281213919957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EarthHammer_2
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 420
+        width: 105
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b004287f0f77795f0800000000000000
+      internalID: -749998936105533429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EarthHammer_3
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 420
+        width: 105
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dccbba4b57d1b1010800000000000000
+      internalID: 1160553720357567693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EarthHammer_4
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 420
+        width: 105
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff44251c62cb44d80800000000000000
+      internalID: -8267276141307214593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EarthHammer_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 315
+        width: 105
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41f37beddd2eeb790800000000000000
+      internalID: -7512317685855207660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EarthHammer_6
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 315
+        width: 105
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93aec04dd3d858510800000000000000
+      internalID: 1550800943389141561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EarthHammer_7
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 315
+        width: 105
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e87479e2c707ef3a0800000000000000
+      internalID: -6629737922782869618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EarthHammer_8
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 315
+        width: 105
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f18cebf79e962740800000000000000
+      internalID: 5126959601411719664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EarthHammer_9
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 315
+        width: 105
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80b488cd6e11eda80800000000000000
+      internalID: -8440288968405660920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EarthHammer_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 210
+        width: 105
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f485fcea8d7c6d3a0800000000000000
+      internalID: -6640900867051530161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EarthHammer_11
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 210
+        width: 105
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 253b8de0eb2dbcaa0800000000000000
+      internalID: -6139581953254837422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EarthHammer_12
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 210
+        width: 105
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a11af24c5696ce10800000000000000
+      internalID: 2217625189531390377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EarthHammer_13
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 210
+        width: 105
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4245ca1c401d83a20800000000000000
+      internalID: 3042411366648140836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EarthHammer_14
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 210
+        width: 105
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4169f478a58a68ad0800000000000000
+      internalID: -2700285819791370732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EarthHammer_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 105
+        width: 105
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fca9c79cb3cba66b0800000000000000
+      internalID: -5302218646305858865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EarthHammer_16
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 105
+        width: 105
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe880c414411d0e50800000000000000
+      internalID: 6777091998366075119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EarthHammer_17
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 105
+        width: 105
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47e04db93bbc09260800000000000000
+      internalID: 7102400584637222516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EarthHammer_18
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 105
+        width: 105
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f16ec88078276520800000000000000
+      internalID: 2695167365801206264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EarthHammer_19
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 105
+        width: 105
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ba0b8257b7e45ea0800000000000000
+      internalID: -5884824038516520272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 7fa8cd63a1d805e4f85b0207b6f2ed8d
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      EarthHammer_0: -4543586225157405530
+      EarthHammer_1: 2709234281213919957
+      EarthHammer_10: -6640900867051530161
+      EarthHammer_11: -6139581953254837422
+      EarthHammer_12: 2217625189531390377
+      EarthHammer_13: 3042411366648140836
+      EarthHammer_14: -2700285819791370732
+      EarthHammer_15: -5302218646305858865
+      EarthHammer_16: 6777091998366075119
+      EarthHammer_17: 7102400584637222516
+      EarthHammer_18: 2695167365801206264
+      EarthHammer_19: -5884824038516520272
+      EarthHammer_2: -749998936105533429
+      EarthHammer_3: 1160553720357567693
+      EarthHammer_4: -8267276141307214593
+      EarthHammer_5: -7512317685855207660
+      EarthHammer_6: 1550800943389141561
+      EarthHammer_7: -6629737922782869618
+      EarthHammer_8: 5126959601411719664
+      EarthHammer_9: -8440288968405660920
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

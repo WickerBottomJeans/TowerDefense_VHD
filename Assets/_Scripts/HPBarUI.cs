@@ -17,6 +17,7 @@ public class HPBarUI : MonoBehaviour {
     }
 
     private void IHasHPBar_OnHPChanged(object sender, IHasHPBar.OnHPChangedEventArgs e) {
+        if (hpBar.fillAmount != 1) { }
         hpBar.fillAmount = e.HPNormalized;
         mpBar.fillAmount = e.MPNormalized;
         levelHeart.fillAmount = e.levelNormalized;

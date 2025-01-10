@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ThunderStrike : MonoBehaviour {
+public class ThunderStrike : MonoBehaviour, ISpecialAbility {
     public float damage = 300f;
     public float range = 1f;
     public float spawnTimer = 0f;
@@ -37,18 +37,18 @@ public class ThunderStrike : MonoBehaviour {
             spawnTimer -= Time.deltaTime;
         } else if (spawnTimer <= 0f && currentState != State.Strike) {
             currentState = State.Strike;
-            CastThunderStrike();
+            DealDamage();
             FireOnStateChanged(State.Strike);
         }
     }
 
-    private void CastThunderStrike() {
+    private void DealDamage() {
         foreach (Enemy enemy in enemiesInRange) {
             enemy.TakeDamage(damage);
         }
     }
 
-    public void Initialize(Vector2 targetLocation) {
+    public void Activate(Vector2 targetLocation) {
         transform.position = new Vector3(targetLocation.x, targetLocation.y, 0);
         spawnTimer = spawnTime;
     }
@@ -66,7 +66,7 @@ public class ThunderStrike : MonoBehaviour {
         }
     }
 
-    public float GetCooldown() {
+    public float GetCoolDown() {
         return cooldown;
     }
 
