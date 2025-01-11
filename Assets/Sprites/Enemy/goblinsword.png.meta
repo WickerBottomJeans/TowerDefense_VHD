@@ -1,0 +1,555 @@
+fileFormatVersion: 2
+guid: 3107cd69767486c4c9e27972c3c9a4fb
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1837830896318328027
+    second: goblinsword_0
+  - first:
+      213: -1662570426216421234
+    second: goblinsword_1
+  - first:
+      213: -8110537941278445712
+    second: goblinsword_2
+  - first:
+      213: 8051905966485507833
+    second: goblinsword_3
+  - first:
+      213: -3725825973336119000
+    second: goblinsword_4
+  - first:
+      213: -7691920711324495029
+    second: goblinsword_5
+  - first:
+      213: -6973559924285699994
+    second: goblinsword_6
+  - first:
+      213: -9175582817059872603
+    second: goblinsword_7
+  - first:
+      213: 6911299763095095672
+    second: goblinsword_8
+  - first:
+      213: 5469796490197286460
+    second: goblinsword_9
+  - first:
+      213: 6607137919049091068
+    second: goblinsword_10
+  - first:
+      213: -3929800196036055347
+    second: goblinsword_11
+  - first:
+      213: -6350651410508524359
+    second: goblinsword_12
+  - first:
+      213: -9071002018835662140
+    second: goblinsword_13
+  - first:
+      213: 3530812243095320009
+    second: goblinsword_14
+  - first:
+      213: 8085721788255965877
+    second: goblinsword_15
+  - first:
+      213: 988038201051330190
+    second: goblinsword_16
+  - first:
+      213: 6816305293598379640
+    second: goblinsword_17
+  - first:
+      213: -1408473307009808016
+    second: goblinsword_18
+  - first:
+      213: 6997741978114975577
+    second: goblinsword_19
+  - first:
+      213: -3092923678991214686
+    second: goblinsword_20
+  - first:
+      213: -6979546465786158074
+    second: goblinsword_21
+  - first:
+      213: 8412074681676469440
+    second: goblinsword_22
+  - first:
+      213: 723462625305788610
+    second: goblinsword_23
+  - first:
+      213: 6834390223922301395
+    second: goblinsword_24
+  - first:
+      213: 3481090569845367560
+    second: goblinsword_25
+  - first:
+      213: 1092952490297184190
+    second: goblinsword_26
+  - first:
+      213: -4898585751582351255
+    second: goblinsword_27
+  - first:
+      213: 7214735368898090302
+    second: goblinsword_28
+  - first:
+      213: -2040945566043023015
+    second: goblinsword_29
+  - first:
+      213: 61921202107988728
+    second: goblinsword_30
+  - first:
+      213: -1930908880342761714
+    second: goblinsword_31
+  - first:
+      213: 888203314285606377
+    second: goblinsword_32
+  - first:
+      213: -2156025589221158220
+    second: goblinsword_33
+  - first:
+      213: 7357911026846588345
+    second: goblinsword_34
+  - first:
+      213: -7634495216303570970
+    second: goblinsword_35
+  - first:
+      213: 8811464676475965509
+    second: goblinsword_36
+  - first:
+      213: 3587654836919731274
+    second: goblinsword_37
+  - first:
+      213: -1504481257092238919
+    second: goblinsword_38
+  - first:
+      213: 5896133974990516005
+    second: goblinsword_39
+  - first:
+      213: 7360200408062944346
+    second: goblinsword_40
+  - first:
+      213: -6088696698679766720
+    second: goblinsword_41
+  - first:
+      213: -8068694851976431111
+    second: goblinsword_42
+  - first:
+      213: -5579022734691876438
+    second: goblinsword_43
+  - first:
+      213: -3956866190863234995
+    second: goblinsword_44
+  - first:
+      213: -3334267677619508154
+    second: goblinsword_45
+  - first:
+      213: -5110993068763337847
+    second: goblinsword_46
+  - first:
+      213: 4980193158862027440
+    second: goblinsword_47
+  - first:
+      213: 2193250978655988642
+    second: goblinsword_48
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 48
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: goblinsword_11
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 199
+        width: 30
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcea20dea8b8679c0800000000000000
+      internalID: -3929800196036055347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: goblinsword_12
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 199
+        width: 30
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b45e487034fdd7a0800000000000000
+      internalID: -6350651410508524359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: goblinsword_13
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 200
+        width: 31
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4caf27e59b35d1280800000000000000
+      internalID: -9071002018835662140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: goblinsword_14
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 200
+        width: 37
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c5fb4e2707fff030800000000000000
+      internalID: 3530812243095320009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: goblinsword_15
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 199
+        width: 48
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b212ad5021463070800000000000000
+      internalID: 8085721788255965877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: goblinsword_16
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 199
+        width: 36
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e863e2e428736bd00800000000000000
+      internalID: 988038201051330190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: goblinsword_17
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 199
+        width: 31
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87ecb89dc81689e50800000000000000
+      internalID: 6816305293598379640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: goblinsword_18
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 199
+        width: 26
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0798f0c5df8147ce0800000000000000
+      internalID: -1408473307009808016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: goblinsword_19
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 199
+        width: 49
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 957e163e049fc1160800000000000000
+      internalID: 6997741978114975577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: goblinsword_20
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 199
+        width: 42
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a7955c0d4ab315d0800000000000000
+      internalID: -3092923678991214686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: goblinsword_21
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 199
+        width: 37
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 604ab75f77ba32f90800000000000000
+      internalID: -6979546465786158074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: c9313bd6afb252e4bab56123eca3d49c
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      goblinsword_0: 1837830896318328027
+      goblinsword_1: -1662570426216421234
+      goblinsword_10: 6607137919049091068
+      goblinsword_11: -3929800196036055347
+      goblinsword_12: -6350651410508524359
+      goblinsword_13: -9071002018835662140
+      goblinsword_14: 3530812243095320009
+      goblinsword_15: 8085721788255965877
+      goblinsword_16: 988038201051330190
+      goblinsword_17: 6816305293598379640
+      goblinsword_18: -1408473307009808016
+      goblinsword_19: 6997741978114975577
+      goblinsword_2: -8110537941278445712
+      goblinsword_20: -3092923678991214686
+      goblinsword_21: -6979546465786158074
+      goblinsword_22: 8412074681676469440
+      goblinsword_23: 723462625305788610
+      goblinsword_24: 6834390223922301395
+      goblinsword_25: 3481090569845367560
+      goblinsword_26: 1092952490297184190
+      goblinsword_27: -4898585751582351255
+      goblinsword_28: 7214735368898090302
+      goblinsword_29: -2040945566043023015
+      goblinsword_3: 8051905966485507833
+      goblinsword_30: 61921202107988728
+      goblinsword_31: -1930908880342761714
+      goblinsword_32: 888203314285606377
+      goblinsword_33: -2156025589221158220
+      goblinsword_34: 7357911026846588345
+      goblinsword_35: -7634495216303570970
+      goblinsword_36: 8811464676475965509
+      goblinsword_37: 3587654836919731274
+      goblinsword_38: -1504481257092238919
+      goblinsword_39: 5896133974990516005
+      goblinsword_4: -3725825973336119000
+      goblinsword_40: 7360200408062944346
+      goblinsword_41: -6088696698679766720
+      goblinsword_42: -8068694851976431111
+      goblinsword_43: -5579022734691876438
+      goblinsword_44: -3956866190863234995
+      goblinsword_45: -3334267677619508154
+      goblinsword_46: -5110993068763337847
+      goblinsword_47: 4980193158862027440
+      goblinsword_48: 2193250978655988642
+      goblinsword_5: -7691920711324495029
+      goblinsword_6: -6973559924285699994
+      goblinsword_7: -9175582817059872603
+      goblinsword_8: 6911299763095095672
+      goblinsword_9: 5469796490197286460
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

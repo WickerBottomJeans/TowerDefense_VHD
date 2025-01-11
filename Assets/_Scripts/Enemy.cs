@@ -68,7 +68,7 @@ public class Enemy : MonoBehaviour {
     }
 
     private void Die() {
-        DesTroySelf();
+        //DesTroySelf();
     }
 
     private void DesTroySelf() {

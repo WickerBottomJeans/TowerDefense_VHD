@@ -109,14 +109,16 @@ public class WaterSpell : MonoBehaviour, IProjectile {
         Destroy(gameObject);
     }
 
-    private void OnTriggerEnter2D(Collider2D other) {
-        if (other.gameObject.CompareTag("Enemy")) {
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Enemy"))
+        {
             // Apply damage to the enemy
-            Enemy enemy = other.gameObject.GetComponent<Enemy>();
-            if (enemy != null) {
-                enemy.TakeDamage(damage);
+            Monster monster = other.gameObject.GetComponent<Monster>();
+            if (monster != null)
+            {
+                monster.TakeDamage(damage);
             }
-
             //Stop the projectile from bouncing off and keep hitting enemy again
             isChasingTarget = false;
             isDoneChasing = true;
