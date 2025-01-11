@@ -290,9 +290,9 @@ GameObject:
   - component: {fileID: 1323737117663252522}
   - component: {fileID: 592518111090511448}
   - component: {fileID: 5398823778771054824}
-  - component: {fileID: 2453688890785030364}
   - component: {fileID: 7861553565038098411}
   - component: {fileID: 7061713073267090620}
+  - component: {fileID: 3674240089560589061}
   m_Layer: 0
   m_Name: goblinsword 1
   m_TagString: Enemy
@@ -393,23 +393,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &2453688890785030364
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2400808309104340447}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2bb0068e3a198e841acbaafd3e9f750b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHealth: 50
-  moveSpeed: 3
-  attackRange: 1.5
-  rewardGold: 10
-  healthBar: {fileID: 5705736624223771854}
 --- !u!50 &7861553565038098411
 Rigidbody2D:
   serializedVersion: 5
@@ -483,6 +466,24 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &3674240089560589061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2400808309104340447}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23b0e3573f5cbdd42b065d40baa1b974, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  speed: 2
+  mpGain: 5
+  expGain: 5
+  coinGain: 10
+  healthBar: {fileID: 5705736624223771854}
 --- !u!1 &4503488761896784378
 GameObject:
   m_ObjectHideFlags: 0

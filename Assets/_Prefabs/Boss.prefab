@@ -226,7 +226,7 @@ GameObject:
   - component: {fileID: 1212410335585527862}
   - component: {fileID: 8590033446937120252}
   - component: {fileID: 9184597755054276351}
-  - component: {fileID: 6547892878157769195}
+  - component: {fileID: 300394712705692469}
   m_Layer: 0
   m_Name: Boss
   m_TagString: Enemy
@@ -400,7 +400,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &6547892878157769195
+--- !u!114 &300394712705692469
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -409,13 +409,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 2274571752021828888}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2bb0068e3a198e841acbaafd3e9f750b, type: 3}
+  m_Script: {fileID: 11500000, guid: 23b0e3573f5cbdd42b065d40baa1b974, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 100
-  moveSpeed: 1
-  attackRange: 1.5
-  rewardGold: 100
+  speed: 1
+  mpGain: 5
+  expGain: 5
+  coinGain: 10
   healthBar: {fileID: 7353618984663074392}
 --- !u!1 &2862307971855886848
 GameObject:

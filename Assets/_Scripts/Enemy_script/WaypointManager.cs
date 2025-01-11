@@ -6,8 +6,8 @@ public class WaypointManager : MonoBehaviour
 
     void Awake()
     {
-        // Tự động tìm tất cả GameObject có tag "Waypoint"
-        GameObject[] waypointObjects = GameObject.FindGameObjectsWithTag("Waypoint");
+        // Tự động tìm tất cả GameObject có tag "WayPoints"
+        GameObject[] waypointObjects = GameObject.FindGameObjectsWithTag("WayPoints");
         waypoints = new Transform[waypointObjects.Length];
 
         // Sắp xếp waypoint theo tên (ví dụ: Waypoint1, Waypoint2, ...)

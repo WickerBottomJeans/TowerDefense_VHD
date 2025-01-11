@@ -30,10 +30,10 @@ public class EnemySpawner : MonoBehaviour
 
             currentEnemyCount++;
 
-            Monster monster = enemy.GetComponent<Monster>();
-            if (monster != null)
+            Enemy enemyComponent = enemy.GetComponent<Enemy>();
+            if (enemyComponent != null)
             {
-                monster.OnDeath += HandleEnemyDeath;
+                enemyComponent.OnEnemyDestroyed += HandleEnemyDeath;
             }
         }
         else
@@ -42,7 +42,7 @@ public class EnemySpawner : MonoBehaviour
         }
     }
 
-    void HandleEnemyDeath(Monster monster)
+    void HandleEnemyDeath(object sender, Enemy.OnEnemyDestroyedEventArgs args)
     {
         currentEnemyCount--;
     }
