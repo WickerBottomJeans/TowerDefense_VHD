@@ -47,7 +47,6 @@ public class EnemySpawner : MonoBehaviour
         currentEnemyCount--;
     }
 
-
     void OnDisable()
     {
         // Dừng spawning khi Spawner bị vô hiệu hóa

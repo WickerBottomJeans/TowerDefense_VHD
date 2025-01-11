@@ -112,10 +112,10 @@ public class WaterSpell : MonoBehaviour, IProjectile {
         if (other.gameObject.CompareTag("Enemy"))
         {
             // Apply damage to the enemy
-            Monster monster = other.gameObject.GetComponent<Monster>();
-            if (monster != null)
+            Enemy enemy = other.gameObject.GetComponent<Enemy>();
+            if (enemy != null)
             {
-                monster.TakeDamage(damage);
+                enemy.TakeDamage(damage);
             }
             //Stop the projectile from bouncing off and keep hitting enemy again
             isChasingTarget = false;
