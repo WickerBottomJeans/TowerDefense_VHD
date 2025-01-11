@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using UnityEngine;
 
 public class Enemy : MonoBehaviour {
@@ -8,9 +8,9 @@ public class Enemy : MonoBehaviour {
 
     private float currentHealth;
     public float speed = 2f;
-    public float mpGain = 5f;
-    public float expGain = 5f;
-    public int coinGain = 10;
+    public float mpGain = 5f; // quái chết trả về 
+    public float expGain = 5f; //quái chết trả về 
+    public int coinGain = 10; //quái chết trả về 
 
     [Header("References")]
     public Transform[] waypoints;       // Path waypoints for the enemies to follow
@@ -21,7 +21,7 @@ public class Enemy : MonoBehaviour {
         currentHealth = maxHealth;
     }
 
-    public event EventHandler<OnEnemyDestroyedEventArgs> OnEnemyDestroyed;
+    public event EventHandler<OnEnemyDestroyedEventArgs> OnEnemyDestroyed; //
 
     public class OnEnemyDestroyedEventArgs : EventArgs {
         public float mpGain;
@@ -85,7 +85,8 @@ public class Enemy : MonoBehaviour {
         Destroy(gameObject);
     }
 
-    public float getMPGain() {
+    // phải có
+    public float getMPGain() {   
         return mpGain;
     }
 
