@@ -20,7 +20,7 @@ public abstract class _BaseTurret : MonoBehaviour, IHasHPBar {
     protected bool specialSkillUnlocked = false;
     protected GameObject currentTarget;
     protected IProjectile iprojectile;
-    protected GameObject specialSkillPrefab;
+    public ISpecialAbility iSpecialAbility;
     [SerializeField] protected float currentHP, currentMP, currentAttackRange, currentFireRate;
     [SerializeField] protected float currentMaxHP, currentMaxMP, currentMaxAttackRange, currentMaxFireRate;
     protected HashSet<GameObject> enemiesInRange = new HashSet<GameObject>();
@@ -70,7 +70,6 @@ public abstract class _BaseTurret : MonoBehaviour, IHasHPBar {
     protected void EnemyScript_OnEnemyDestroyed(object sender, Enemy.OnEnemyDestroyedEventArgs e) {
         //Gain MP
         currentMP += e.mpGain;
-        Debug.Log("Mana += " + e.mpGain);
         if (currentMP >= currentMaxMP) {
             currentMP = currentMaxMP;
         }
@@ -116,8 +115,6 @@ public abstract class _BaseTurret : MonoBehaviour, IHasHPBar {
         currentAttackRange = Mathf.Min(currentAttackRange + (currentMaxAttackRange - currentAttackRange), currentMaxAttackRange);
         currentFireRate = Mathf.Min(currentFireRate + (currentMaxFireRate - currentFireRate), currentMaxFireRate);
 
-        specialSkillPrefab = turretStatsSO.specialSkillPrefab;
-
         FireOnHPChanged();
     }
 
@@ -128,6 +125,8 @@ public abstract class _BaseTurret : MonoBehaviour, IHasHPBar {
 
         currentMP = 0f;
         GetComponent<CircleCollider2D>().radius = currentMaxAttackRange;
+        iprojectile = turretStatsSO.projectilePrefab.GetComponent<IProjectile>();
+        iSpecialAbility = turretStatsSO.specialAbilityGameObject.GetComponent<ISpecialAbility>();
         specialSkillButton = transform.Find("SpecialSkillButtonCanvas/SpecialSkillButton")?.GetComponent<SpecialSkillButton>();
     }
 

@@ -103,10 +103,8 @@ public class WaterSpell : MonoBehaviour, IProjectile {
 
     private void Enemy_OnEnemyDestroyed(object sender, EventArgs e) {
         FireOnStateChanged(State.Destroy);
-    }
 
-    public void DestroyAfterAnimation() {
-        Destroy(gameObject);
+        //Destroy(gameObject);
     }
 
     private void OnTriggerEnter2D(Collider2D other)

@@ -908,8 +908,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyPrefab: {fileID: 2274571752021828888, guid: adb5263482fd2be438f4e3ead5547bbb, type: 3}
   spawnPoint: {fileID: 409228240}
-  spawnInterval: 10
-  maxEnemies: 100
+  waypoints: []
+  spawnTimerMax: 5
 --- !u!4 &409228240
 Transform:
   m_ObjectHideFlags: 0
@@ -1697,8 +1697,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyPrefab: {fileID: 2400808309104340447, guid: 48d02db2849c4ad46965c31ba28ba5e3, type: 3}
   spawnPoint: {fileID: 1887679860}
-  spawnInterval: 2
-  maxEnemies: 100
+  waypoints: []
+  spawnTimerMax: 5
 --- !u!4 &1887679860
 Transform:
   m_ObjectHideFlags: 0
@@ -7065,11 +7065,11 @@ PrefabInstance:
       objectReference: {fileID: 7157970720339516129, guid: de42ccac5c4517e45b98ae16c3136a8b, type: 3}
     - target: {fileID: 2023668180802820400, guid: 7aa23d77f312aa84ba942177bf41e93a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.09049806
+      value: 8.16
       objectReference: {fileID: 0}
     - target: {fileID: 2023668180802820400, guid: 7aa23d77f312aa84ba942177bf41e93a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.12066275
+      value: 5.33
       objectReference: {fileID: 0}
     - target: {fileID: 2023668180802820400, guid: 7aa23d77f312aa84ba942177bf41e93a, type: 3}
       propertyPath: m_LocalPosition.z

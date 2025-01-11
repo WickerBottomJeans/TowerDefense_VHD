@@ -48,9 +48,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 50
-  speed: 2
+  speed: 2.5
   mpGain: 5
-  expGain: 500
+  expGain: 20
+  coinGain: 10
   waypoints: []
 --- !u!58 &8379145576025570492
 CircleCollider2D:
@@ -87,7 +88,7 @@ CircleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 0.4
+  m_Radius: 0.004
 --- !u!50 &1348402151565377327
 Rigidbody2D:
   serializedVersion: 5
@@ -102,7 +103,7 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 17
   m_LinearDamping: 1
-  m_AngularDamping: 0.05
+  m_AngularDamping: 0.3
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -213,7 +214,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 8498479158080882289, guid: 8ea9607814c5ed74abf4d5dc9a6106d6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

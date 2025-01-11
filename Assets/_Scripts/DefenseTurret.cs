@@ -26,7 +26,10 @@ public class DefenseTurret : _BaseTurret {
     public override void AttackEnemy() {
         //Attack closest enemy
         currentTarget = FindEnemy();
-        if (currentTarget == null) return;
+        if (currentTarget == null) {
+            DestroySword();
+            return;
+        }
 
         Enemy enemyScript = currentTarget.GetComponent<Enemy>();
         if (enemyScript != null && !subscribedEnemies.Contains(currentTarget)) {

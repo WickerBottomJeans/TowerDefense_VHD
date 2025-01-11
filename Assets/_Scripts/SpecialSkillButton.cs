@@ -22,7 +22,7 @@ public class SpecialSkillButton : MonoBehaviour {
         turret = transform.parent.parent.GetComponentInChildren<_BaseTurret>();
 
         //set the cooldown
-        cooldownTime = turret.turretStatsSO.specialSkillPrefab.GetComponent<ThunderStrike>().GetCooldown();
+        cooldownTime = turret.iSpecialAbility.GetCoolDown();
 
         specialSkillButton.enabled = false;
         cooldownMask.fillAmount = 0f; // Ensure the mask is not visible initially

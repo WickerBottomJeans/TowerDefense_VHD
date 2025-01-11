@@ -70,7 +70,6 @@ public class FunSpell : MonoBehaviour, IProjectile {
             // Transition from chilling to chasing
             isChasingTarget = true;
             FireOnStateChanged(State.Idle);
-            Debug.Log("Being idle");
             speed *= speedMultiplier;
         }
     }

@@ -1,0 +1,11 @@
+fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/_Prefabs/Boss.prefab.meta
+guid: 1f9527fa9b19292448dd6266c64992e8
+========
+guid: 39cbb28554f328044b81a2a656205e0c
+>>>>>>>> d150649914668d812e5f834b97957fe896b30fa9:Assets/_Prefabs/CoinManager.prefab.meta
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
