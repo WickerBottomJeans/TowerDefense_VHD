@@ -11,13 +11,13 @@ public class Enemy : MonoBehaviour
     public float mpGain = 5f; // quái chết trả về
     public float expGain = 5f; // quái chết trả về
     public int coinGain = 10; // quái chết trả về
-
     public float attackDamage = 10f; // Sát thương khi tấn công trụ
     public float attackCooldown = 2f; // Thời gian hồi giữa các đòn tấn công
 
     [Header("References")]
     public Slider healthBar; // Thanh máu bên trên
     private Transform[] waypoints; // Path waypoints for the enemies to follow
+    private Transform targetTower; // Trụ mục tiêu
 
     private int currentWaypointIndex = 0; // Index of the next waypoint
     private bool isDead = false;
@@ -49,14 +49,8 @@ public class Enemy : MonoBehaviour
             Debug.LogError("WaypointManager not found in the scene.");
         }
 
-        // Thêm Collider nếu chưa có
-        if (GetComponent<Collider>() == null)
-        {
-            gameObject.AddComponent<BoxCollider>();
-        }
-
         // Tìm trụ mục tiêu dựa trên tag
-        GameObject tower = GameObject.FindGameObjectWithTag("Tower");
+        GameObject tower = GameObject.FindGameObjectWithTag("Turret");
         if (tower != null)
         {
             targetTower = tower.transform;
@@ -65,11 +59,24 @@ public class Enemy : MonoBehaviour
         {
             Debug.LogError("Tower not found in the scene. Ensure it has the 'Tower' tag.");
         }
+
+        // Thêm Collider nếu chưa có
+        if (GetComponent<Collider>() == null)
+        {
+            gameObject.AddComponent<BoxCollider>();
+        }
     }
 
     private void Update()
     {
-        if (!isDead && waypoints != null && waypoints.Length > 0)
+        if (isDead) return;
+
+        // Kiểm tra nếu đã đến trụ
+        if (targetTower != null && Vector3.Distance(transform.position, targetTower.position) <= 2.5f)
+        {
+            AttackTower();
+        }
+        else if (waypoints != null && waypoints.Length > 0)
         {
             MoveAlongWaypoints();
         }
@@ -88,12 +95,32 @@ public class Enemy : MonoBehaviour
             {
                 currentWaypointIndex++;
 
-                if (currentWaypointIndex >= waypoints.Length)
+                if (currentWaypointIndex >= waypoints.Length && targetTower != null)
                 {
-                    ReachDestination();
+                    // Hướng đến trụ sau khi đi hết waypoint
+                    targetTower = GameObject.FindGameObjectWithTag("Turret")?.transform;
                 }
             }
         }
+    }
+
+    private void AttackTower()
+    {
+        if (attackTimer <= 0f)
+        {
+            // Tấn công trụ
+            _BaseTurret tower = targetTower.GetComponent<_BaseTurret>();
+            if (tower != null)
+            {
+                tower.TakeDamage(attackDamage);
+                Debug.Log($"Enemy attacked the tower for {attackDamage} damage.");
+            }
+
+            // Đặt lại bộ đếm thời gian
+            attackTimer = attackCooldown;
+        }
+
+        attackTimer -= Time.deltaTime;
     }
 
     private void ReachDestination()
@@ -153,6 +180,6 @@ public class Enemy : MonoBehaviour
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, 0.1f);
+        Gizmos.DrawWireSphere(transform.position, 1.5f); // Vẽ phạm vi tấn công
     }
 }
