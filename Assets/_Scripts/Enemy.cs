@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
@@ -15,14 +16,20 @@ public class Enemy : MonoBehaviour
     public float attackDamage = 10f; // Sát thương khi tấn công trụ
     public float attackCooldown = 2f; // Thời gian hồi giữa các đòn tấn công
 
+    [Header("Detection Settings")]
+    public float detectRange = 1f;
+    public float attackRange = 0.5f;
+
     [Header("References")]
     public Slider healthBar; // Thanh máu bên trên
     private Transform[] waypoints; // Path waypoints for the enemies to follow
-    private Transform targetTower; // Trụ mục tiêu
 
+    private List<GameObject> turretInRange = new List<GameObject>();
+    private GameObject targetTurret;
     private int currentWaypointIndex = 0; // Index of the next waypoint
-    private bool isAttackingTower = false;
     private float attackTimer = 0f; // Bộ đếm thời gian cho tấn công
+
+    private CircleCollider2D circleCollider2D;
 
     public event EventHandler<OnEnemyDestroyedEventArgs> OnEnemyDestroyed; //
 
@@ -49,7 +56,9 @@ public class Enemy : MonoBehaviour
             Debug.LogError("WaypointManager not found in the scene.");
         }
 
-        FindTurret();
+        circleCollider2D = gameObject.AddComponent<CircleCollider2D>();
+        circleCollider2D.isTrigger = true;
+        circleCollider2D.radius = detectRange;
 
         // Thêm Collider nếu chưa có
         if (GetComponent<Collider>() == null)
@@ -58,68 +67,74 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    private void FindTurret()
-    {
-        // Tìm trụ mục tiêu dựa trên tag
-        GameObject tower = GameObject.FindGameObjectWithTag("Turret");
-        if (tower != null)
-        {
-            targetTower = tower.transform;
-            Debug.Log("New tower found, heading to attack.");
-        }
-        else
-        {
-            targetTower = null; // Không có trụ trong cảnh
-            Debug.Log("No tower found in the scene.");
-        }
-    }
-
-    //private void Update()
-    //{
-
-    //    // Kiểm tra nếu đã đến trụ
-    //    if (targetTower != null && Vector3.Distance(transform.position, targetTower.position) <= 2.5f)
-    //    {
-    //        AttackTower();
-    //    }
-    //    else if (waypoints != null && waypoints.Length > 0)
-    //    {
-    //        MoveAlongWaypoints();
-    //    }
-    //}
     private void Update()
     {
-        // Cập nhật trụ nếu không có
-        if (targetTower == null)
-        {
-            FindTurret(); // Tìm trụ mới nếu có
-        }
+        attackTimer -= Time.deltaTime;
 
-        // Kiểm tra nếu đã đến trụ
-        if (targetTower != null && Vector3.Distance(transform.position, targetTower.position) <= 2.5f)
+        // Check for turrets in range
+        if (turretInRange.Count > 0)
         {
-            AttackTower();
+            targetTurret = FindTurret();
+            if (targetTurret != null)
+            {
+                float distanceToTurret = Vector3.Distance(transform.position, targetTurret.transform.position);
+                // Move toward turret if not within attack range
+                if (distanceToTurret > attackRange)
+                {
+                    MoveToTarget(targetTurret.transform.position);
+                }
+                // Attack if within range and cooldown is ready
+                else if (attackTimer <= 0)
+                {
+                    AttackTower();
+                }
+            }
         }
+        // If no turrets are detected or turret destroyed, follow waypoints
         else if (waypoints != null && waypoints.Length > 0)
         {
             MoveAlongWaypoints();
         }
-        Debug.Log(targetTower == null);
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Turret"))
+        {
+            turretInRange.Add(collision.gameObject);
+        }
+    }
 
-    //private void MoveAlongWaypoints()
-    //{
-    //    if (currentWaypointIndex < waypoints.Length)
-    //    {
-    //        Transform targetWaypoint = waypoints[currentWaypointIndex];
-    //        Vector3 direction = (targetWaypoint.position - transform.position).normalized;
-    //        transform.position += direction * speed * Time.deltaTime;
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag("Turret"))
+        {
+            turretInRange.Remove(other.gameObject);
+        }
+    }
 
-    //        // Check if the enemy has reached the waypoint
-    //        if (Vector3.Distance(transform.position, targetWaypoint.position) < 0.1f)
-    //        {
-    //            currentWaypointIndex++;
+    private GameObject FindTurret()
+    {
+        GameObject closestTurret = null;
+        float shortestDistance = Mathf.Infinity;
+
+        foreach (GameObject turret in turretInRange)
+        {
+            float distanceToTurret = Vector3.Distance(transform.position, turret.transform.position);
+            if (distanceToTurret < shortestDistance)
+            {
+                shortestDistance = distanceToTurret;
+                closestTurret = turret;
+            }
+        }
+        return closestTurret;
+    }
+
+    private void MoveToTarget(Vector3 targetPosition)
+    {
+        Vector3 direction = (targetPosition - transform.position).normalized;
+        transform.position += direction * speed * Time.deltaTime;
+    }
 
     private void MoveAlongWaypoints()
     {
@@ -133,34 +148,30 @@ public class Enemy : MonoBehaviour
             if (Vector3.Distance(transform.position, targetWaypoint.position) < 0.1f)
             {
                 currentWaypointIndex++;
-
-                if (currentWaypointIndex >= waypoints.Length && targetTower == null)
-                {
-                    FindTurret(); // Tìm trụ nếu waypoint kết thúc
-                }
             }
         }
     }
 
     private void AttackTower()
     {
-        if (attackTimer <= 2.0f)
+        if (targetTurret != null)
         {
-            if (targetTower != null)
+            _BaseTurret tower = targetTurret.GetComponent<_BaseTurret>();
+            if (tower != null)
             {
-                _BaseTurret tower = targetTower.GetComponent<_BaseTurret>();
-                if (tower != null)
-                {
-                    // Kiểm tra nếu trụ đã bị phá hủy
-                    FindTurret(); // Tìm trụ mới nếu có
-                    tower.TakeDamage(attackDamage);
-            }
+                tower.TakeDamage(attackDamage);
+                Debug.Log($"Enemy attacked the tower for {attackDamage} damage.");
 
-            // Đặt lại bộ đếm thời gian
-            attackTimer = attackCooldown;
+                // If the turret is destroyed, clear it from the target and continue to the next waypoint
+                //if (tower.IsDestroyed())
+                //{
+                //    turretInRange.Remove(targetTurret);
+                //    targetTurret = null;
+                //}
+            }
         }
 
-        attackTimer -= Time.deltaTime;
+        attackTimer = attackCooldown; // Đặt lại thời gian hồi
     }
 
     public void TakeDamage(float damage)
@@ -204,5 +215,13 @@ public class Enemy : MonoBehaviour
     public float getEXPGain()
     {
         return expGain;
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, detectRange); // Vẽ phạm vi phát hiện
+        Gizmos.color = Color.green;
+        Gizmos.DrawWireSphere(transform.position, attackRange); // Vẽ phạm vi tấn công
     }
 }

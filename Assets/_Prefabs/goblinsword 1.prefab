@@ -485,6 +485,8 @@ MonoBehaviour:
   coinGain: 10
   attackDamage: 10
   attackCooldown: 2
+  detectRange: 1
+  attackRange: 0.5
   healthBar: {fileID: 5705736624223771854}
 --- !u!1 &4503488761896784378
 GameObject:
