@@ -36,6 +36,9 @@ public abstract class _BaseTurret : MonoBehaviour, IHasHPBar {
     protected void Update() {
         RotateTurretPivotTowardsTarget();
         HandleAttackCooldown();
+        if (currentHP == 0) {
+            Die();
+        }
     }
 
     protected void Start() {
