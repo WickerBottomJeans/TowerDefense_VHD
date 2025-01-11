@@ -121,14 +121,6 @@ public class Enemy : MonoBehaviour
     //        {
     //            currentWaypointIndex++;
 
-    //            if (currentWaypointIndex >= waypoints.Length && targetTower != null)
-    //            {
-    //                // Hướng đến trụ sau khi đi hết waypoint
-    //                targetTower = GameObject.FindGameObjectWithTag("Turret")?.transform;
-    //            }
-    //        }
-    //    }
-    //}
     private void MoveAlongWaypoints()
     {
         if (currentWaypointIndex < waypoints.Length)
@@ -150,25 +142,6 @@ public class Enemy : MonoBehaviour
         }
     }
 
-
-    //private void AttackTower()
-    //{
-    //    if (attackTimer <= 0f)
-    //    {
-    //        // Tấn công trụ
-    //        _BaseTurret tower = targetTower.GetComponent<_BaseTurret>();
-    //        if (tower != null)
-    //        {
-    //            tower.TakeDamage(attackDamage);
-    //            Debug.Log($"Enemy attacked the tower for {attackDamage} damage.");
-    //        }
-
-    //        // Đặt lại bộ đếm thời gian
-    //        attackTimer = attackCooldown;
-    //    }
-
-    //    attackTimer -= Time.deltaTime;
-    //}
     private void AttackTower()
     {
         if (attackTimer <= 2.0f)
@@ -181,8 +154,6 @@ public class Enemy : MonoBehaviour
                     // Kiểm tra nếu trụ đã bị phá hủy
                     FindTurret(); // Tìm trụ mới nếu có
                     tower.TakeDamage(attackDamage);
-                    Debug.Log($"Enemy attacked the tower for {attackDamage} damage.");
-                }
             }
 
             // Đặt lại bộ đếm thời gian
@@ -192,12 +163,8 @@ public class Enemy : MonoBehaviour
         attackTimer -= Time.deltaTime;
     }
 
-
-
     public void TakeDamage(float damage)
     {
-      
-
         currentHealth -= damage;
         healthBar.value = currentHealth;
 
@@ -209,7 +176,6 @@ public class Enemy : MonoBehaviour
 
     private void Die()
     {
-      
         DesTroySelf();
     }
 
@@ -238,11 +204,5 @@ public class Enemy : MonoBehaviour
     public float getEXPGain()
     {
         return expGain;
-    }
-
-    private void OnDrawGizmos()
-    {
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, 2.5f); // Vẽ phạm vi tấn công
     }
 }
