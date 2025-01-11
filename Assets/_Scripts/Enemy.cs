@@ -12,12 +12,17 @@ public class Enemy : MonoBehaviour
     public float expGain = 5f; // quái chết trả về
     public int coinGain = 10; // quái chết trả về
 
+    public float attackDamage = 10f; // Sát thương khi tấn công trụ
+    public float attackCooldown = 2f; // Thời gian hồi giữa các đòn tấn công
+
     [Header("References")]
     public Slider healthBar; // Thanh máu bên trên
     private Transform[] waypoints; // Path waypoints for the enemies to follow
 
     private int currentWaypointIndex = 0; // Index of the next waypoint
     private bool isDead = false;
+    private bool isAttackingTower = false;
+    private float attackTimer = 0f; // Bộ đếm thời gian cho tấn công
 
     public event EventHandler<OnEnemyDestroyedEventArgs> OnEnemyDestroyed; //
 
@@ -48,6 +53,17 @@ public class Enemy : MonoBehaviour
         if (GetComponent<Collider>() == null)
         {
             gameObject.AddComponent<BoxCollider>();
+        }
+
+        // Tìm trụ mục tiêu dựa trên tag
+        GameObject tower = GameObject.FindGameObjectWithTag("Tower");
+        if (tower != null)
+        {
+            targetTower = tower.transform;
+        }
+        else
+        {
+            Debug.LogError("Tower not found in the scene. Ensure it has the 'Tower' tag.");
         }
     }
 
