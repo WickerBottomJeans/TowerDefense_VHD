@@ -1485,11 +1485,11 @@ MonoBehaviour:
   - {fileID: 2274571752021828888, guid: adb5263482fd2be438f4e3ead5547bbb, type: 3}
   spawnPoints:
   - {fileID: 1119971744}
-  maxEnemies: 100
+  maxEnemies: 1000
   maxBosses: 20
   spawnInterval: 2
   bossSpawnInterval: 30
-  totalDuration: 60
+  totalDuration: 0
 --- !u!4 &778203211
 Transform:
   m_ObjectHideFlags: 0

@@ -127,6 +127,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 352414412385705457, guid: 3a783a5d9b629e742acc3be1cd75c914, type: 3}
+      propertyPath: winCanvasPrefab
+      value: 
+      objectReference: {fileID: 5426605233072698303, guid: b5c496d5b15307d4d803267e83417c36, type: 3}
     - target: {fileID: 3481179945691850324, guid: 3a783a5d9b629e742acc3be1cd75c914, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.6074791
@@ -1283,7 +1287,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6fcb8ea825e851e44acd0e49a1471cda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnMode: 1
+  spawnMode: 0
   enemyPrefabs:
   - {fileID: 2400808309104340447, guid: 48d02db2849c4ad46965c31ba28ba5e3, type: 3}
   - {fileID: 6690305332689179794, guid: d09c2cece3b33db49af137cc2b0b608a, type: 3}
@@ -1291,11 +1295,11 @@ MonoBehaviour:
   - {fileID: 2274571752021828888, guid: adb5263482fd2be438f4e3ead5547bbb, type: 3}
   spawnPoints:
   - {fileID: 1512811667}
-  maxEnemies: 100
-  maxBosses: 20
+  maxEnemies: 10
+  maxBosses: 2
   spawnInterval: 2
   bossSpawnInterval: 30
-  totalDuration: 60
+  totalDuration: 0
 --- !u!4 &1743884559
 Transform:
   m_ObjectHideFlags: 0

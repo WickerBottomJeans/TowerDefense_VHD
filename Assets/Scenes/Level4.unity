@@ -127,6 +127,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 352414412385705457, guid: 3a783a5d9b629e742acc3be1cd75c914, type: 3}
+      propertyPath: winCanvasPrefab
+      value: 
+      objectReference: {fileID: 5426605233072698303, guid: b5c496d5b15307d4d803267e83417c36, type: 3}
     - target: {fileID: 3481179945691850324, guid: 3a783a5d9b629e742acc3be1cd75c914, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.6074791
