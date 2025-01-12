@@ -85,7 +85,10 @@ public class TurretPlacer : MonoBehaviour {
             SpriteRenderer spriteRenderer = currentGhost.AddComponent<SpriteRenderer>();
             spriteRenderer.sprite = currentTurretStats.ghostSprite;
             spriteRenderer.color = new Color(1f, 1f, 1f, 0.5f);
-            currentGhost.transform.position = placementTilemap.CellToWorld(tilePosition);
+
+            // Adjust position to bottom-center of the tile
+            Vector3 adjustedPosition = placementTilemap.CellToWorld(tilePosition) + new Vector3(placementTilemap.cellSize.x / 2, 0, 0);
+            currentGhost.transform.position = adjustedPosition;
         }
     }
 
@@ -97,7 +100,8 @@ public class TurretPlacer : MonoBehaviour {
         if (IsTileValidForPlacement(tilePosition)) {
             CoinManager coinManager = CoinManager.Instance;
             if (coinManager != null && coinManager.TrySpendCoins((int)currentTurretStats.turretCost)) {
-                Vector3 worldPosition = placementTilemap.CellToWorld(tilePosition);
+                // Adjust position to bottom-center of the tile
+                Vector3 worldPosition = placementTilemap.CellToWorld(tilePosition) + new Vector3(placementTilemap.cellSize.x / 2, 0, 0);
                 Instantiate(currentTurretStats.turretPrefab.gameObject, worldPosition, Quaternion.identity);
                 placementTilemap.SetTile(tilePosition, null);
                 isPlacing = false;
