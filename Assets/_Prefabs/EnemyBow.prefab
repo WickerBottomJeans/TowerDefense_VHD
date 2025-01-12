@@ -328,15 +328,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b16acf886ea13354f878c9ff9d0bdb69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
-  speed: 2
+  maxHealth: 70
+  speed: 1.5
   mpGain: 5
   expGain: 5
   coinGain: 10
   attackDamage: 10
   attackCooldown: 2
-  detectRange: 1.5
-  attackRange: 1
+  detectRange: 2.5
+  attackRange: 1.5
   healthBar: {fileID: 1202412823430303787}
   arrowPrefab: {fileID: 4474028694157505921, guid: 6e9637e429c15b84ba202928e06e478b, type: 3}
   arrowSpawnPoint: {fileID: 741376559233920289}

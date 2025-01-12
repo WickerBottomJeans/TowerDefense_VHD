@@ -51,7 +51,7 @@ public class Enemy : MonoBehaviour {
         turretInRange.Remove(turret);
     }
 
-    protected virtual void Start() // Đổi private thành protected virtual
+    protected virtual void Start() 
     {
         currentHealth = maxHealth;
         healthBar.maxValue = maxHealth;
@@ -77,7 +77,7 @@ public class Enemy : MonoBehaviour {
         }
     }
 
-    protected virtual void Update() // Đổi private thành protected virtual
+    protected virtual void Update() 
     {
         attackTimer -= Time.deltaTime;
 
@@ -110,13 +110,13 @@ public class Enemy : MonoBehaviour {
         return closestTurret;
     }
 
-    protected virtual void MoveToTarget(Vector3 targetPosition) // Đổi private thành protected
+    protected virtual void MoveToTarget(Vector3 targetPosition) 
     {
         Vector3 direction = (targetPosition - transform.position).normalized;
         transform.position += direction * speed * Time.deltaTime;
     }
 
-    protected virtual void MoveAlongWaypoints() // Đổi private thành protected
+    protected virtual void MoveAlongWaypoints() 
     {
         if (currentWaypointIndex < waypoints.Length) {
             Transform targetWaypoint = waypoints[currentWaypointIndex];
@@ -146,7 +146,7 @@ public class Enemy : MonoBehaviour {
         attackTimer = attackCooldown;
     }
 
-    public virtual void TakeDamage(float damage) // Đổi private thành public virtual
+    public virtual void TakeDamage(float damage) 
     {
         currentHealth -= damage;
         healthBar.value = currentHealth;
@@ -156,12 +156,12 @@ public class Enemy : MonoBehaviour {
         }
     }
 
-    protected virtual void Die() // Đổi private thành protected virtual
+    protected virtual void Die() 
     {
         DesTroySelf();
     }
 
-    protected virtual void DesTroySelf() // Đổi private thành protected virtual
+    protected virtual void DesTroySelf() 
     {
         OnEnemyDestroyed?.Invoke(this, new OnEnemyDestroyedEventArgs {
             mpGain = mpGain,
