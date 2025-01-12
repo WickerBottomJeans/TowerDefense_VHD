@@ -341,7 +341,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 50
-  speed: 0.5
+  speed: 1
   mpGain: 50
   expGain: 50
   coinGain: 100

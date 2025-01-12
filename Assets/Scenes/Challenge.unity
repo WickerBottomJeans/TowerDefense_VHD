@@ -1006,54 +1006,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1867030288}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &409228238
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 409228240}
-  - component: {fileID: 409228239}
-  m_Layer: 0
-  m_Name: Spawn_Boss
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!114 &409228239
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 409228238}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2e6a164bd33c8654eb4efb972fc34fe2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemyPrefab: {fileID: 2274571752021828888, guid: adb5263482fd2be438f4e3ead5547bbb, type: 3}
-  spawnPoint: {fileID: 409228240}
-  spawnInterval: 5
-  maxEnemies: 10
---- !u!4 &409228240
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 409228238}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -15.93, y: 0.93, z: 0.0828048}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1496,6 +1448,65 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1f9527fa9b19292448dd6266c64992e8, type: 3}
+--- !u!1 &778203209
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 778203211}
+  - component: {fileID: 778203210}
+  m_Layer: 0
+  m_Name: SpawnController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &778203210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 778203209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fcb8ea825e851e44acd0e49a1471cda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnMode: 1
+  enemyPrefabs:
+  - {fileID: 2400808309104340447, guid: 48d02db2849c4ad46965c31ba28ba5e3, type: 3}
+  - {fileID: 6690305332689179794, guid: d09c2cece3b33db49af137cc2b0b608a, type: 3}
+  bossPrefabs:
+  - {fileID: 2274571752021828888, guid: adb5263482fd2be438f4e3ead5547bbb, type: 3}
+  spawnPoints:
+  - {fileID: 1119971744}
+  maxEnemies: 100
+  maxBosses: 20
+  spawnInterval: 2
+  bossSpawnInterval: 30
+  totalDuration: 60
+--- !u!4 &778203211
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 778203209}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -13.53, y: 0.75, z: 300.61392}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1119971744}
+  - {fileID: 1867030288}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &869492354
 GameObject:
   m_ObjectHideFlags: 0
@@ -1605,7 +1616,7 @@ Transform:
   - {fileID: 131465309}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1057014458
+--- !u!1 &1119971743
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1613,45 +1624,28 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1057014460}
-  - component: {fileID: 1057014459}
+  - component: {fileID: 1119971744}
   m_Layer: 0
-  m_Name: Spawn_EnemyBow
+  m_Name: Spawn_Point
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!114 &1057014459
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1057014458}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2e6a164bd33c8654eb4efb972fc34fe2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemyPrefab: {fileID: 2156438117834231868, guid: 3436c381fec18464ca3c63876bfe4ba8, type: 3}
-  spawnPoint: {fileID: 1057014460}
-  spawnInterval: 1
-  maxEnemies: 10
---- !u!4 &1057014460
+  m_IsActive: 1
+--- !u!4 &1119971744
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1057014458}
+  m_GameObject: {fileID: 1119971743}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -15.93, y: 0.93, z: 0.0828048}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.44000053, y: 0.26999998, z: -297.50092}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 778203211}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1135787189
 GameObject:
@@ -1771,8 +1765,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1867030287}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.06, y: 4.05, z: 0.0828048}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 14.59, y: 3.3000002, z: -300.53113}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1783,7 +1777,7 @@ Transform:
   - {fileID: 269220504}
   - {fileID: 1135787190}
   - {fileID: 941172582}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 778203211}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1867030289
 MonoBehaviour:
@@ -1797,54 +1791,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a4e643c42013294bb8154e03c5f009c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &1887679858
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1887679860}
-  - component: {fileID: 1887679859}
-  m_Layer: 0
-  m_Name: Spawner
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1887679859
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1887679858}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2e6a164bd33c8654eb4efb972fc34fe2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemyPrefab: {fileID: 2400808309104340447, guid: 48d02db2849c4ad46965c31ba28ba5e3, type: 3}
-  spawnPoint: {fileID: 1887679860}
-  spawnInterval: 2
-  maxEnemies: 10
---- !u!4 &1887679860
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1887679858}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -15.93, y: 0.93, z: 0.0828048}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1895895868
 GameObject:
   m_ObjectHideFlags: 0
@@ -7370,9 +7316,6 @@ SceneRoots:
   - {fileID: 1996258404}
   - {fileID: 947532724}
   - {fileID: 3310408524900767640}
-  - {fileID: 1867030288}
-  - {fileID: 1887679860}
-  - {fileID: 409228240}
-  - {fileID: 1057014460}
   - {fileID: 250541672}
   - {fileID: 761822223}
+  - {fileID: 778203211}

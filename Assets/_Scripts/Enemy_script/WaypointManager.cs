@@ -9,7 +9,7 @@ public class WaypointManager : MonoBehaviour
         // Tự động tìm tất cả GameObject có tag "WayPoints"
         GameObject[] waypointObjects = GameObject.FindGameObjectsWithTag("WayPoints");
         waypoints = new Transform[waypointObjects.Length];
-
+       
         // Sắp xếp waypoint theo tên (ví dụ: Waypoint1, Waypoint2, ...)
         System.Array.Sort(waypointObjects, (a, b) => a.name.CompareTo(b.name));
 
@@ -17,12 +17,15 @@ public class WaypointManager : MonoBehaviour
         {
             waypoints[i] = waypointObjects[i].transform;
         }
+        
     }
 
     public Transform[] GetWaypoints()
     {
         return waypoints;
     }
+
+
 
     void OnDrawGizmos()
     {

@@ -110,20 +110,38 @@ public class Enemy : MonoBehaviour {
         return closestTurret;
     }
 
-    protected virtual void MoveToTarget(Vector3 targetPosition) 
+    protected virtual void MoveToTarget(Vector3 targetPosition)
     {
         Vector3 direction = (targetPosition - transform.position).normalized;
         transform.position += direction * speed * Time.deltaTime;
+
+        // Cập nhật hướng mặt của enemy
+        if (direction.x != 0)
+        {
+            Vector3 localScale = transform.localScale;
+            localScale.x = Mathf.Abs(localScale.x) * Mathf.Sign(direction.x);
+            transform.localScale = localScale;
+        }
     }
 
-    protected virtual void MoveAlongWaypoints() 
+    protected virtual void MoveAlongWaypoints()
     {
-        if (currentWaypointIndex < waypoints.Length) {
+        if (currentWaypointIndex < waypoints.Length)
+        {
             Transform targetWaypoint = waypoints[currentWaypointIndex];
             Vector3 direction = (targetWaypoint.position - transform.position).normalized;
             transform.position += direction * speed * Time.deltaTime;
 
-            if (Vector3.Distance(transform.position, targetWaypoint.position) < 0.1f) {
+            // Cập nhật hướng mặt của enemy
+            if (direction.x != 0)
+            {
+                Vector3 localScale = transform.localScale;
+                localScale.x = Mathf.Abs(localScale.x) * Mathf.Sign(direction.x);
+                transform.localScale = localScale;
+            }
+
+            if (Vector3.Distance(transform.position, targetWaypoint.position) < 0.1f)
+            {
                 currentWaypointIndex++;
             }
         }
