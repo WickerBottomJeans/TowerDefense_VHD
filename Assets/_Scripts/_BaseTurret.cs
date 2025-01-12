@@ -36,8 +36,8 @@ public abstract class _BaseTurret : MonoBehaviour, IHasHPBar {
     protected void Update() {
         RotateTurretPivotTowardsTarget();
         HandleAttackCooldown();
-        if (currentHP == 0) {
-            Die();
+        if (Input.GetKeyDown(KeyCode.L)) {
+            TakeDamage(50);
         }
     }
 
