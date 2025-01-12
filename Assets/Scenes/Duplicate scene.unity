@@ -846,6 +846,138 @@ Transform:
   m_Children: []
   m_Father: {fileID: 947532724}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
+=======
+--- !u!1 &250541670
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 250541672}
+  - component: {fileID: 250541671}
+  m_Layer: 0
+  m_Name: Music
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &250541671
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 250541670}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: c60e6359e26b6a84a918b776c9be626d, type: 3}
+  m_Resource: {fileID: 8300000, guid: c60e6359e26b6a84a918b776c9be626d, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.2
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &250541672
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 250541670}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.12, y: 5.7, z: 0.13759935}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+>>>>>>> vu_cao_duong
 --- !u!1 &269220503
 GameObject:
   m_ObjectHideFlags: 0
@@ -857,7 +989,11 @@ GameObject:
   - component: {fileID: 269220504}
   m_Layer: 0
   m_Name: waypoint5
+<<<<<<< HEAD
   m_TagString: Waypoint
+=======
+  m_TagString: WayPoints
+>>>>>>> vu_cao_duong
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -888,12 +1024,20 @@ GameObject:
   - component: {fileID: 409228240}
   - component: {fileID: 409228239}
   m_Layer: 0
+<<<<<<< HEAD
   m_Name: Spawner (1)
+=======
+  m_Name: Spawn_Boss
+>>>>>>> vu_cao_duong
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
+<<<<<<< HEAD
   m_IsActive: 1
+=======
+  m_IsActive: 0
+>>>>>>> vu_cao_duong
 --- !u!114 &409228239
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -908,8 +1052,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyPrefab: {fileID: 2274571752021828888, guid: adb5263482fd2be438f4e3ead5547bbb, type: 3}
   spawnPoint: {fileID: 409228240}
+<<<<<<< HEAD
   waypoints: []
   spawnTimerMax: 5
+=======
+  spawnInterval: 5
+  maxEnemies: 10
+>>>>>>> vu_cao_duong
 --- !u!4 &409228240
 Transform:
   m_ObjectHideFlags: 0
@@ -1226,7 +1375,11 @@ GameObject:
   - component: {fileID: 635356814}
   m_Layer: 0
   m_Name: waypoint4
+<<<<<<< HEAD
   m_TagString: Waypoint
+=======
+  m_TagString: WayPoints
+>>>>>>> vu_cao_duong
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1246,6 +1399,130 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1867030288}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
+=======
+--- !u!1001 &761822223
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 879139847612697415, guid: 1f9527fa9b19292448dd6266c64992e8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 879139847612697415, guid: 1f9527fa9b19292448dd6266c64992e8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.95
+      objectReference: {fileID: 0}
+    - target: {fileID: 879139847612697415, guid: 1f9527fa9b19292448dd6266c64992e8, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.09350304
+      objectReference: {fileID: 0}
+    - target: {fileID: 879139847612697415, guid: 1f9527fa9b19292448dd6266c64992e8, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 879139847612697415, guid: 1f9527fa9b19292448dd6266c64992e8, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 879139847612697415, guid: 1f9527fa9b19292448dd6266c64992e8, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 879139847612697415, guid: 1f9527fa9b19292448dd6266c64992e8, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 879139847612697415, guid: 1f9527fa9b19292448dd6266c64992e8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 879139847612697415, guid: 1f9527fa9b19292448dd6266c64992e8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 879139847612697415, guid: 1f9527fa9b19292448dd6266c64992e8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4150879998033965355, guid: 1f9527fa9b19292448dd6266c64992e8, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4150879998033965355, guid: 1f9527fa9b19292448dd6266c64992e8, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4150879998033965355, guid: 1f9527fa9b19292448dd6266c64992e8, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4150879998033965355, guid: 1f9527fa9b19292448dd6266c64992e8, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4150879998033965355, guid: 1f9527fa9b19292448dd6266c64992e8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4150879998033965355, guid: 1f9527fa9b19292448dd6266c64992e8, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4150879998033965355, guid: 1f9527fa9b19292448dd6266c64992e8, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5599674209939053888, guid: 1f9527fa9b19292448dd6266c64992e8, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5599674209939053888, guid: 1f9527fa9b19292448dd6266c64992e8, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5599674209939053888, guid: 1f9527fa9b19292448dd6266c64992e8, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5599674209939053888, guid: 1f9527fa9b19292448dd6266c64992e8, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5599674209939053888, guid: 1f9527fa9b19292448dd6266c64992e8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5599674209939053888, guid: 1f9527fa9b19292448dd6266c64992e8, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5599674209939053888, guid: 1f9527fa9b19292448dd6266c64992e8, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6505194218634354054, guid: 1f9527fa9b19292448dd6266c64992e8, type: 3}
+      propertyPath: m_Name
+      value: CoinManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 6519174936217528898, guid: 1f9527fa9b19292448dd6266c64992e8, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+    - target: {fileID: 6519174936217528898, guid: 1f9527fa9b19292448dd6266c64992e8, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1f9527fa9b19292448dd6266c64992e8, type: 3}
+>>>>>>> vu_cao_duong
 --- !u!1 &869492354
 GameObject:
   m_ObjectHideFlags: 0
@@ -1257,7 +1534,11 @@ GameObject:
   - component: {fileID: 869492355}
   m_Layer: 0
   m_Name: waypoint3
+<<<<<<< HEAD
   m_TagString: Waypoint
+=======
+  m_TagString: WayPoints
+>>>>>>> vu_cao_duong
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1288,7 +1569,11 @@ GameObject:
   - component: {fileID: 941172582}
   m_Layer: 0
   m_Name: waypoint7
+<<<<<<< HEAD
   m_TagString: Waypoint
+=======
+  m_TagString: WayPoints
+>>>>>>> vu_cao_duong
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1355,7 +1640,11 @@ Transform:
   - {fileID: 131465309}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
 --- !u!1 &1032961268
+=======
+--- !u!1 &1057014458
+>>>>>>> vu_cao_duong
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1363,23 +1652,37 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
+<<<<<<< HEAD
   - component: {fileID: 1032961271}
   - component: {fileID: 1032961270}
   - component: {fileID: 1032961269}
   m_Layer: 0
   m_Name: skeleton_bow_0
+=======
+  - component: {fileID: 1057014460}
+  - component: {fileID: 1057014459}
+  m_Layer: 0
+  m_Name: Spawn_EnemyBow
+>>>>>>> vu_cao_duong
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
+<<<<<<< HEAD
   m_IsActive: 1
 --- !u!95 &1032961269
 Animator:
   serializedVersion: 7
+=======
+  m_IsActive: 0
+--- !u!114 &1057014459
+MonoBehaviour:
+>>>>>>> vu_cao_duong
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_GameObject: {fileID: 1032961268}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
@@ -1451,15 +1754,35 @@ SpriteRenderer:
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1032961271
+=======
+  m_GameObject: {fileID: 1057014458}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e6a164bd33c8654eb4efb972fc34fe2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyPrefab: {fileID: 2156438117834231868, guid: 3436c381fec18464ca3c63876bfe4ba8, type: 3}
+  spawnPoint: {fileID: 1057014460}
+  spawnInterval: 1
+  maxEnemies: 10
+--- !u!4 &1057014460
+>>>>>>> vu_cao_duong
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_GameObject: {fileID: 1032961268}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.869, y: 1.83, z: 0}
+=======
+  m_GameObject: {fileID: 1057014458}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -15.93, y: 0.93, z: 0.0828048}
+>>>>>>> vu_cao_duong
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1476,7 +1799,11 @@ GameObject:
   - component: {fileID: 1135787190}
   m_Layer: 0
   m_Name: waypoint6
+<<<<<<< HEAD
   m_TagString: Waypoint
+=======
+  m_TagString: WayPoints
+>>>>>>> vu_cao_duong
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1496,6 +1823,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1867030288}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
 --- !u!1001 &1232228549
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1553,6 +1881,8 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 45baf0a390fcbab49be7b7be406da732, type: 3}
+=======
+>>>>>>> vu_cao_duong
 --- !u!1 &1729960243
 GameObject:
   m_ObjectHideFlags: 0
@@ -1564,7 +1894,11 @@ GameObject:
   - component: {fileID: 1729960244}
   m_Layer: 0
   m_Name: waypoint2
+<<<<<<< HEAD
   m_TagString: Waypoint
+=======
+  m_TagString: WayPoints
+>>>>>>> vu_cao_duong
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1595,7 +1929,11 @@ GameObject:
   - component: {fileID: 1811752248}
   m_Layer: 0
   m_Name: waypoint1
+<<<<<<< HEAD
   m_TagString: Waypoint
+=======
+  m_TagString: WayPoints
+>>>>>>> vu_cao_duong
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1666,7 +2004,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a4e643c42013294bb8154e03c5f009c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
   waypoints: []
+=======
+>>>>>>> vu_cao_duong
 --- !u!1 &1887679858
 GameObject:
   m_ObjectHideFlags: 0
@@ -1698,8 +2039,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyPrefab: {fileID: 2400808309104340447, guid: 48d02db2849c4ad46965c31ba28ba5e3, type: 3}
   spawnPoint: {fileID: 1887679860}
+<<<<<<< HEAD
   waypoints: []
   spawnTimerMax: 5
+=======
+  spawnInterval: 2
+  maxEnemies: 10
+>>>>>>> vu_cao_duong
 --- !u!4 &1887679860
 Transform:
   m_ObjectHideFlags: 0
@@ -2528,6 +2874,10 @@ GameObject:
   - component: {fileID: 2046452305}
   - component: {fileID: 2046452307}
   - component: {fileID: 2046452306}
+<<<<<<< HEAD
+=======
+  - component: {fileID: 2046452308}
+>>>>>>> vu_cao_duong
   m_Layer: 0
   m_Name: Ground
   m_TagString: Untagged
@@ -7036,6 +7386,22 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+<<<<<<< HEAD
+=======
+--- !u!114 &2046452308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2046452304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04327e3ceb3c94b4782d27ae9e37ebe6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
+>>>>>>> vu_cao_duong
 --- !u!1001 &3310408524900767640
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7066,11 +7432,19 @@ PrefabInstance:
       objectReference: {fileID: 7157970720339516129, guid: de42ccac5c4517e45b98ae16c3136a8b, type: 3}
     - target: {fileID: 2023668180802820400, guid: 7aa23d77f312aa84ba942177bf41e93a, type: 3}
       propertyPath: m_LocalPosition.x
+<<<<<<< HEAD
       value: -0.09049806
       objectReference: {fileID: 0}
     - target: {fileID: 2023668180802820400, guid: 7aa23d77f312aa84ba942177bf41e93a, type: 3}
       propertyPath: m_LocalPosition.y
       value: -0.12066275
+=======
+      value: 8.16
+      objectReference: {fileID: 0}
+    - target: {fileID: 2023668180802820400, guid: 7aa23d77f312aa84ba942177bf41e93a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.33
+>>>>>>> vu_cao_duong
       objectReference: {fileID: 0}
     - target: {fileID: 2023668180802820400, guid: 7aa23d77f312aa84ba942177bf41e93a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -7104,10 +7478,120 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+<<<<<<< HEAD
+=======
+    - target: {fileID: 2676499574784014365, guid: 7aa23d77f312aa84ba942177bf41e93a, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2676499574784014365, guid: 7aa23d77f312aa84ba942177bf41e93a, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2676499574784014365, guid: 7aa23d77f312aa84ba942177bf41e93a, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2676499574784014365, guid: 7aa23d77f312aa84ba942177bf41e93a, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2676499574784014365, guid: 7aa23d77f312aa84ba942177bf41e93a, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2676499574784014365, guid: 7aa23d77f312aa84ba942177bf41e93a, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3316566562934452804, guid: 7aa23d77f312aa84ba942177bf41e93a, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+    - target: {fileID: 3316566562934452804, guid: 7aa23d77f312aa84ba942177bf41e93a, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+>>>>>>> vu_cao_duong
     - target: {fileID: 3726438526724074079, guid: 7aa23d77f312aa84ba942177bf41e93a, type: 3}
       propertyPath: m_Name
       value: TurretPlacer
       objectReference: {fileID: 0}
+<<<<<<< HEAD
+=======
+    - target: {fileID: 4789743404394622044, guid: 7aa23d77f312aa84ba942177bf41e93a, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+    - target: {fileID: 4789743404394622044, guid: 7aa23d77f312aa84ba942177bf41e93a, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+    - target: {fileID: 7976254686916944731, guid: 7aa23d77f312aa84ba942177bf41e93a, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7976254686916944731, guid: 7aa23d77f312aa84ba942177bf41e93a, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7976254686916944731, guid: 7aa23d77f312aa84ba942177bf41e93a, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7976254686916944731, guid: 7aa23d77f312aa84ba942177bf41e93a, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7976254686916944731, guid: 7aa23d77f312aa84ba942177bf41e93a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7976254686916944731, guid: 7aa23d77f312aa84ba942177bf41e93a, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7976254686916944731, guid: 7aa23d77f312aa84ba942177bf41e93a, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9048514999566624862, guid: 7aa23d77f312aa84ba942177bf41e93a, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9048514999566624862, guid: 7aa23d77f312aa84ba942177bf41e93a, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9048514999566624862, guid: 7aa23d77f312aa84ba942177bf41e93a, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9048514999566624862, guid: 7aa23d77f312aa84ba942177bf41e93a, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9048514999566624862, guid: 7aa23d77f312aa84ba942177bf41e93a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9048514999566624862, guid: 7aa23d77f312aa84ba942177bf41e93a, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9048514999566624862, guid: 7aa23d77f312aa84ba942177bf41e93a, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9219908421138209685, guid: 7aa23d77f312aa84ba942177bf41e93a, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+    - target: {fileID: 9219908421138209685, guid: 7aa23d77f312aa84ba942177bf41e93a, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+>>>>>>> vu_cao_duong
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7122,8 +7606,17 @@ SceneRoots:
   - {fileID: 1996258404}
   - {fileID: 947532724}
   - {fileID: 3310408524900767640}
+<<<<<<< HEAD
   - {fileID: 1232228549}
   - {fileID: 1867030288}
   - {fileID: 1887679860}
   - {fileID: 409228240}
   - {fileID: 1032961271}
+=======
+  - {fileID: 1867030288}
+  - {fileID: 1887679860}
+  - {fileID: 409228240}
+  - {fileID: 1057014460}
+  - {fileID: 250541672}
+  - {fileID: 761822223}
+>>>>>>> vu_cao_duong

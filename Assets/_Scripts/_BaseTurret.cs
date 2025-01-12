@@ -153,7 +153,7 @@ public abstract class _BaseTurret : MonoBehaviour, IHasHPBar {
 
     #endregion DataStuff
 
-    protected void TakeDamage(float damage) {
+    public void TakeDamage(float damage) {
         if (currentHP > damage) {
             currentHP -= damage;
             FireOnHPChanged();
