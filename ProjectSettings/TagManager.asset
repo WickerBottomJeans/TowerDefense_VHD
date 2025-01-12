@@ -3,13 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 3
-  tags:
-  - Enemy
-<<<<<<< HEAD
-  - Waypoint
-=======
-  - Turret
->>>>>>> 9c4494b9e63748bb7b4ecccb86917e0ff5956df7
+  tags: []
   layers:
   - Default
   - TransparentFX
@@ -17,8 +11,8 @@ TagManager:
   - 
   - Water
   - UI
-  - Enemy
-  - Projectile
+  - 
+  - 
   - 
   - 
   - 

@@ -8,7 +8,7 @@ public class Enemy : MonoBehaviour
 {
     [Header("Enemy Stats")]
     public float maxHealth = 100f;
-    private float currentHealth;
+    protected float currentHealth; // Đổi từ private thành protected
     public float speed = 2f;
     public float mpGain = 5f; // quái chết trả về
     public float expGain = 5f; // quái chết trả về
@@ -22,16 +22,16 @@ public class Enemy : MonoBehaviour
 
     [Header("References")]
     public Slider healthBar; // Thanh máu bên trên
-    private Transform[] waypoints; // Path waypoints for the enemies to follow
+    protected Transform[] waypoints; // Đổi từ private thành protected
 
-    private List<GameObject> turretInRange = new List<GameObject>();
-    private GameObject targetTurret;
-    private int currentWaypointIndex = 0; // Index of the next waypoint
-    private float attackTimer = 0f; // Bộ đếm thời gian cho tấn công
+    protected List<GameObject> turretInRange = new List<GameObject>(); // Đổi từ private thành protected
+    protected GameObject targetTurret; // Đổi từ private thành protected
+    protected int currentWaypointIndex = 0; // Đổi từ private thành protected
+    protected float attackTimer = 0f; // Đổi từ private thành protected
 
     private CircleCollider2D circleCollider2D;
 
-    public event EventHandler<OnEnemyDestroyedEventArgs> OnEnemyDestroyed; //
+    public event EventHandler<OnEnemyDestroyedEventArgs> OnEnemyDestroyed;
 
     public class OnEnemyDestroyedEventArgs : EventArgs
     {
@@ -39,13 +39,12 @@ public class Enemy : MonoBehaviour
         public float expGain;
     }
 
-    private void Start()
+    protected virtual void Start() // Đổi private thành protected virtual
     {
         currentHealth = maxHealth;
         healthBar.maxValue = maxHealth;
         healthBar.value = currentHealth;
 
-        // Lấy danh sách waypoint từ WaypointManager
         WaypointManager waypointManager = UnityEngine.Object.FindAnyObjectByType<WaypointManager>();
         if (waypointManager != null)
         {
@@ -60,44 +59,39 @@ public class Enemy : MonoBehaviour
         circleCollider2D.isTrigger = true;
         circleCollider2D.radius = detectRange;
 
-        // Thêm Collider nếu chưa có
         if (GetComponent<Collider>() == null)
         {
             gameObject.AddComponent<BoxCollider>();
         }
     }
 
-    private void Update()
+    protected virtual void Update() // Đổi private thành protected virtual
     {
         attackTimer -= Time.deltaTime;
 
-        // Check for turrets in range
         if (turretInRange.Count > 0)
         {
             targetTurret = FindTurret();
             if (targetTurret != null)
             {
                 float distanceToTurret = Vector3.Distance(transform.position, targetTurret.transform.position);
-                // Move toward turret if not within attack range
                 if (distanceToTurret > attackRange)
                 {
                     MoveToTarget(targetTurret.transform.position);
                 }
-                // Attack if within range and cooldown is ready
                 else if (attackTimer <= 0)
                 {
                     AttackTower();
                 }
             }
         }
-        // If no turrets are detected or turret destroyed, follow waypoints
         else if (waypoints != null && waypoints.Length > 0)
         {
             MoveAlongWaypoints();
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    protected virtual void OnTriggerEnter2D(Collider2D collision) 
     {
         if (collision.CompareTag("Turret"))
         {
@@ -105,7 +99,7 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    private void OnTriggerExit2D(Collider2D other)
+    protected virtual void OnTriggerExit2D(Collider2D other) 
     {
         if (other.CompareTag("Turret"))
         {
@@ -130,13 +124,13 @@ public class Enemy : MonoBehaviour
         return closestTurret;
     }
 
-    private void MoveToTarget(Vector3 targetPosition)
+    protected virtual void MoveToTarget(Vector3 targetPosition) // Đổi private thành protected
     {
         Vector3 direction = (targetPosition - transform.position).normalized;
         transform.position += direction * speed * Time.deltaTime;
     }
 
-    private void MoveAlongWaypoints()
+    protected virtual void MoveAlongWaypoints() // Đổi private thành protected
     {
         if (currentWaypointIndex < waypoints.Length)
         {
@@ -144,7 +138,6 @@ public class Enemy : MonoBehaviour
             Vector3 direction = (targetWaypoint.position - transform.position).normalized;
             transform.position += direction * speed * Time.deltaTime;
 
-            // Check if the enemy has reached the waypoint
             if (Vector3.Distance(transform.position, targetWaypoint.position) < 0.1f)
             {
                 currentWaypointIndex++;
@@ -152,7 +145,7 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    private void AttackTower()
+    protected virtual void AttackTower() 
     {
         if (targetTurret != null)
         {
@@ -162,19 +155,18 @@ public class Enemy : MonoBehaviour
                 tower.TakeDamage(attackDamage);
                 Debug.Log($"Enemy attacked the tower for {attackDamage} damage.");
 
-                // If the turret is destroyed, clear it from the target and continue to the next waypoint
-                //if (tower.IsDestroyed())
-                //{
-                //    turretInRange.Remove(targetTurret);
-                //    targetTurret = null;
-                //}
+                AudioSource audioSource = GetComponent<AudioSource>();
+                if (audioSource != null && !audioSource.isPlaying)
+                {
+                    audioSource.Play();
+                }
             }
         }
 
-        attackTimer = attackCooldown; // Đặt lại thời gian hồi
+        attackTimer = attackCooldown;
     }
 
-    public void TakeDamage(float damage)
+    public virtual void TakeDamage(float damage) // Đổi private thành public virtual
     {
         currentHealth -= damage;
         healthBar.value = currentHealth;
@@ -185,12 +177,12 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    private void Die()
+    protected virtual void Die() // Đổi private thành protected virtual
     {
         DesTroySelf();
     }
 
-    private void DesTroySelf()
+    protected virtual void DesTroySelf() // Đổi private thành protected virtual
     {
         OnEnemyDestroyed?.Invoke(this, new OnEnemyDestroyedEventArgs
         {
@@ -220,8 +212,8 @@ public class Enemy : MonoBehaviour
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, detectRange); // Vẽ phạm vi phát hiện
+        Gizmos.DrawWireSphere(transform.position, detectRange);
         Gizmos.color = Color.green;
-        Gizmos.DrawWireSphere(transform.position, attackRange); // Vẽ phạm vi tấn công
+        Gizmos.DrawWireSphere(transform.position, attackRange);
     }
 }
