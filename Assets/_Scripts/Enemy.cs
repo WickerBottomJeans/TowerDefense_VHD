@@ -22,12 +22,12 @@ public class Enemy : MonoBehaviour
 
     [Header("References")]
     public Slider healthBar; // Thanh máu bên trên
-    protected Transform[] waypoints; // Đổi từ private thành protected
+    protected Transform[] waypoints; 
 
-    protected List<GameObject> turretInRange = new List<GameObject>(); // Đổi từ private thành protected
-    protected GameObject targetTurret; // Đổi từ private thành protected
-    protected int currentWaypointIndex = 0; // Đổi từ private thành protected
-    protected float attackTimer = 0f; // Đổi từ private thành protected
+    protected List<GameObject> turretInRange = new List<GameObject>(); 
+    protected GameObject targetTurret; 
+    protected int currentWaypointIndex = 0; 
+    protected float attackTimer = 0f; 
 
     private CircleCollider2D circleCollider2D;
 
