@@ -10718,6 +10718,30 @@ PrefabInstance:
       propertyPath: resetButton
       value: 
       objectReference: {fileID: 1292918041}
+    - target: {fileID: 1563031326016114247, guid: cfe4018667af7ec45bcdabdc9199144a, type: 3}
+      propertyPath: levelButtons.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1563031326016114247, guid: cfe4018667af7ec45bcdabdc9199144a, type: 3}
+      propertyPath: 'levelButtons.Array.data[0]'
+      value: 
+      objectReference: {fileID: 1771325664}
+    - target: {fileID: 1563031326016114247, guid: cfe4018667af7ec45bcdabdc9199144a, type: 3}
+      propertyPath: 'levelButtons.Array.data[1]'
+      value: 
+      objectReference: {fileID: 231661069}
+    - target: {fileID: 1563031326016114247, guid: cfe4018667af7ec45bcdabdc9199144a, type: 3}
+      propertyPath: 'levelButtons.Array.data[2]'
+      value: 
+      objectReference: {fileID: 1671316566}
+    - target: {fileID: 1563031326016114247, guid: cfe4018667af7ec45bcdabdc9199144a, type: 3}
+      propertyPath: 'levelButtons.Array.data[3]'
+      value: 
+      objectReference: {fileID: 507718779}
+    - target: {fileID: 1563031326016114247, guid: cfe4018667af7ec45bcdabdc9199144a, type: 3}
+      propertyPath: 'levelButtons.Array.data[4]'
+      value: 
+      objectReference: {fileID: 1699275853}
     - target: {fileID: 1563031326016114247, guid: 1660358b3a0a52546821e13bc0ac7743, type: 3}
       propertyPath: resetButton
       value: 
