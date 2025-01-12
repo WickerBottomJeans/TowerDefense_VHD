@@ -52,4 +52,3 @@ Chúc bạn chơi vui vẻ! 🎉
 
 ---
 
-*Lưu ý: README này là một cách vui nhộn và hấp dẫn để giới thiệu người chơi đến với trò chơi của bạn. Hãy tùy chỉnh nó với các liên kết, thông tin liên hệ và chi tiết bổ sung về trò chơi của bạn.*
