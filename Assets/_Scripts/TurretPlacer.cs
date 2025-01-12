@@ -47,7 +47,6 @@ public class TurretPlacer : MonoBehaviour {
         if (isPlacing) {
             Vector3 mouseWorldPosition = mainCamera.ScreenToWorldPoint(Input.mousePosition);
             Vector3Int tilePosition = placementTilemap.WorldToCell(mouseWorldPosition);
-            Debug.Log(tilePosition);
 
             ShowGhostTurret(tilePosition);
 

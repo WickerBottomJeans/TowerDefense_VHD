@@ -89,16 +89,13 @@ public abstract class _BaseTurret : MonoBehaviour, IHasHPBar {
         }
     }
 
-    protected void OnTriggerEnter2D(Collider2D other) {
-        if (other.CompareTag("Enemy")) {
-            enemiesInRange.Add(other.gameObject);
-        }
+    public void OnEnemyEnterRange(GameObject enemy) {
+        Debug.Log("hi");
+        enemiesInRange.Add(enemy);
     }
 
-    protected void OnTriggerExit2D(Collider2D other) {
-        if (other.CompareTag("Enemy")) {
-            enemiesInRange.Remove(other.gameObject);
-        }
+    public void OnEnemyExitRange(GameObject enemy) {
+        enemiesInRange.Remove(enemy);
     }
 
     #endregion AttackStuff
@@ -127,7 +124,13 @@ public abstract class _BaseTurret : MonoBehaviour, IHasHPBar {
         currentHP = currentMaxMP = turretStatsSO.baseMaxMP;
 
         currentMP = 0f;
-        GetComponent<CircleCollider2D>().radius = currentMaxAttackRange;
+
+        Transform detectorForTurretTransform = transform.Find("DetectorForTurret");
+        if (detectorForTurretTransform != null) {
+            CircleCollider2D detectorForTurretCollider = detectorForTurretTransform.GetComponent<CircleCollider2D>();
+            detectorForTurretCollider.radius = currentMaxAttackRange;
+        }
+
         iprojectile = turretStatsSO.projectilePrefab.GetComponent<IProjectile>();
         iSpecialAbility = turretStatsSO.specialAbilityGameObject.GetComponent<ISpecialAbility>();
         specialSkillButton = transform.Find("SpecialSkillButtonCanvas/SpecialSkillButton")?.GetComponent<SpecialSkillButton>();
