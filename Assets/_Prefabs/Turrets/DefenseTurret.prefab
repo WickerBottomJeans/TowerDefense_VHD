@@ -8,6 +8,54 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 192746020321525172, guid: 7a5f812abbed9ac41a49af6887536702, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 192746020321525172, guid: 7a5f812abbed9ac41a49af6887536702, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 192746020321525172, guid: 7a5f812abbed9ac41a49af6887536702, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 192746020321525172, guid: 7a5f812abbed9ac41a49af6887536702, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 192746020321525172, guid: 7a5f812abbed9ac41a49af6887536702, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 192746020321525172, guid: 7a5f812abbed9ac41a49af6887536702, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 1840831116365319980, guid: 7a5f812abbed9ac41a49af6887536702, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1840831116365319980, guid: 7a5f812abbed9ac41a49af6887536702, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1840831116365319980, guid: 7a5f812abbed9ac41a49af6887536702, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1840831116365319980, guid: 7a5f812abbed9ac41a49af6887536702, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1840831116365319980, guid: 7a5f812abbed9ac41a49af6887536702, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1840831116365319980, guid: 7a5f812abbed9ac41a49af6887536702, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4421234763196940844, guid: 7a5f812abbed9ac41a49af6887536702, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -56,6 +104,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DefenseTurret
       objectReference: {fileID: 0}
+    - target: {fileID: 6086097106348808260, guid: 7a5f812abbed9ac41a49af6887536702, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 9143219866550085753, guid: 7a5f812abbed9ac41a49af6887536702, type: 3}
     - {fileID: 7937456235400539169, guid: 7a5f812abbed9ac41a49af6887536702, type: 3}
@@ -94,7 +146,8 @@ MonoBehaviour:
   levelSystem: {fileID: 2910432760595316514}
   turretPivot: {fileID: 1882059363590226864}
   turretStatsSO: {fileID: 11400000, guid: 9b14e002359c2294890a5da0d983ace4, type: 2}
-  specialSkillButton: {fileID: 0}
+  specialSkillButton: {fileID: 378361962372957257}
+  secondSpecialSkillButton: {fileID: 0}
   currentHP: 0
   currentMP: 0
   currentAttackRange: 0
@@ -103,6 +156,17 @@ MonoBehaviour:
   currentMaxMP: 0
   currentMaxAttackRange: 0
   currentMaxFireRate: 0
+--- !u!114 &378361962372957257 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5207487733313667059, guid: 7a5f812abbed9ac41a49af6887536702, type: 3}
+  m_PrefabInstance: {fileID: 5549702151403469754}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca0bbd5d2c36dbe498f5429e5404863e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &806589979897175447 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5058973824624027181, guid: 7a5f812abbed9ac41a49af6887536702, type: 3}

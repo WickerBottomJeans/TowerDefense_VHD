@@ -1,16 +1,9 @@
 using UnityEngine;
 
-public class EarthHammerAnimator : MonoBehaviour
-{
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+public class EarthHammerAnimator : MonoBehaviour {
+    public EarthHammer hammer;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    public void DestroyAfterAnimation() {
+        Destroy(hammer.gameObject);
     }
 }

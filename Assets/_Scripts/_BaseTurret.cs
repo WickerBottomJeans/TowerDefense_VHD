@@ -161,6 +161,7 @@ public abstract class _BaseTurret : MonoBehaviour, IHasHPBar {
 
     private void SecondSpecialSkillButton_OnSpecialButtonClicked(object sender, SpecialSkillButton.OnSpecialButtonClickedEventArgs e) {
         CastSpecialSkill(e.targetLocation, e.turret, e.specialAbilityIndex);
+        Debug.Log("hi");
     }
 
     private void SpecialSkillButton_OnSpecialButtonClicked(object sender, SpecialSkillButton.OnSpecialButtonClickedEventArgs e) {
