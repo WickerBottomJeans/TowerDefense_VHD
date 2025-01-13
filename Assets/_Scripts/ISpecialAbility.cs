@@ -1,8 +1,9 @@
 using UnityEngine;
 
 public interface ISpecialAbility {
+    bool CoolDown { get; }
 
-    float GetCoolDown();
+    bool RequiresAiming { get; }
 
     void Activate(Vector2 targetLocation);
 }

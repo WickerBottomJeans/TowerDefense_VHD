@@ -1,0 +1,865 @@
+fileFormatVersion: 2
+guid: 8fab887d40109f844966f518641ea80f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2220271449094900867
+    second: Darkspell_0
+  - first:
+      213: -597833632577473880
+    second: Darkspell_1
+  - first:
+      213: -2480783746493680050
+    second: Darkspell_2
+  - first:
+      213: 5328593287065301197
+    second: Darkspell_3
+  - first:
+      213: 5449198325359236744
+    second: Darkspell_4
+  - first:
+      213: -2386332192331521917
+    second: Darkspell_5
+  - first:
+      213: 653935501938416506
+    second: Darkspell_6
+  - first:
+      213: 3677346983146704874
+    second: Darkspell_7
+  - first:
+      213: -2156228034578792322
+    second: Darkspell_8
+  - first:
+      213: 8655195888713206794
+    second: Darkspell_9
+  - first:
+      213: -8584414760592451824
+    second: Darkspell_10
+  - first:
+      213: 1945564698434882901
+    second: Darkspell_11
+  - first:
+      213: -1459106122924724551
+    second: Darkspell_12
+  - first:
+      213: 3513445076955766002
+    second: Darkspell_13
+  - first:
+      213: 7764520786201022294
+    second: Darkspell_14
+  - first:
+      213: 3934066190376417655
+    second: Darkspell_15
+  - first:
+      213: 7440779657944680036
+    second: Darkspell_16
+  - first:
+      213: -6232892143540583780
+    second: Darkspell_17
+  - first:
+      213: -7251997923209928824
+    second: Darkspell_18
+  - first:
+      213: -5514300314642458004
+    second: Darkspell_19
+  - first:
+      213: -7537098940760805777
+    second: Darkspell_20
+  - first:
+      213: 2828156142830552599
+    second: Darkspell_21
+  - first:
+      213: 3761470309235110321
+    second: Darkspell_22
+  - first:
+      213: -3296052945693223922
+    second: Darkspell_23
+  - first:
+      213: 5880035978859911949
+    second: Darkspell_24
+  - first:
+      213: -3208702997584096867
+    second: Darkspell_25
+  - first:
+      213: 2355633517969760971
+    second: Darkspell_26
+  - first:
+      213: -63028867350712581
+    second: Darkspell_27
+  - first:
+      213: -1124487103414145827
+    second: Darkspell_28
+  - first:
+      213: 8981948196225790778
+    second: Darkspell_29
+  - first:
+      213: 1548251683263072401
+    second: Darkspell_30
+  - first:
+      213: 3147709604114003630
+    second: Darkspell_31
+  - first:
+      213: -4059758849843376284
+    second: Darkspell_32
+  - first:
+      213: 1781948817149909490
+    second: Darkspell_33
+  - first:
+      213: -5587935650161171800
+    second: Darkspell_34
+  - first:
+      213: -4651728205639077134
+    second: Darkspell_35
+  - first:
+      213: 5430027135886278009
+    second: Darkspell_36
+  - first:
+      213: -5102009661211841172
+    second: Darkspell_37
+  - first:
+      213: 6421523375836192727
+    second: Darkspell_38
+  - first:
+      213: -627893861541713464
+    second: Darkspell_39
+  - first:
+      213: -7773878348947957476
+    second: Darkspell_40
+  - first:
+      213: -4712240504557394469
+    second: Darkspell_41
+  - first:
+      213: -6833715096247486080
+    second: Darkspell_42
+  - first:
+      213: 6585273708809063039
+    second: Darkspell_43
+  - first:
+      213: 770554298221306833
+    second: Darkspell_44
+  - first:
+      213: 9079192793288277634
+    second: Darkspell_45
+  - first:
+      213: 7806065546055679447
+    second: Darkspell_46
+  - first:
+      213: 4853302162209082585
+    second: Darkspell_47
+  - first:
+      213: -7336966060418797544
+    second: Darkspell_48
+  - first:
+      213: -8964575737504936817
+    second: Darkspell_49
+  - first:
+      213: 2889740020641049332
+    second: Darkspell_50
+  - first:
+      213: 2469058741228587134
+    second: Darkspell_51
+  - first:
+      213: 5262098973631075303
+    second: Darkspell_52
+  - first:
+      213: 5603596228892648852
+    second: Darkspell_53
+  - first:
+      213: -1979938787017757825
+    second: Darkspell_54
+  - first:
+      213: -961992108980563672
+    second: Darkspell_55
+  - first:
+      213: 6310216399901807705
+    second: Darkspell_56
+  - first:
+      213: -1373576483114792167
+    second: Darkspell_57
+  - first:
+      213: -7672000189548781129
+    second: Darkspell_58
+  - first:
+      213: 2255726625146769467
+    second: Darkspell_59
+  - first:
+      213: 5027289941922029693
+    second: Darkspell_60
+  - first:
+      213: 69487068081331239
+    second: Darkspell_61
+  - first:
+      213: -3636089588418834428
+    second: Darkspell_62
+  - first:
+      213: -6662685925314855177
+    second: Darkspell_63
+  - first:
+      213: 6087245628612266087
+    second: Darkspell_64
+  - first:
+      213: -5031303204380625045
+    second: Darkspell_65
+  - first:
+      213: 2022630375507602351
+    second: Darkspell_66
+  - first:
+      213: -7278444607710131946
+    second: Darkspell_67
+  - first:
+      213: 7513605272609320805
+    second: Darkspell_68
+  - first:
+      213: 1188862032165004716
+    second: Darkspell_69
+  - first:
+      213: 4234406249288094668
+    second: Darkspell_70
+  - first:
+      213: 4755952680985161380
+    second: Darkspell_71
+  - first:
+      213: -3254962668768850037
+    second: Darkspell_72
+  - first:
+      213: 6072174416327723423
+    second: Darkspell_73
+  - first:
+      213: 4776476870135907345
+    second: Darkspell_74
+  - first:
+      213: 4725058472793015007
+    second: Darkspell_75
+  - first:
+      213: -6150793210163497306
+    second: Darkspell_76
+  - first:
+      213: 1359158216487512797
+    second: Darkspell_77
+  - first:
+      213: -7163156515914247921
+    second: Darkspell_78
+  - first:
+      213: 6993145641342454595
+    second: Darkspell_79
+  - first:
+      213: 2096370486434789265
+    second: Darkspell_80
+  - first:
+      213: -7348341569858377432
+    second: Darkspell_81
+  - first:
+      213: -5692473217605251438
+    second: Darkspell_82
+  - first:
+      213: 9154800880845684195
+    second: Darkspell_83
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Darkspell_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d73b1cb61e20031e0800000000000000
+      internalID: -2220271449094900867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Darkspell_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a230778a7114b7f0800000000000000
+      internalID: -597833632577473880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Darkspell_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e467ea9835c729dd0800000000000000
+      internalID: -2480783746493680050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Darkspell_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc0fe0ccc57f2f940800000000000000
+      internalID: 5328593287065301197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Darkspell_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 886d0bd71017f9b40800000000000000
+      internalID: 5449198325359236744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Darkspell_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3802000b38b02eed0800000000000000
+      internalID: -2386332192331521917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Darkspell_6
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7b5e03dfde331900800000000000000
+      internalID: 653935501938416506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Darkspell_7
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aef4056099f880330800000000000000
+      internalID: 3677346983146704874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Darkspell_8
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e704138d60a8312e0800000000000000
+      internalID: -2156228034578792322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Darkspell_9
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0c0c28bdce6d1870800000000000000
+      internalID: 8655195888713206794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Darkspell_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0175446e1480ed880800000000000000
+      internalID: -8584414760592451824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Darkspell_11
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55d40c109c8000b10800000000000000
+      internalID: 1945564698434882901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Darkspell_12
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9be697d36b630cbe0800000000000000
+      internalID: -1459106122924724551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Darkspell_13
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fc1bc5bea342c030800000000000000
+      internalID: 3513445076955766002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Darkspell_14
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65f06a0548e11cb60800000000000000
+      internalID: 7764520786201022294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Darkspell_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 779b2484b5c989630800000000000000
+      internalID: 3934066190376417655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Darkspell_16
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 466cebb0da5f24760800000000000000
+      internalID: 7440779657944680036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Darkspell_17
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c92c0f46e915089a0800000000000000
+      internalID: -6232892143540583780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Darkspell_18
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88f9333cf4abb5b90800000000000000
+      internalID: -7251997923209928824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Darkspell_19
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6a59e074154973b0800000000000000
+      internalID: -5514300314642458004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Darkspell_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6eaaf65278d66790800000000000000
+      internalID: -7537098940760805777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 2f92f0fec4f5411479db1ec69055d33e
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Darkspell_0: -2220271449094900867
+      Darkspell_1: -597833632577473880
+      Darkspell_10: -8584414760592451824
+      Darkspell_11: 1945564698434882901
+      Darkspell_12: -1459106122924724551
+      Darkspell_13: 3513445076955766002
+      Darkspell_14: 7764520786201022294
+      Darkspell_15: 3934066190376417655
+      Darkspell_16: 7440779657944680036
+      Darkspell_17: -6232892143540583780
+      Darkspell_18: -7251997923209928824
+      Darkspell_19: -5514300314642458004
+      Darkspell_2: -2480783746493680050
+      Darkspell_20: -7537098940760805777
+      Darkspell_3: 5328593287065301197
+      Darkspell_4: 5449198325359236744
+      Darkspell_5: -2386332192331521917
+      Darkspell_6: 653935501938416506
+      Darkspell_7: 3677346983146704874
+      Darkspell_8: -2156228034578792322
+      Darkspell_9: 8655195888713206794
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

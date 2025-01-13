@@ -33,12 +33,5 @@ public class AttackTurret : _BaseTurret {
         return closestEnemy;
     }
 
-    protected override void CastSpecialSkill(Vector2 targetLocation) {
-        iSpecialAbility = Instantiate(turretStatsSO.specialAbilityGameObject).GetComponent<ISpecialAbility>();
-        if (iSpecialAbility != null) {
-            iSpecialAbility.Activate(targetLocation);
-        }
-    }
-
     #endregion AttackStuff
 }

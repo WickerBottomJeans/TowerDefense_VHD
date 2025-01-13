@@ -20,6 +20,8 @@ public class ThunderStrike : MonoBehaviour, ISpecialAbility {
 
     private State currentState;
 
+    public bool RequiresAiming => true;
+
     public event EventHandler<OnStateChangedEventArgs> OnStateChanged;
 
     public class OnStateChangedEventArgs : EventArgs {
@@ -69,26 +71,4 @@ public class ThunderStrike : MonoBehaviour, ISpecialAbility {
     public float GetCoolDown() {
         return cooldown;
     }
-
-    //    private void OnTriggerEnter2D(Collider2D collision) {
-    //    // Check if the object is an enemy and apply damage
-    //    if (collision.CompareTag("Enemy") && collision.TryGetComponent(out Enemy enemyScript)) {
-    //        enemiesInRange.Add(enemyScript);
-    //        enemyScript.OnEnemyDestroyed += EnemyScript_OnEnemyDestroyed;
-    //    }
-    //}
-
-    //private void OnTriggerExit2D(Collider2D collision) {
-    //    if (collision.CompareTag("Enemy") && collision.TryGetComponent(out Enemy enemyScript)) {
-    //        enemiesInRange.Remove(enemyScript);
-    //        enemyScript.OnEnemyDestroyed -= EnemyScript_OnEnemyDestroyed;
-    //    }
-    //}
-
-    //private void EnemyScript_OnEnemyDestroyed(object sender, Enemy.OnEnemyDestroyedEventArgs e) {
-    //    if (sender is Enemy destroyedEnemy) {
-    //        enemiesInRange.Remove(destroyedEnemy);
-    //        destroyedEnemy.OnEnemyDestroyed -= EnemyScript_OnEnemyDestroyed;
-    //    }
-    //}
 }

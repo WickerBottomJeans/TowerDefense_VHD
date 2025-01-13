@@ -38,8 +38,4 @@ public class FunTurret : _BaseTurret {
         iprojectile = turretStatsSO.projectilePrefab.GetComponent<IProjectile>();
         iprojectile.SpawnProjectile(turretStatsSO.projectilePrefab, firePoint, currentTarget.transform);
     }
-
-    protected override void CastSpecialSkill(Vector2 targetLocation) {
-        throw new System.NotImplementedException();
-    }
 }

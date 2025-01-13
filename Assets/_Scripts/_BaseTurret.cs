@@ -149,7 +149,12 @@ public abstract class _BaseTurret : MonoBehaviour, IHasHPBar {
         CastSpecialSkill(e.targetLocation);
     }
 
-    protected abstract void CastSpecialSkill(Vector2 targetLocation);
+    protected void CastSpecialSkill(Vector2 targetLocation) {
+        iSpecialAbility = Instantiate(turretStatsSO.specialAbilityGameObject).GetComponent<ISpecialAbility>();
+        if (iSpecialAbility != null) {
+            iSpecialAbility.Activate(targetLocation);
+        }
+    }
 
     #endregion DataStuff
 
