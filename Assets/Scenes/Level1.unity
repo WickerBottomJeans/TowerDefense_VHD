@@ -789,6 +789,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: MainTower
       objectReference: {fileID: 0}
+    - target: {fileID: 2601258619011922883, guid: 5f011c87844b47a4d8de23f610f50d11, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2601258619011922883, guid: 5f011c87844b47a4d8de23f610f50d11, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4432620121471704456, guid: 5f011c87844b47a4d8de23f610f50d11, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -1597,7 +1605,7 @@ MonoBehaviour:
   - {fileID: 1512811667}
   maxEnemies: 10
   maxBosses: 2
-  spawnInterval: 2
+  spawnInterval: 0.1
   bossSpawnInterval: 30
   totalDuration: 0
 --- !u!4 &1743884559

@@ -9,9 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8389328155631359540}
-  - component: {fileID: 139564876875722798}
-  - component: {fileID: 7685189639099551048}
   - component: {fileID: 2091717915620014350}
+  - component: {fileID: 8642984922746101002}
+  - component: {fileID: 1981763711888425752}
   m_Layer: 0
   m_Name: DarkSpellCircleRange
   m_TagString: Untagged
@@ -34,7 +34,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1997494583824536084}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &139564876875722798
+--- !u!114 &2091717915620014350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 490299697635496489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7217be33d34f444684e33868725ef64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!95 &8642984922746101002
 Animator:
   serializedVersion: 7
   m_ObjectHideFlags: 0
@@ -56,7 +68,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!212 &7685189639099551048
+--- !u!212 &1981763711888425752
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -100,30 +112,17 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 984614438458739684, guid: 749c08e4745ca814e9e6cd7b206b9366, type: 3}
-  m_Color: {r: 0.81761, g: 0, b: 0.7736541, a: 0.44705883}
+  m_Sprite: {fileID: 3486911089735239989, guid: 667667200bb5af14d94b37485835e2e6, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.3333334, y: 1.3333334}
+  m_Size: {x: 1, y: 1.0003909}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &2091717915620014350
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 490299697635496489}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b7217be33d34f444684e33868725ef64, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  darkspell: {fileID: 0}
 --- !u!1 &8350920096416007801
 GameObject:
   m_ObjectHideFlags: 0
@@ -171,7 +170,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 698a51c80ec6f3640a02d681d9c7b851, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: 10
+  range: 7
   cooldown: 5
   spellRangeCirclePrefab: {fileID: 490299697635496489}
 --- !u!58 &2732088982784380477
@@ -254,7 +253,7 @@ Animator:
   m_GameObject: {fileID: 8679007406000414289}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: af921bc7f4dd3f74381d0b0e140406f1, type: 2}
+  m_Controller: {fileID: 9100000, guid: 2d0c89b3368cb474dbdfa1c17b9d5d4e, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

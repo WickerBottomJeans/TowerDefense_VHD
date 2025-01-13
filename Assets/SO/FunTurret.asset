@@ -23,5 +23,6 @@ MonoBehaviour:
   maxHPMultiplier: 0.1
   projectilePrefab: {fileID: 1057119316314463574, guid: 215b5e2755ad0ac4f9ed4cf98b30205f, type: 3}
   specialAbilityGameObject: {fileID: 8350920096416007801, guid: 0c55c4e551a13df4a99f1c7be428bec9, type: 3}
+  specialAbilitySecondGameObject: {fileID: 0}
   turretPrefab: {fileID: 1841312430189335454, guid: d58b7b6fa507712478781bebe02718f1, type: 3}
   ghostSprite: {fileID: 3763649122343108368, guid: 253869b55d95c624bbe854415430fa6f, type: 3}

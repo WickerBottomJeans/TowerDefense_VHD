@@ -132,7 +132,7 @@ public abstract class _BaseTurret : MonoBehaviour, IHasHPBar {
 
         iprojectile = turretStatsSO.projectilePrefab.GetComponent<IProjectile>();
         iSpecialAbility = turretStatsSO.specialAbilityGameObject.GetComponent<ISpecialAbility>();
-        specialSkillButton = transform.Find("SpecialSkillButtonCanvas/SpecialSkillButton")?.GetComponent<SpecialSkillButton>();
+        specialSkillButton = transform.Find("ButtonCanvas/SpecialSkillButton")?.GetComponent<SpecialSkillButton>();
     }
 
     protected void LevelSystem_OnLevelUp(object sender, LevelSystem.OnLevelUpEventArgs e) {
