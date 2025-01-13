@@ -10,7 +10,8 @@ public class ThunderStrike : MonoBehaviour, ISpecialAbility {
     public float spawnTime = 1f;
     private HashSet<Enemy> enemiesInRange = new HashSet<Enemy>();
     private CircleCollider2D areaCollider;
-
+    public float mpCost = 50f;
+    public float MPCost => mpCost;
     [SerializeField] private float cooldown = 5f;
 
     public enum State {

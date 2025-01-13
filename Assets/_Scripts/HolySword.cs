@@ -4,7 +4,8 @@ public class HolySword : MonoBehaviour, ISpecialAbility {
     public float range = 2f;
     public float cooldown = 5f;
     public float CoolDown => cooldown;
-
+    public float mpCost = 50f;
+    public float MPCost => mpCost;
     public bool RequiresAiming => false;
 
     public void Activate(Vector2 targetLocation, _BaseTurret turret) {
