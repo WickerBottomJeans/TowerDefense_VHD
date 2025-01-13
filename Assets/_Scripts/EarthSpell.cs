@@ -12,7 +12,7 @@ public class EarthHammer : MonoBehaviour, ISpecialAbility {
     public bool RequiresAiming => true; // Requires targeting location
     public float CoolDown => cooldown; // No cooldown for this spell
 
-    public void Activate(Vector2 targetLocation) {
+    public void Activate(Vector2 targetLocation, _BaseTurret turret) {
         // Detect enemies in range
         DetectEnemiesInRange(targetLocation);
 

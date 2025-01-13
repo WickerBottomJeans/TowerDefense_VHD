@@ -18,7 +18,7 @@ public class DarkSpell : MonoBehaviour, ISpecialAbility {
         }
     }
 
-    public void Activate(Vector2 targetLocation) {
+    public void Activate(Vector2 targetLocation, _BaseTurret turret) {
         // Set the position of the spell and range circle to the target location
         transform.position = new Vector2(targetLocation.x, targetLocation.y);
 

@@ -33,7 +33,6 @@ public class Enemy : MonoBehaviour {
     protected GameObject targetTurret;
     protected int currentWaypointIndex = 0;
     protected float attackTimer = 0f;
-
     private CircleCollider2D circleCollider2D;
 
     public event EventHandler<OnEnemyDestroyedEventArgs> OnEnemyDestroyed;
@@ -48,6 +47,11 @@ public class Enemy : MonoBehaviour {
 
     private float hypnotizedDuration = 5f; // Thời gian thôi miên
     private float hypnotizedTimer = 0f;
+
+    //provoke stuff
+    public bool isProvoked;
+
+    public GameObject provokeTarget;
 
     public void OnTurretEnterRange(GameObject turret) {
         targetInRange.Add(turret);
@@ -81,6 +85,7 @@ public class Enemy : MonoBehaviour {
     }
 
     protected virtual void Update() {
+        Debug.Log("Is provoked" + isProvoked);
         if (Input.GetKeyDown(KeyCode.S)) {
             ApplyHypnotize();
         }
@@ -97,6 +102,20 @@ public class Enemy : MonoBehaviour {
             }
         }
 
+        if (isProvoked) {
+            targetTurret = provokeTarget;
+            if (targetTurret != null) {
+                float distanceToTurret = Vector3.Distance(transform.position, targetTurret.transform.position);
+                if (distanceToTurret > attackRange) {
+                    MoveToTarget(targetTurret.transform.position);
+                } else if (attackTimer <= 0) {
+                    AttackTower();
+                }
+            } else {
+                Debug.Log("Target turret == null");
+            }
+            return;
+        }
         if (isHypnotized) {
             GameObject closestEnemy = FindClosestEnemy();
             if (closestEnemy != null) {
@@ -108,6 +127,7 @@ public class Enemy : MonoBehaviour {
                 }
             }
         } else {
+            Debug.Log("EAT ASS");
             if (targetInRange.Count > 0) {
                 targetTurret = FindTarget();
                 if (targetTurret != null) {
@@ -276,7 +296,8 @@ public class Enemy : MonoBehaviour {
 
     // Thêm phương thức để thay đổi mục tiêu tấn công sang trụ
     public void ChangeTargetToTower(GameObject tower) {
-        targetTurret = tower;
+        provokeTarget = tower;
+        isProvoked = true;
         isHypnotized = false; // Dừng trạng thái thôi miên nếu có
         Debug.Log("Enemy changed target to tower: " + tower.name);
     }

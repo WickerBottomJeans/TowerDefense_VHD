@@ -20,7 +20,9 @@ public class DefenseTurret : _BaseTurret {
     }
 
     private void DestroySword() {
-        Destroy(currentSword.gameObject);
+        if (currentSword != null) {
+            Destroy(currentSword.gameObject);
+        }
     }
 
     public override void AttackEnemy() {
