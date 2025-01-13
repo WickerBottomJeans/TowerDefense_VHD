@@ -82,11 +82,6 @@ public abstract class _BaseTurret : MonoBehaviour, IHasHPBar {
     }
 
     protected void EnemyScript_OnAppliedHypnotize(object sender, System.EventArgs e) {
-        if (currentTarget != null && enemiesInRange.Contains(currentTarget)) {
-            enemiesInRange.Remove(currentTarget);
-            Debug.Log(enemiesInRange.Contains(currentTarget) ? "Still here" : "ASS");
-        }
-
         if (currentTarget == sender) {
             currentTarget = null;
         }
