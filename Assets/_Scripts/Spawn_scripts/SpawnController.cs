@@ -24,14 +24,24 @@ public class SpawnController : MonoBehaviour
 
     private int currentEnemyCount = 0;
     private int currentBossCount = 0;
+    private int deadEnemyCount = 0; // Số lượng quái đã chết
+    private int deadBossCount = 0; // Số lượng boss đã chết
     private float spawnTimer = 0f;
     private float bossSpawnTimer = 0f;
+
+    private GameManager gameManager;
 
     void Start()
     {
         spawnTimer = spawnInterval;
         bossSpawnTimer = bossSpawnInterval;
         elapsedTime = 0f; // Đặt lại thời gian đã trôi qua khi bắt đầu
+
+        gameManager = FindObjectOfType<GameManager>();
+        if (gameManager == null)
+        {
+            Debug.LogError("GameManager not found in the scene.");
+        }
     }
 
     private void Update()
@@ -75,6 +85,15 @@ public class SpawnController : MonoBehaviour
                 bossSpawnTimer = bossSpawnInterval;
             }
         }
+
+        // Kiểm tra nếu tất cả quái và boss đã chết
+        if (deadEnemyCount >= maxEnemies && deadBossCount >= maxBosses)
+        {
+            if (gameManager != null)
+            {
+                gameManager.SetState(GameManager.State.Win);
+            }
+        }
     }
 
     private void InfiniteSpawn()
@@ -93,12 +112,17 @@ public class SpawnController : MonoBehaviour
             bossSpawnTimer = bossSpawnInterval;
         }
     }
+
     private void TimedSpawn()
     {
         // Kiểm tra nếu thời gian tổng đã vượt qua
         if (elapsedTime >= totalDuration)
         {
             Debug.Log("Timed Spawn Ended: Total duration reached.");
+            if (gameManager != null)
+            {
+                gameManager.SetState(GameManager.State.Win);
+            }
             return; // Ngừng spawn khi hết thời gian tổng
         }
 
@@ -122,6 +146,15 @@ public class SpawnController : MonoBehaviour
                 bossSpawnTimer = bossSpawnInterval;
             }
         }
+
+        // Kiểm tra nếu tất cả quái và boss đã chết
+        if (deadEnemyCount >= maxEnemies && deadBossCount >= maxBosses)
+        {
+            if (gameManager != null)
+            {
+                gameManager.SetState(GameManager.State.Win);
+            }
+        }
     }
 
     private void SpawnEnemy()
@@ -130,7 +163,14 @@ public class SpawnController : MonoBehaviour
 
         Transform spawnPoint = spawnPoints[Random.Range(0, spawnPoints.Length)];
         GameObject enemyPrefab = enemyPrefabs[Random.Range(0, enemyPrefabs.Length)];
-        Instantiate(enemyPrefab, spawnPoint.position, spawnPoint.rotation);
+        GameObject enemy = Instantiate(enemyPrefab, spawnPoint.position, spawnPoint.rotation);
+
+        // Đăng ký sự kiện khi quái chết
+        Enemy enemyScript = enemy.GetComponent<Enemy>();
+        if (enemyScript != null)
+        {
+            enemyScript.OnEnemyDestroyed += OnEnemyDestroyed;
+        }
 
         currentEnemyCount++;
     }
@@ -147,8 +187,25 @@ public class SpawnController : MonoBehaviour
 
         Transform spawnPoint = spawnPoints[Random.Range(0, spawnPoints.Length)];
         GameObject bossPrefab = bossPrefabs[Random.Range(0, bossPrefabs.Length)];
-        Instantiate(bossPrefab, spawnPoint.position, spawnPoint.rotation);
+        GameObject boss = Instantiate(bossPrefab, spawnPoint.position, spawnPoint.rotation);
+
+        // Đăng ký sự kiện khi boss chết
+        Enemy bossScript = boss.GetComponent<Enemy>();
+        if (bossScript != null)
+        {
+            bossScript.OnEnemyDestroyed += OnBossDestroyed;
+        }
 
         currentBossCount++;
+    }
+
+    private void OnEnemyDestroyed(object sender, Enemy.OnEnemyDestroyedEventArgs e)
+    {
+        deadEnemyCount++;
+    }
+
+    private void OnBossDestroyed(object sender, Enemy.OnEnemyDestroyedEventArgs e)
+    {
+        deadBossCount++;
     }
 }
