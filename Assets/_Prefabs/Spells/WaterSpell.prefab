@@ -166,7 +166,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 4
   chillTime: 0.1
-  damage: 100
+  damage: 30
   speedMultiplier: 50
   smoothFactor: 0.05
   forceAmount: 200
