@@ -12,6 +12,7 @@ public abstract class _BaseTurret : MonoBehaviour, IHasHPBar {
     [SerializeField] public Transform turretPivot;
     [SerializeField] public TurretStatsSO turretStatsSO;
     public SpecialSkillButton specialSkillButton;
+    public SpecialSkillButton secondSpecialSkillButton;
 
     #endregion Reference
 
@@ -20,6 +21,7 @@ public abstract class _BaseTurret : MonoBehaviour, IHasHPBar {
     protected bool specialSkillUnlocked = false;
     protected GameObject currentTarget;
     protected IProjectile iprojectile;
+    public ISpecialAbility secondISpecialAbility;
     public ISpecialAbility iSpecialAbility;
     [SerializeField] protected float currentHP, currentMP, currentAttackRange, currentFireRate;
     [SerializeField] protected float currentMaxHP, currentMaxMP, currentMaxAttackRange, currentMaxFireRate;
@@ -142,6 +144,7 @@ public abstract class _BaseTurret : MonoBehaviour, IHasHPBar {
         }
 
         iprojectile = turretStatsSO.projectilePrefab.GetComponent<IProjectile>();
+        secondISpecialAbility = turretStatsSO.secondSpecialAbilityGameObject.GetComponent<ISpecialAbility>();
         iSpecialAbility = turretStatsSO.specialAbilityGameObject.GetComponent<ISpecialAbility>();
         specialSkillButton = transform.Find("ButtonCanvas/SpecialSkillButton")?.GetComponent<SpecialSkillButton>();
     }
@@ -152,17 +155,36 @@ public abstract class _BaseTurret : MonoBehaviour, IHasHPBar {
         if (e.isMaxLevel) {
             specialSkillUnlocked = true;
             specialSkillButton.OnSpecialButtonClicked += SpecialSkillButton_OnSpecialButtonClicked;
+            secondSpecialSkillButton.OnSpecialButtonClicked += SecondSpecialSkillButton_OnSpecialButtonClicked;
         }
     }
 
-    private void SpecialSkillButton_OnSpecialButtonClicked(object sender, SpecialSkillButton.OnSpecialButtonClickedEventArgs e) {
-        CastSpecialSkill(e.targetLocation, e.turret);
+    private void SecondSpecialSkillButton_OnSpecialButtonClicked(object sender, SpecialSkillButton.OnSpecialButtonClickedEventArgs e) {
+        CastSpecialSkill(e.targetLocation, e.turret, e.specialAbilityIndex);
     }
 
-    protected void CastSpecialSkill(Vector2 targetLocation, _BaseTurret turret) {
-        iSpecialAbility = Instantiate(turretStatsSO.specialAbilityGameObject).GetComponent<ISpecialAbility>();
-        if (iSpecialAbility != null) {
-            iSpecialAbility.Activate(targetLocation, turret);
+    private void SpecialSkillButton_OnSpecialButtonClicked(object sender, SpecialSkillButton.OnSpecialButtonClickedEventArgs e) {
+        CastSpecialSkill(e.targetLocation, e.turret, e.specialAbilityIndex);
+    }
+
+    protected void CastSpecialSkill(Vector2 targetLocation, _BaseTurret turret, int specialAbilityIndex) {
+        Debug.Log("base turret has casted the cast skills");
+
+        switch (specialAbilityIndex) {
+            case 1:
+                iSpecialAbility = Instantiate(turretStatsSO.specialAbilityGameObject).GetComponent<ISpecialAbility>();
+                if (iSpecialAbility != null) {
+                    iSpecialAbility.Activate(targetLocation, turret);
+                }
+                break;
+
+            case 2:
+                secondISpecialAbility = Instantiate(turretStatsSO.secondSpecialAbilityGameObject).GetComponent<ISpecialAbility>();
+                if (secondISpecialAbility != null) {
+                    secondISpecialAbility.Activate(targetLocation, turret);
+                }
+                Debug.Log("base turret has casted the 2nd skills");
+                break;
         }
     }
 

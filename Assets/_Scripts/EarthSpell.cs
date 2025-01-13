@@ -14,8 +14,9 @@ public class EarthHammer : MonoBehaviour, ISpecialAbility {
 
     public void Activate(Vector2 targetLocation, _BaseTurret turret) {
         // Detect enemies in range
+        Debug.Log("EAT ASSSSSS");
         DetectEnemiesInRange(targetLocation);
-
+        transform.position = targetLocation;
         // Push each enemy only once
         for (int i = 0; i < enemiesInRange.Count; i++) {
             GameObject enemy = enemiesInRange[i];

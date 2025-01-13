@@ -85,7 +85,6 @@ public class Enemy : MonoBehaviour {
     }
 
     protected virtual void Update() {
-        Debug.Log("Is provoked" + isProvoked);
         if (Input.GetKeyDown(KeyCode.S)) {
             ApplyHypnotize();
         }
@@ -127,7 +126,6 @@ public class Enemy : MonoBehaviour {
                 }
             }
         } else {
-            Debug.Log("EAT ASS");
             if (targetInRange.Count > 0) {
                 targetTurret = FindTarget();
                 if (targetTurret != null) {
@@ -211,7 +209,6 @@ public class Enemy : MonoBehaviour {
             _BaseTurret tower = targetTurret.GetComponent<_BaseTurret>();
             if (tower != null) {
                 tower.TakeDamage(attackDamage);
-                Debug.Log($"Enemy attacked the tower for {attackDamage} damage.");
 
                 AudioSource audioSource = GetComponent<AudioSource>();
                 if (audioSource != null && !audioSource.isPlaying) {

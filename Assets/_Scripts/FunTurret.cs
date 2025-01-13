@@ -1,6 +1,7 @@
 using UnityEngine;
 
 public class FunTurret : _BaseTurret {
+    //second ability earth toss
 
     protected void Update() {
         RotateTurretPivotTowardsTarget();

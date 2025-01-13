@@ -8,23 +8,28 @@ public class SpecialSkillButton : MonoBehaviour {
     [SerializeField] private Image cooldownMask;
     private float cooldownTime;
     [SerializeField] private Sprite aimingMouseSprite;
+    [SerializeField] private int SpecialSkillIndex = 1;
 
     private GameObject aimingMouseObject;
     private _BaseTurret turret;
     private bool isAiming = false;
     private bool isCooldown = false;
     private float cooldownTimer = 0f;
+    private ISpecialAbility iSpecialAbility;
 
     public event EventHandler<OnSpecialButtonClickedEventArgs> OnSpecialButtonClicked;
 
     private void Start() {
         // Get the turret from the parent of the parent
         turret = transform.parent.parent.GetComponentInChildren<_BaseTurret>();
-
+        if (SpecialSkillIndex == 1) {
+            iSpecialAbility = turret.iSpecialAbility;
+        } else if (SpecialSkillIndex == 2) {
+            iSpecialAbility = turret.secondISpecialAbility;
+        }
         //set the cooldown
-        Debug.Log($"CooldownTime: {cooldownTime}, iSpecialAbility Cooldown: {turret.iSpecialAbility.CoolDown}, Turret: {turret}");
 
-        cooldownTime = turret.iSpecialAbility.CoolDown;
+        cooldownTime = iSpecialAbility.CoolDown;
 
         specialSkillButton.enabled = false;
         cooldownMask.fillAmount = 0f; // Ensure the mask is not visible initially
@@ -52,7 +57,7 @@ public class SpecialSkillButton : MonoBehaviour {
     private void HandleSpecialSkillButtonClick() {
         if (isCooldown) return; // Prevent clicking if on cooldown
 
-        if (turret.iSpecialAbility.RequiresAiming) {
+        if (iSpecialAbility.RequiresAiming) {
             // If the special ability requires aiming
             isAiming = true; // Start aiming
             aimingMouseObject.SetActive(true); // Show the aiming cursor
@@ -60,7 +65,7 @@ public class SpecialSkillButton : MonoBehaviour {
         } else {
             // If the special ability does not require aiming
             Vector2 targetLocation = turret.transform.position; // Use the turret's position or a default position
-            OnSpecialButtonClicked?.Invoke(this, new OnSpecialButtonClickedEventArgs { targetLocation = targetLocation, turret = turret });
+            OnSpecialButtonClicked?.Invoke(this, new OnSpecialButtonClickedEventArgs { targetLocation = targetLocation, turret = turret, specialAbilityIndex = SpecialSkillIndex });
             StartCooldown(); // Start cooldown immediately
         }
     }
@@ -73,7 +78,7 @@ public class SpecialSkillButton : MonoBehaviour {
 
             if (Input.GetMouseButtonDown(0)) { // Left click
                 Vector2 targetLocation = mousePosition; // Get target location
-                OnSpecialButtonClicked?.Invoke(this, new OnSpecialButtonClickedEventArgs { targetLocation = targetLocation, turret = turret });
+                OnSpecialButtonClicked?.Invoke(this, new OnSpecialButtonClickedEventArgs { targetLocation = targetLocation, turret = turret, specialAbilityIndex = SpecialSkillIndex });
 
                 // Hide the aiming cursor and show the default cursor
                 aimingMouseObject.SetActive(false);
@@ -103,6 +108,7 @@ public class SpecialSkillButton : MonoBehaviour {
     }
 
     public class OnSpecialButtonClickedEventArgs : EventArgs {
+        public int specialAbilityIndex;
         public Vector2 targetLocation;
         public _BaseTurret turret;
     }
