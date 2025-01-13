@@ -9,6 +9,8 @@ public class MainTowerAttack : MonoBehaviour
     private IProjectile iprojectile;
     private float  currentAttackRange, currentFireRate;
     private float currentMaxAttackRange, currentMaxFireRate;
+    [SerializeField]
+    private MainTower mainTower;
     
     private HashSet<GameObject> enemiesInRange = new HashSet<GameObject>();
     private HashSet<GameObject> subscribedEnemies = new HashSet<GameObject>();
@@ -97,6 +99,7 @@ public class MainTowerAttack : MonoBehaviour
         if (iprojectile != null) {
             iprojectile.SpawnProjectile(towerData.projectilePrefab, 
                 firePoint, currentTarget.transform);
+            mainTower.AddMP();
         }
     }
     
