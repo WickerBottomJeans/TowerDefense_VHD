@@ -407,8 +407,8 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDamping: 0
+  m_Mass: 3.5
+  m_LinearDamping: 0.7
   m_AngularDamping: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
@@ -490,6 +490,8 @@ MonoBehaviour:
   detectRange: 3
   attackRange: 0.5
   healthBar: {fileID: 5705736624223771854}
+  isProvoked: 0
+  provokeTarget: {fileID: 0}
 --- !u!82 &2717950328817229314
 AudioSource:
   m_ObjectHideFlags: 0
