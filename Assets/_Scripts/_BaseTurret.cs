@@ -90,7 +90,6 @@ public abstract class _BaseTurret : MonoBehaviour, IHasHPBar {
     }
 
     public void OnEnemyEnterRange(GameObject enemy) {
-        Debug.Log("hi");
         enemiesInRange.Add(enemy);
     }
 
