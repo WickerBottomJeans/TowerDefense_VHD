@@ -340,7 +340,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23b0e3573f5cbdd42b065d40baa1b974, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 6000
+  maxHealth: 80
   speed: 1
   mpGain: 50
   expGain: 50
@@ -350,6 +350,8 @@ MonoBehaviour:
   detectRange: 5
   attackRange: 0.5
   healthBar: {fileID: 3030550080706549288}
+  isProvoked: 0
+  provokeTarget: {fileID: 0}
 --- !u!61 &-2312129572560352516
 BoxCollider2D:
   m_ObjectHideFlags: 0

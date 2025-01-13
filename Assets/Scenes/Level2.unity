@@ -1485,7 +1485,7 @@ Tilemap:
       - {fileID: 2966020086064994025, guid: 749c08e4745ca814e9e6cd7b206b9366, type: 3}
       - {fileID: 3461928449725060889, guid: 749c08e4745ca814e9e6cd7b206b9366, type: 3}
       - {fileID: 1961741340041596545, guid: 749c08e4745ca814e9e6cd7b206b9366, type: 3}
-      m_AnimationSpeed: 20.000002
+      m_AnimationSpeed: 20
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 4, y: 1, z: 0}
@@ -2051,6 +2051,18 @@ PrefabInstance:
       propertyPath: totalDuration
       value: 30
       objectReference: {fileID: 0}
+    - target: {fileID: 7313106531873612809, guid: 959f19feceac0fb488d6719f6eb307b1, type: 3}
+      propertyPath: enemyPrefabs.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7313106531873612809, guid: 959f19feceac0fb488d6719f6eb307b1, type: 3}
+      propertyPath: 'enemyPrefabs.Array.data[0]'
+      value: 
+      objectReference: {fileID: 6690305332689179794, guid: d09c2cece3b33db49af137cc2b0b608a, type: 3}
+    - target: {fileID: 7313106531873612809, guid: 959f19feceac0fb488d6719f6eb307b1, type: 3}
+      propertyPath: 'enemyPrefabs.Array.data[1]'
+      value: 
+      objectReference: {fileID: 2156438117834231868, guid: 3436c381fec18464ca3c63876bfe4ba8, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
