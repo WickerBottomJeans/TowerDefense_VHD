@@ -14,7 +14,7 @@ public class Arrow_Script : MonoBehaviour
             if (turret != null)
             {
                 turret.TakeDamage(damage);
-                //Destroy(gameObject);
+                Destroy(gameObject);
             }
 
 
