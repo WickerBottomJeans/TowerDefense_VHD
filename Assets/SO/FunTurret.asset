@@ -16,13 +16,13 @@ MonoBehaviour:
   baseAttackRange: 8
   baseFireRate: 1
   baseMaxMP: 100
-  baseMaxHP: 200
+  baseMaxHP: 5000
   attackRangeMultiplier: 0.1
   fireRateMultiplier: 0.1
   maxMPMultiplier: 0.1
   maxHPMultiplier: 0.1
   projectilePrefab: {fileID: 1057119316314463574, guid: 215b5e2755ad0ac4f9ed4cf98b30205f, type: 3}
   specialAbilityGameObject: {fileID: 8350920096416007801, guid: 0c55c4e551a13df4a99f1c7be428bec9, type: 3}
-  specialAbilitySecondGameObject: {fileID: 0}
+  secondSpecialAbilityGameObject: {fileID: 9016740799896413216, guid: 95419a1a59037284aa95a23a5bcd025e, type: 3}
   turretPrefab: {fileID: 1841312430189335454, guid: d58b7b6fa507712478781bebe02718f1, type: 3}
   ghostSprite: {fileID: 3763649122343108368, guid: 253869b55d95c624bbe854415430fa6f, type: 3}
