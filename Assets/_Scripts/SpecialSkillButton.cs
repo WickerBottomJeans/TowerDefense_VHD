@@ -57,7 +57,7 @@ public class SpecialSkillButton : MonoBehaviour {
             Cursor.visible = false; // Hide the default cursor
         } else {
             // If the special ability does not require aiming
-            Vector2 targetLocation = transform.position; // Use the turret's position or a default position
+            Vector2 targetLocation = turret.transform.position; // Use the turret's position or a default position
             OnSpecialButtonClicked?.Invoke(this, new OnSpecialButtonClickedEventArgs { targetLocation = targetLocation });
             StartCooldown(); // Start cooldown immediately
         }

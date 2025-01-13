@@ -1,7 +1,7 @@
 using UnityEngine;
 
 public interface ISpecialAbility {
-    bool CoolDown { get; }
+    float CoolDown { get; }
 
     bool RequiresAiming { get; }
 

@@ -20,6 +20,7 @@ public class ThunderStrike : MonoBehaviour, ISpecialAbility {
 
     private State currentState;
 
+    public float CoolDown => cooldown;
     public bool RequiresAiming => true;
 
     public event EventHandler<OnStateChangedEventArgs> OnStateChanged;
