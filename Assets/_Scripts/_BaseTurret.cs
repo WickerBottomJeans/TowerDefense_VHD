@@ -228,5 +228,18 @@ public abstract class _BaseTurret : MonoBehaviour, IHasHPBar {
 
             levelNormalized = (float)levelSystem.GetLevel() / levelSystem.GetMaxLevel()
         });
+        UpdateSpecialSkillButtonState();
+    }
+
+    protected void UpdateSpecialSkillButtonState() {
+        // Check and enable/disable the first special skill button
+        if (specialSkillButton != null) {
+            specialSkillButton.gameObject.SetActive(currentMP >= iSpecialAbility.MPCost);
+        }
+
+        // Check and enable/disable the second special skill button
+        if (secondSpecialSkillButton != null) {
+            secondSpecialSkillButton.gameObject.SetActive(currentMP >= secondISpecialAbility.MPCost);
+        }
     }
 }

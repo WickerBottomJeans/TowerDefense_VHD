@@ -10,6 +10,8 @@ public class SpecialSkillButton : MonoBehaviour {
     [SerializeField] private Sprite aimingMouseSprite;
     [SerializeField] private int SpecialSkillIndex = 1;
 
+    private Button button;
+
     private GameObject aimingMouseObject;
     private _BaseTurret turret;
     private bool isAiming = false;
