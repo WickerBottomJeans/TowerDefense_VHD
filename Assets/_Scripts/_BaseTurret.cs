@@ -172,19 +172,34 @@ public abstract class _BaseTurret : MonoBehaviour, IHasHPBar {
 
         switch (specialAbilityIndex) {
             case 1:
-                iSpecialAbility = Instantiate(turretStatsSO.specialAbilityGameObject).GetComponent<ISpecialAbility>();
-                if (iSpecialAbility != null) {
-                    iSpecialAbility.Activate(targetLocation, turret);
+                if (TrySpendMP(iSpecialAbility.MPCost)) {
+                    iSpecialAbility = Instantiate(turretStatsSO.specialAbilityGameObject).GetComponent<ISpecialAbility>();
+                    if (iSpecialAbility != null) {
+                        iSpecialAbility.Activate(targetLocation, turret);
+                    }
                 }
                 break;
 
             case 2:
-                secondISpecialAbility = Instantiate(turretStatsSO.secondSpecialAbilityGameObject).GetComponent<ISpecialAbility>();
-                if (secondISpecialAbility != null) {
-                    secondISpecialAbility.Activate(targetLocation, turret);
+                if (TrySpendMP(secondISpecialAbility.MPCost)) {
+                    secondISpecialAbility = Instantiate(turretStatsSO.secondSpecialAbilityGameObject).GetComponent<ISpecialAbility>();
+                    if (secondISpecialAbility != null) {
+                        secondISpecialAbility.Activate(targetLocation, turret);
+                    }
+                    Debug.Log("base turret has casted the 2nd skills");
                 }
-                Debug.Log("base turret has casted the 2nd skills");
                 break;
+        }
+    }
+
+    protected bool TrySpendMP(float amount) {
+        if (currentMP >= amount) {
+            currentMP -= amount;
+            FireOnHPChanged();
+            return true;
+        } else {
+            Debug.LogWarning("Not enough MP to spend!");
+            return false;
         }
     }
 

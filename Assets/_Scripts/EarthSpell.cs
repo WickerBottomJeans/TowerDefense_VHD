@@ -4,6 +4,8 @@ using System.Collections.Generic;
 public class EarthHammer : MonoBehaviour, ISpecialAbility {
     public float PushForce = 10f; // The force with which enemies are pushed away
     public float PushRadius = 1f; // The radius of effect for the push
+    public float mpCost = 50f;
+    public float MPCost => mpCost;
 
     // List of enemies to push (you can add your own logic for detecting enemies)
     private List<GameObject> enemiesInRange = new List<GameObject>();

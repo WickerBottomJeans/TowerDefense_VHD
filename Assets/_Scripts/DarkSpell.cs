@@ -4,6 +4,8 @@ public class DarkSpell : MonoBehaviour, ISpecialAbility {
     public float range = 2f;
     public float cooldown = 5f;
     public GameObject spellRangeCirclePrefab;  // Reference to the circle prefab with sprite and animation
+    public float mpCost = 50f;
+    public float MPCost => mpCost;
 
     public float CoolDown => cooldown;
     public bool RequiresAiming => false;

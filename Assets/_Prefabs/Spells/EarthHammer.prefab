@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6524962944516426122}
   - component: {fileID: 3357428471538287913}
   - component: {fileID: 4741265481337730266}
+  - component: {fileID: 6065913755987548828}
   m_Layer: 0
   m_Name: EarthHammerVisual
   m_TagString: Untagged
@@ -110,6 +111,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &6065913755987548828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4403769406665436298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06868cb8ee2b8bf48916d21c3d8fdd2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hammer: {fileID: 7630205398384644851}
 --- !u!1 &9016740799896413216
 GameObject:
   m_ObjectHideFlags: 0
