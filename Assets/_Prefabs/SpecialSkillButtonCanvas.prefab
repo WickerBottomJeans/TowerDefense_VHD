@@ -173,7 +173,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 1
+  m_PresetInfoIsWorld: 0
 --- !u!114 &8997235633409796878
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -284,7 +284,6 @@ MonoBehaviour:
   levelSystem: {fileID: 0}
   specialSkillButton: {fileID: 9005313807476837398}
   cooldownMask: {fileID: 1230781691492810248}
-  cooldownTime: 5
   aimingMouseSprite: {fileID: -2312855820161195145, guid: fa82c05782f4c7c4eb8302f7b59fbe48, type: 3}
 --- !u!114 &4260325347661798360
 MonoBehaviour:

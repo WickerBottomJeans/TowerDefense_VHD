@@ -4,18 +4,19 @@
 TagManager:
   serializedVersion: 3
   tags:
-  - WayPoints
-  - Enemy
   - Turret
+  - Enemy
+  - WayPoints
+  - SpelledEnemy
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Enemy
   - Water
   - UI
-  - Enemy
-  - Projectile
+  - 
+  - 
   - 
   - 
   - 

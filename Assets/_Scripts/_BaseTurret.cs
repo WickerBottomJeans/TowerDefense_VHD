@@ -36,8 +36,8 @@ public abstract class _BaseTurret : MonoBehaviour, IHasHPBar {
     protected void Update() {
         RotateTurretPivotTowardsTarget();
         HandleAttackCooldown();
-        if (currentHP == 0) {
-            Die();
+        if (Input.GetKeyDown(KeyCode.L)) {
+            TakeDamage(50);
         }
     }
 
@@ -158,7 +158,7 @@ public abstract class _BaseTurret : MonoBehaviour, IHasHPBar {
 
     #endregion DataStuff
 
-    protected void TakeDamage(float damage) {
+    public void TakeDamage(float damage) {
         if (currentHP > damage) {
             currentHP -= damage;
             FireOnHPChanged();

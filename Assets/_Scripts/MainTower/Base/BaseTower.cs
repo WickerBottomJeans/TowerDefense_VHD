@@ -37,7 +37,7 @@ public abstract class BaseTower : MonoBehaviour, IHasHPBar {
 
     protected virtual void InitStats() {
         currentHP = currentMaxHP = mainTowerSO.GetTowerData(levelTower).baseMaxHP;
-        currentMP = 0f;
+        currentMP = currentMaxMP = mainTowerSO.GetTowerData(levelTower).baseMaxMP;
     }
     
     protected virtual void TakeDamage(float damage) {

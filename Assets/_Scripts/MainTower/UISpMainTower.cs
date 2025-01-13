@@ -9,6 +9,8 @@ public class UISpMainTower : MonoBehaviour
     private bool _activeShield;
     
     private CoinManager _coinManager;
+    [SerializeField]
+    private MainTower mainTower;
     
     [SerializeField]
     private int amountActiveShield = 30;
@@ -52,9 +54,14 @@ public class UISpMainTower : MonoBehaviour
     
     public void ActiveSkill()
     {
-        if (_coinManager != null && _coinManager.TrySpendCoins(amountUsingSkinTower))
+        if(mainTower.curMp >= 80)
+        {
+            mainTower.curMp = 0;
+            OnActiveSkill?.Invoke();
+        }
+/*        if (_coinManager != null && _coinManager.TrySpendCoins(amountUsingSkinTower))
         {        
             OnActiveSkill?.Invoke();   
-        }
+        }*/
     } 
 }

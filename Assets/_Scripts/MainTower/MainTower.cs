@@ -22,12 +22,22 @@ public class MainTower: BaseTower
     private int _takeTowerDisShield = 0;
     private int _totalTakeDisShield = 5;
 
+    public float curMp = 0f;
+
     private void Awake()
     {
         _mainTowerAttack = GetComponent<MainTowerAttack>();
         _mainTowerHealing = GetComponentInChildren<MainTowerHealing>();
         _uiSpMainTower = GetComponentInChildren<UISpMainTower>();
         _hpBarUIMainTower = GetComponentInChildren<HPBarUIMainTower>();
+    }
+
+    public void AddMP()
+    {
+        if(curMp <= 100)
+        {
+            curMp++;
+        }
     }
 
     protected override void Start()

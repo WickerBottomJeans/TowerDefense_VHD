@@ -112,8 +112,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 2
   chillTime: 1
-  damage: 200
-  target: {fileID: 0}
+  damage: 100
+  speedMultiplier: 0
+  smoothFactor: 0.1
+  forceAmount: 2
+  torque: 5
 --- !u!1 &6146915934555002539
 GameObject:
   m_ObjectHideFlags: 0
