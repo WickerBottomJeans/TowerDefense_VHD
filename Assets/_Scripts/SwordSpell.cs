@@ -5,7 +5,7 @@ using static UnityEngine.GraphicsBuffer;
 public class SwordSpell : MonoBehaviour, IProjectile {
     [SerializeField] private float speed = .5f;
     [SerializeField] private float chillTime = 1f;
-    [SerializeField] private int damage = 10;
+    [SerializeField] private float damage = 10;
     [SerializeField] private float speedMultiplier;
     [SerializeField] private float smoothFactor = 0.1f;
     [SerializeField] private _BaseTurret turret;

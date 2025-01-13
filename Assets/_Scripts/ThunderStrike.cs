@@ -51,7 +51,7 @@ public class ThunderStrike : MonoBehaviour, ISpecialAbility {
         }
     }
 
-    public void Activate(Vector2 targetLocation) {
+    public void Activate(Vector2 targetLocation, _BaseTurret turret) {
         transform.position = new Vector3(targetLocation.x, targetLocation.y, 0);
         spawnTimer = spawnTime;
     }

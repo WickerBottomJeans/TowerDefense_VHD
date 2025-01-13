@@ -5,5 +5,5 @@ public interface ISpecialAbility {
 
     bool RequiresAiming { get; }
 
-    void Activate(Vector2 targetLocation);
+    void Activate(Vector2 targetLocation, _BaseTurret turret);
 }

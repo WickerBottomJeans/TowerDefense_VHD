@@ -156,13 +156,13 @@ public abstract class _BaseTurret : MonoBehaviour, IHasHPBar {
     }
 
     private void SpecialSkillButton_OnSpecialButtonClicked(object sender, SpecialSkillButton.OnSpecialButtonClickedEventArgs e) {
-        CastSpecialSkill(e.targetLocation);
+        CastSpecialSkill(e.targetLocation, e.turret);
     }
 
-    protected void CastSpecialSkill(Vector2 targetLocation) {
+    protected void CastSpecialSkill(Vector2 targetLocation, _BaseTurret turret) {
         iSpecialAbility = Instantiate(turretStatsSO.specialAbilityGameObject).GetComponent<ISpecialAbility>();
         if (iSpecialAbility != null) {
-            iSpecialAbility.Activate(targetLocation);
+            iSpecialAbility.Activate(targetLocation, turret);
         }
     }
 
