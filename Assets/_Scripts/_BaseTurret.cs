@@ -81,6 +81,17 @@ public abstract class _BaseTurret : MonoBehaviour, IHasHPBar {
         FireOnHPChanged();
     }
 
+    protected void EnemyScript_OnAppliedHypnotize(object sender, System.EventArgs e) {
+        if (currentTarget != null && enemiesInRange.Contains(currentTarget)) {
+            enemiesInRange.Remove(currentTarget);
+            Debug.Log(enemiesInRange.Contains(currentTarget) ? "Still here" : "ASS");
+        }
+
+        if (currentTarget == sender) {
+            currentTarget = null;
+        }
+    }
+
     protected void HandleAttackCooldown() {
         fireCooldown -= Time.deltaTime;
         if (fireCooldown <= 0f) {
@@ -90,6 +101,11 @@ public abstract class _BaseTurret : MonoBehaviour, IHasHPBar {
     }
 
     public void OnEnemyEnterRange(GameObject enemy) {
+        Enemy enemyScript = enemy.GetComponent<Enemy>();
+        if (enemyScript != null) {
+            enemy.GetComponent<Enemy>().OnAppliedHypnotize += EnemyScript_OnAppliedHypnotize; ;
+        }
+
         enemiesInRange.Add(enemy);
     }
 

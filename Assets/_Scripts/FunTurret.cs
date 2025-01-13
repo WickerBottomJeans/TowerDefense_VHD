@@ -17,10 +17,12 @@ public class FunTurret : _BaseTurret {
         float shortestDistance = Mathf.Infinity;
 
         foreach (GameObject enemy in enemiesInRange) {
-            float distanceToEnemy = Vector3.Distance(transform.position, enemy.transform.position);
-            if (distanceToEnemy < shortestDistance && distanceToEnemy <= currentAttackRange) {
-                shortestDistance = distanceToEnemy;
-                closestEnemy = enemy;
+            if (enemy.CompareTag("Enemy")) {
+                float distanceToEnemy = Vector3.Distance(transform.position, enemy.transform.position);
+                if (distanceToEnemy < shortestDistance && distanceToEnemy <= currentAttackRange) {
+                    shortestDistance = distanceToEnemy;
+                    closestEnemy = enemy;
+                }
             }
         }
         return closestEnemy;
@@ -28,13 +30,19 @@ public class FunTurret : _BaseTurret {
 
     public override void AttackEnemy() {
         currentTarget = FindEnemy();
-        if (currentTarget == null) return;
+
+        if (currentTarget == null || !enemiesInRange.Contains(currentTarget)) {
+            return;
+        }
 
         Enemy enemyScript = currentTarget.GetComponent<Enemy>();
         if (enemyScript != null && !subscribedEnemies.Contains(currentTarget)) {
             enemyScript.OnEnemyDestroyed += EnemyScript_OnEnemyDestroyed;
+            enemyScript.OnAppliedHypnotize += EnemyScript_OnAppliedHypnotize;
+
             subscribedEnemies.Add(currentTarget);
         }
+
         iprojectile = turretStatsSO.projectilePrefab.GetComponent<IProjectile>();
         iprojectile.SpawnProjectile(turretStatsSO.projectilePrefab, firePoint, currentTarget.transform);
     }

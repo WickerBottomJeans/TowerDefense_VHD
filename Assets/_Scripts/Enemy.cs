@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class Enemy : MonoBehaviour {
+
     [Header("Enemy Stats")]
     public float maxHealth = 100f;
 
@@ -255,10 +256,16 @@ public class Enemy : MonoBehaviour {
     }
 
     // Thêm phương thức để kích hoạt trạng thái "bị thôi miên"
+
+    public event EventHandler OnAppliedHypnotize;
+
     public void ApplyHypnotize() {
         isHypnotized = true;
         hypnotizedTimer = hypnotizedDuration;
         gameObject.tag = "SpelledEnemy";
+
+        //fire event to turret to notice hypnotization
+        OnAppliedHypnotize?.Invoke(this, EventArgs.Empty);
 
         // Change the color to red using SpriteRenderer
         SpriteRenderer spriteRenderer = gameObject.GetComponent<SpriteRenderer>();

@@ -30,6 +30,7 @@ public class AttackTurret : _BaseTurret {
                 closestEnemy = enemy;
             }
         }
+
         return closestEnemy;
     }
 
