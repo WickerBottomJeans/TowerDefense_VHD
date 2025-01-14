@@ -16,7 +16,7 @@ MonoBehaviour:
   baseAttackRange: 5
   baseFireRate: 1
   baseMaxMP: 100
-  baseMaxHP: 1000
+  baseMaxHP: 500
   attackRangeMultiplier: 0.1
   fireRateMultiplier: 0.1
   maxMPMultiplier: 0.1

@@ -98,6 +98,10 @@ public class Enemy : MonoBehaviour {
                 isHypnotized = false;
                 gameObject.tag = "Enemy"; // Đổi lại tag khi hết thôi miên
                 Debug.Log("Enemy is no longer hypnotized.");
+                SpriteRenderer spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
+                if (spriteRenderer != null) {
+                    spriteRenderer.color = Color.white;
+                }
             }
         }
 

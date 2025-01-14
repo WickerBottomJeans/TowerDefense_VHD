@@ -418,7 +418,7 @@ MonoBehaviour:
   speed: 1
   mpGain: 5
   expGain: 50
-  coinGain: 10
+  coinGain: 50
   attackDamage: 10
   attackCooldown: 2
   detectRange: 3
