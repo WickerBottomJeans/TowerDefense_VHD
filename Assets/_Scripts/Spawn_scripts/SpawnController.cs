@@ -1,9 +1,8 @@
 ﻿using UnityEngine;
 
-public class SpawnController : MonoBehaviour
-{
-    public enum SpawnMode
-    {
+public class SpawnController : MonoBehaviour {
+
+    public enum SpawnMode {
         Controlled,
         Infinite,
         Timed
@@ -31,134 +30,113 @@ public class SpawnController : MonoBehaviour
 
     private GameManager gameManager;
 
-    void Start()
-    {
+    private void Start() {
         spawnTimer = spawnInterval;
         bossSpawnTimer = bossSpawnInterval;
         elapsedTime = 0f; // Đặt lại thời gian đã trôi qua khi bắt đầu
 
         gameManager = FindObjectOfType<GameManager>();
-        if (gameManager == null)
-        {
+        if (gameManager == null) {
             Debug.LogError("GameManager not found in the scene.");
         }
     }
 
-    private void Update()
-    {
+    private void Update() {
         elapsedTime += Time.deltaTime; // Cập nhật thời gian đã trôi qua
 
-        switch (spawnMode)
-        {
+        switch (spawnMode) {
             case SpawnMode.Controlled:
                 ControlledSpawn();
                 break;
+
             case SpawnMode.Infinite:
                 InfiniteSpawn();
                 break;
+
             case SpawnMode.Timed:
                 TimedSpawn();
                 break;
         }
     }
 
-    private void ControlledSpawn()
-    {
+    private void ControlledSpawn() {
         // Spawn quái
-        if (currentEnemyCount < maxEnemies)
-        {
+        if (currentEnemyCount < maxEnemies) {
             spawnTimer -= Time.deltaTime;
-            if (spawnTimer <= 0f)
-            {
+            if (spawnTimer <= 0f) {
                 SpawnEnemy();
                 spawnTimer = spawnInterval;
             }
         }
 
         // Spawn boss
-        if (currentBossCount < maxBosses)
-        {
+        if (currentBossCount < maxBosses) {
             bossSpawnTimer -= Time.deltaTime;
-            if (bossSpawnTimer <= 0f)
-            {
+            if (bossSpawnTimer <= 0f) {
                 SpawnBoss();
                 bossSpawnTimer = bossSpawnInterval;
             }
         }
 
         // Kiểm tra nếu tất cả quái và boss đã chết
-        if (deadEnemyCount >= maxEnemies && deadBossCount >= maxBosses)
-        {
-            if (gameManager != null)
-            {
+        if (deadEnemyCount >= maxEnemies && deadBossCount >= maxBosses) {
+            if (gameManager != null) {
                 gameManager.SetState(GameManager.State.Win);
+                Debug.Log("SetState win");
             }
         }
     }
 
-    private void InfiniteSpawn()
-    {
+    private void InfiniteSpawn() {
         spawnTimer -= Time.deltaTime;
-        if (spawnTimer <= 0f)
-        {
+        if (spawnTimer <= 0f) {
             SpawnEnemy();
             spawnTimer = spawnInterval;
         }
 
         bossSpawnTimer -= Time.deltaTime;
-        if (bossSpawnTimer <= 0f)
-        {
+        if (bossSpawnTimer <= 0f) {
             SpawnBoss();
             bossSpawnTimer = bossSpawnInterval;
         }
     }
 
-    private void TimedSpawn()
-    {
+    private void TimedSpawn() {
         // Kiểm tra nếu thời gian tổng đã vượt qua
-        if (elapsedTime >= totalDuration)
-        {
+        if (elapsedTime >= totalDuration) {
             Debug.Log("Timed Spawn Ended: Total duration reached.");
-            if (gameManager != null)
-            {
+            if (gameManager != null) {
                 gameManager.SetState(GameManager.State.Win);
             }
             return; // Ngừng spawn khi hết thời gian tổng
         }
 
         // Thực hiện logic spawn quái và boss như ControlledSpawn
-        if (currentEnemyCount < maxEnemies)
-        {
+        if (currentEnemyCount < maxEnemies) {
             spawnTimer -= Time.deltaTime;
-            if (spawnTimer <= 0f)
-            {
+            if (spawnTimer <= 0f) {
                 SpawnEnemy();
                 spawnTimer = spawnInterval;
             }
         }
 
-        if (currentBossCount < maxBosses)
-        {
+        if (currentBossCount < maxBosses) {
             bossSpawnTimer -= Time.deltaTime;
-            if (bossSpawnTimer <= 0f)
-            {
+            if (bossSpawnTimer <= 0f) {
                 SpawnBoss();
                 bossSpawnTimer = bossSpawnInterval;
             }
         }
 
         // Kiểm tra nếu tất cả quái và boss đã chết
-        if (deadEnemyCount >= maxEnemies && deadBossCount >= maxBosses)
-        {
-            if (gameManager != null)
-            {
+        if (deadEnemyCount >= maxEnemies && deadBossCount >= maxBosses) {
+            if (gameManager != null) {
                 gameManager.SetState(GameManager.State.Win);
             }
         }
     }
 
-    private void SpawnEnemy()
-    {
+    private void SpawnEnemy() {
         if (currentEnemyCount >= maxEnemies) return;
 
         Transform spawnPoint = spawnPoints[Random.Range(0, spawnPoints.Length)];
@@ -167,20 +145,17 @@ public class SpawnController : MonoBehaviour
 
         // Đăng ký sự kiện khi quái chết
         Enemy enemyScript = enemy.GetComponent<Enemy>();
-        if (enemyScript != null)
-        {
+        if (enemyScript != null) {
             enemyScript.OnEnemyDestroyed += OnEnemyDestroyed;
         }
 
         currentEnemyCount++;
     }
 
-    private void SpawnBoss()
-    {
+    private void SpawnBoss() {
         if (currentBossCount >= maxBosses) return;
 
-        if (bossPrefabs.Length == 0)
-        {
+        if (bossPrefabs.Length == 0) {
             Debug.LogWarning("No boss prefabs assigned!");
             return;
         }
@@ -191,21 +166,18 @@ public class SpawnController : MonoBehaviour
 
         // Đăng ký sự kiện khi boss chết
         Enemy bossScript = boss.GetComponent<Enemy>();
-        if (bossScript != null)
-        {
+        if (bossScript != null) {
             bossScript.OnEnemyDestroyed += OnBossDestroyed;
         }
 
         currentBossCount++;
     }
 
-    private void OnEnemyDestroyed(object sender, Enemy.OnEnemyDestroyedEventArgs e)
-    {
+    private void OnEnemyDestroyed(object sender, Enemy.OnEnemyDestroyedEventArgs e) {
         deadEnemyCount++;
     }
 
-    private void OnBossDestroyed(object sender, Enemy.OnEnemyDestroyedEventArgs e)
-    {
+    private void OnBossDestroyed(object sender, Enemy.OnEnemyDestroyedEventArgs e) {
         deadBossCount++;
     }
 }

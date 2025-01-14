@@ -91,4 +91,10 @@ public class DefenseTurret : _BaseTurret {
             enemiesInRange.Remove(other.gameObject);
         }
     }
+
+    public void OnDestroy() {
+        if (currentSword != null) {
+            currentSword.GetComponent<SwordSpell>().DestroySelf();
+        }
+    }
 }

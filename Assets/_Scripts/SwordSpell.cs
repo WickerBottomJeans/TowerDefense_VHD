@@ -16,9 +16,9 @@ public class SwordSpell : MonoBehaviour, IProjectile {
     private bool isOnTopTarget = false;
 
     //make it swing
-    [SerializeField] private float swingAmplitude = 10f; // Maximum angle for swinging
+    [SerializeField] private float swingAmplitude = 10f;
 
-    [SerializeField] private float swingFrequency = 5f;  // Speed of the swing
+    [SerializeField] private float swingFrequency = 5f;
     private float swingTimer = 0f;
 
     private void Start() {
@@ -26,13 +26,10 @@ public class SwordSpell : MonoBehaviour, IProjectile {
     }
 
     //We need someway to turn off isOnTopTarget when the target get out of turret range
-    // Sword seem to don't switch target when it get out of turret range
     private void Update() {
         if (isAttacking && target != null) {
             if (isOnTopTarget) {
-                // Stick the sword to the enemy
-                //MAGIC NUMBER!!!!!
-                //REMEMBER TO REMOVE THIS MAGIC NUMBER AFTER EXPERIMENTING
+                // Stick the sword to the ene
 
                 transform.position = target.position;
                 //decide where u want to hold the sword
@@ -68,7 +65,6 @@ public class SwordSpell : MonoBehaviour, IProjectile {
 
     public void SetTarget(Transform target) {
         if (target == null) {
-            Debug.Log("Target == null????????");
         }
         this.target = target;
         isAttacking = true;
@@ -94,5 +90,9 @@ public class SwordSpell : MonoBehaviour, IProjectile {
         isAttacking = false;
         //this to make it not teleport to next enemy
         isOnTopTarget = false;
+    }
+
+    public void DestroySelf() {
+        Destroy(gameObject);
     }
 }

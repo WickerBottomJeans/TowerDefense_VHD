@@ -139,7 +139,7 @@ public class GameManager : MonoBehaviour {
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         int nextLevelIndex = currentSceneIndex + 1;
 
-        string nextLevelSceneName = "Level" + nextLevelIndex;  // Assuming your scenes are named as "Level1", "Level2", ...
+        string nextLevelSceneName = "Level" + nextLevelIndex;
 
         // Check if the next level exists
         if (IsSceneInBuild(nextLevelSceneName)) {
@@ -152,7 +152,7 @@ public class GameManager : MonoBehaviour {
             Button nextButton = winCanvasPrefab.transform.Find("NextButton")?.GetComponent<Button>();
 
             if (nextButton != null) {
-                nextButton.interactable = false;  // Disable the button
+                nextButton.enabled = false;
             } else {
                 Debug.LogError("NextButton not found!");
             }
