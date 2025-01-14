@@ -5151,7 +5151,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 15
   chillTime: 0
-  damage: 1
+  damage: 2
   speedMultiplier: 0
   smoothFactor: 0.05
   turret: {fileID: 0}
