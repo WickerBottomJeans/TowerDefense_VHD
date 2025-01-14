@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turretCost: 50
   baseAttackRange: 6
-  baseFireRate: 5
-  baseMaxMP: 5000
+  baseFireRate: 8
+  baseMaxMP: 200
   baseMaxHP: 200
   attackRangeMultiplier: 0.1
   fireRateMultiplier: 0.1
@@ -23,6 +23,6 @@ MonoBehaviour:
   maxHPMultiplier: 0.1
   projectilePrefab: {fileID: 1057119316314463574, guid: 3c969ac896f4c644cbc92695edb403a9, type: 3}
   specialAbilityGameObject: {fileID: 4371316402298572485, guid: d268560158bca2b44a4b4ff51eaa8bef, type: 3}
-  secondSpecialAbilityGameObject: {fileID: 0}
+  secondSpecialAbilityGameObject: {fileID: 4371316402298572485, guid: d268560158bca2b44a4b4ff51eaa8bef, type: 3}
   turretPrefab: {fileID: 6157155134902797856, guid: 45baf0a390fcbab49be7b7be406da732, type: 3}
   ghostSprite: {fileID: -56096711997968560, guid: 9fe2574ae9496924891c290a3e58239f, type: 3}

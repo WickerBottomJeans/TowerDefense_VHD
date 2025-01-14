@@ -147,7 +147,7 @@ MonoBehaviour:
   turretPivot: {fileID: 1882059363590226864}
   turretStatsSO: {fileID: 11400000, guid: 9b14e002359c2294890a5da0d983ace4, type: 2}
   specialSkillButton: {fileID: 378361962372957257}
-  secondSpecialSkillButton: {fileID: 0}
+  secondSpecialSkillButton: {fileID: 378361962372957257}
   currentHP: 0
   currentMP: 0
   currentAttackRange: 0

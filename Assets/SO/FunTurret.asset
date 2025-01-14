@@ -15,8 +15,8 @@ MonoBehaviour:
   turretCost: 100
   baseAttackRange: 8
   baseFireRate: 1
-  baseMaxMP: 100
-  baseMaxHP: 5000
+  baseMaxMP: 300
+  baseMaxHP: 200
   attackRangeMultiplier: 0.1
   fireRateMultiplier: 0.1
   maxMPMultiplier: 0.1
